@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-11",
+  "build": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-03ad3eb46135",
+    "sourceDigest": "sha256:03ad3eb46135a004127bc740d17ac813a4036077c619426409fd6a3db7571af5",
+    "sourceRevision": "74ba55029c2e3e355ee1cc5d4cc949b4f83d7a24",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "status": "ready for independent blank experience re-review; not teaching approval",
+  "usabilityApproved": false,
+  "independentBlankRunOnThisCandidate": "pending",
+  "pushed": false,
+  "deployed": false,
+  "unit": {
+    "passed": 168,
+    "failed": 0,
+    "log": "logs/unit.log"
+  },
+  "productionMainEntry": {
+    "passed": 15,
+    "failed": 0,
+    "build": "dialogue-03ad3eb46135",
+    "log": "logs/production-e2e.log"
+  },
+  "dragUndoRepeat": {
+    "passed": 3,
+    "failed": 0,
+    "scope": "same final source bytes, pre-freeze build; real drag, undo, reload, explicit empty-left lock, real child connection",
+    "log": "logs/drag-undo-repeat.log"
+  },
+  "storageUi": {
+    "passed": 6,
+    "failed": 0,
+    "scope": "earlier code in this iteration before final drag/undo changes; explicit teaching fixture, actual controller/IDB, not novice run",
+    "log": "logs/storage-ui-earlier.log"
+  },
+  "standardGameClient": {
+    "build": "dialogue-03ad3eb46135",
+    "screenshotVisuallyInspected": true,
+    "errorFiles": [],
+    "scope": "fresh empty profile, candidate identity; native and e2e evidence cover workbench/coaching"
+  },
+  "native": {
+    "build": "dialogue-03ad3eb46135",
+    "identity": "synthetic local nickname 整合独立审查",
+    "scope": [
+      "3440x1157 complete wait flyout and core action visibility on unfinished attempt 3",
+      "move connected wait away, undo, reload original connection; attempt 3 stays incomplete",
+      "existing attempt 1: rerun four change scenes with individual reasons; inspect real own comparison and actual 26-sample old client letter",
+      "old-report response refused; current review does not auto-grant own mapping learning fact",
+      "explicit own mapping recheck and actual changed 20-assertion suite; same downloaded ino; still one 100 EC entry; reload proof and saved delivery view"
+    ],
+    "blankCompleteRun": false,
+    "viewportReset": true,
+    "capturedConsoleErrors": [],
+    "screenshots": "01-final-version.png through 16-normal-delivery.png",
+    "reloadCaveat": "first immediate reload returned to previously saved code view with test/income retained; after saving delivery view its reload restored receipt"
+  },
+  "archive": {
+    "file": "local-backup.json.gz",
+    "reports": 12,
+    "failuresRetained": 2,
+    "attempts": 3,
+    "attempt3Complete": false,
+    "incomeEntries": 1,
+    "income": 100,
+    "replay": "replay-result.json"
+  },
+  "manualChangedThisIteration": false,
+  "manualDigest": "sha256:6b937d8b548d36b3536184014482b9aff3857d7d4d071a1784f5c30cd8c27ade",
+  "regressionFixtures": "derived from real E archives; branch/slot fixtures deliberately truncate actual record to unfinished checkpoints; not independent teaching evidence",
+  "intermediateEvidence": "intermediate-d9a4e28 belongs to previous candidate 455bd0736dd6; not relabelled as final",
+  "knownLimits": [
+    "latest full blank experience re-review pending",
+    "four D change checkpoints still finite local scripts; naturalness not approved",
+    "complex mobile block building, real students and teaching transfer unverified",
+    "candidate Arduino source only; target compile and physical upload not_run",
+    "no real accounts, online AI, shop, multiplayer ranking, teacher console or real income"
+  ],
+  "dependenciesAdded": []
+}

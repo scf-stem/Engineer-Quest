@@ -1,0 +1,16 @@
+[
+  {
+    "file": "变更自动灯.short.cpp",
+    "phase": "short-cpp",
+    "customerPassed": true,
+    "arduinoGenerated": true,
+    "targetCompile": "not_run"
+  },
+  {
+    "file": "基础自动灯.short.cpp",
+    "phase": "blocks",
+    "customerPassed": true,
+    "arduinoGenerated": true,
+    "targetCompile": "not_run"
+  }
+]

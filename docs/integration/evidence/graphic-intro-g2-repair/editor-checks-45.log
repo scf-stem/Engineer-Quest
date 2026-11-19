@@ -1,0 +1,45 @@
+PASS initial fragment stays empty and emits no student edit
+PASS one persistent exact target
+PASS real flyout drag snaps true into output VALUE
+PASS controlled echo keeps the same workspace instance
+PASS real boolean field menu edits TRUE to FALSE with Chinese meaning
+PASS empty-space drop preserves the loose block and original empty slot
+PASS unconnected drop reports an actual target immediately
+PASS undo restores the connection and reports undo synchronously
+PASS replacement preview leaves true connected until confirmed
+PASS cancel preserves the original value
+PASS confirmed replacement uses false and retains old true loose
+PASS one undo restores the replaced value and removes the new block
+PASS native occupied drop opens replacement confirmation
+PASS native replacement preview protects original true
+PASS entering sequence clears the previous output connection message
+PASS a real missed wait drop preserves the same wait in the workspace
+PASS the same existing wait can be placed before the first statement
+PASS the misplaced existing wait can move from before the root into its own former next-chain
+PASS undo restores the whole misplaced chain without losing its statements
+PASS sequence false remains a real editable FALSE field
+PASS wrong numeric-to-statement placement identifies the actual statement connection
+PASS wrong native value drop identifies the actual boolean VALUE slot
+PASS native wait insertion keeps the original off statement below it
+PASS step placement fills just the chosen wait MS slot
+PASS existing statements can be reordered to off wait on
+PASS external restore recovers exact connection graph without a student edit
+PASS execution focus points to the real supplied Blockly block ID
+PASS external focusTarget restores an exact real slot
+PASS external null focusTarget clears the outline
+PASS real LIGHT reader connects to the numeric observation anchor
+PASS reading undo returns to an empty observation VALUE
+PASS independent mode has no unsolicited target outline
+PASS explicit help can locate the actual target in independent mode
+PASS keyboard selection preview and confirm uses the same connection operation
+PASS disabled editing locks undo and placement actions
+PASS output core blocks fit 1024x768
+PASS sequence core blocks fit 1024x768
+PASS reading core blocks fit 1024x768
+PASS output core blocks fit parent 560x300
+PASS sequence core blocks fit parent 560x300
+PASS reading core blocks fit parent 560x300
+PASS output core blocks fit parent 500x330
+PASS sequence core blocks fit parent 500x330
+PASS reading core blocks fit parent 500x330
+PASS no browser console or page errors

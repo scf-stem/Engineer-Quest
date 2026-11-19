@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-12",
+  "source": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-73dba1f086f5",
+    "sourceDigest": "sha256:73dba1f086f518471428f34977cd8badc0cbf9cfff19560eab4b492d8c34d4b1",
+    "sourceRevision": "a5721d0fdbfe4bd53dba467bc392857abff45986",
+    "sourceDirty": true,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "scope": "Local isolated requirement stage; host focusSuspended and final cinematic handoff are integrated by E separately",
+  "build": "passed",
+  "browser": {
+    "port": 5255,
+    "engine": "Chromium headless shell 1248",
+    "command": "EQ_PORT=5255 PLAYWRIGHT_EXECUTABLE_PATH=<local Chromium1248> npx playwright test tests/e2e/requirements-stage.spec.js tests/e2e/storyline.spec.js tests/e2e/storyline-change.spec.js --workers=1",
+    "passed": 11,
+    "durationSeconds": 42.6,
+    "newStageTests": 8,
+    "existingStoryTests": 3,
+    "viewports": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1280,
+        720
+      ],
+      [
+        1024,
+        768
+      ]
+    ],
+    "normalPathBrowserErrors": [],
+    "explicitStorageFaultExpectedError": "需求舞台专项的一次性写入故障"
+  },
+  "limitations": [
+    "Host external-dialog suspension and final-ready cinematic delay are not part of this worktree; E must integrate and verify.",
+    "The explicit native put fault reports its injected synchronous exception once in the baseline E store; E is fixing its catch/abort path and will tighten that test to zero browser errors.",
+    "Recorded-work regression fixtures are labeled; not a second independent novice signoff.",
+    "Standard web-game client provides DOM first-screen smoke only; full interactions were tested through the actual root in dedicated Playwright tests."
+  ]
+}

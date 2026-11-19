@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-11-12T13:39:01.903Z",
+  "frozen": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-13c382b9a7f2",
+    "sourceDigest": "sha256:13c382b9a7f28218a0ebc5a4ef51894e57208531d1444e9c828401bf1849faa1",
+    "sourceRevision": "041a0411a506c67f3df1402603d320e9b4d50c4e",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "currentWorkspace": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-13c382b9a7f2",
+    "sourceDigest": "sha256:13c382b9a7f28218a0ebc5a4ef51894e57208531d1444e9c828401bf1849faa1",
+    "sourceRevision": "3db99a474338e9ddd547f2fc7244639e0a47baa6",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "explanation": "当前Git文档/测试提交可能比冻结应用源码提交更新；全部构建相关内容摘要仍完全相同。",
+  "node": "v25.5.0",
+  "lockedDependencies": {
+    "blockly": "12.5.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "vite": "7.3.8",
+    "@playwright/test": "1.65.0"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "ref": {"id": "eq-first-order-experience-candidate", "version": "0.1.0"},
+  "status": "presentation_design_candidate",
+  "taskRef": {"id": "eq-task-auto-lamp", "version": "0.1.0"},
+  "mode": "static_story_and_navigation",
+  "titleCandidate": "校园自动灯",
+  "notice": "本文件只提供展示内容与导航意图，不改变已冻结需求、客户预期、阶段条件、奖励或教师权限。故事标题统一不等于改写已保存订单。",
+  "currentObjectiveCandidate": {
+    "id": "read-order-and-save-card",
+    "forStage": "requirements",
+    "title": "读懂自动灯委托，保存我的中文方案卡",
+    "reason": "先弄清灯该怎样回应光照变化，再带着方案去认识元件。",
+    "primaryActionId": "open_mail",
+    "savedFeedback": "方案卡已保存。解释仍待核对，可以继续虚拟练习。",
+    "nextGoalPreview": "下一步：查手册，认识输入与输出。",
+    "authority": "是否已领取、已保存、可继续由 E 的当前个人版本决定；点击热点不能完成目标。"
+  },
+  "actionProtocol": {
+    "mappingStatus": "aligned_with_E_navigation_ids_call_shape_owned_by_E",
+    "uiCallback": "onAction（调用参数按 E 现有接口）",
+    "allowedEffect": "纯导航、打开面板、查看物品或请求显示对应手册节。",
+    "forbiddenEffect": ["改变阶段通过", "自动保存作品", "执行学生程序", "发放收入", "扣余额", "改库存", "批准上电", "签核实物"],
+    "contextCandidate": ["sceneObjectId", "manualSection"],
+    "aliasesForEarlierDiscussion": {"open_order_mail": "open_mail", "inspect_starter_kit": "inspect_kit", "open_manual_section": "open_manual"},
+    "actualSubmission": "保存、运行、测试和结算继续由明确的业务按钮执行，校验当前个人快照。"
+  },
+  "actions": [
+    {"id": "open_mail", "label": "查看自动灯委托", "intent": "navigate_to_current_order"},
+    {"id": "talk_requirements_npc", "label": "和林工聊需求", "intent": "open_single_question_dialogue"},
+    {"id": "inspect_kit", "label": "查看首单工具箱", "intent": "open_component_inspection"},
+    {"id": "open_manual", "label": "查看相关手册", "intent": "open_versioned_manual_section"}
+  ],
+  "exploration": {
+    "requiredForProgress": false,
+    "visitedCountUnlocksAnything": false,
+    "interactionChoice": "学生可先读信、先问 NPC 或先看物品；随时可回当前目标，不需要绕房间集齐点击。",
+    "equivalentNavigation": "场景热点与同名文字列表一一对应，鼠标、触屏与键盘均可进入。",
+    "hotspots": [
+      {
+        "id": "scene-mailbox", "label": "客户邮箱", "actionId": "open_mail",
+        "purpose": "看见委托的用途与限制，再整理方案。",
+        "feedback": "委托已展开：先看看客户要解决什么。",
+        "contentSource": "auto-lamp/order.json#customerMessage",
+        "optional": true
+      },
+      {
+        "id": "scene-lin", "label": "林工 · 需求负责人", "actionId": "talk_requirements_npc",
+        "purpose": "把需求与一个能想象的光照变化联系起来。",
+        "question": "灯已经亮着，周围又变亮了，你希望它怎么办？",
+        "feedback": "先说你的想法，方案可以再改。",
+        "manualSection": "02.1",
+        "optional": true
+      },
+      {
+        "id": "scene-kit", "label": "首单工具箱", "actionId": "inspect_kit",
+        "purpose": "通过物品用途认识输入和输出；不预先要求记引脚。",
+        "feedback": "已查看用途，正式接线稍后按手册完成。",
+        "inspectionCardIds": ["inspect-light-sensor", "inspect-led"],
+        "optional": true
+      }
+    ]
+  },
+  "inspectionCards": [
+    {"id": "inspect-light-sensor", "title": "光照模块：装置的输入", "body": "它把周围光照变成可读取的信息。具体接口与读数方向要按审核后的型号资料核对。", "manualSection": "05.1", "manualActionId": "open_manual", "claim": "用途资料，不是校准、连线或运行结果。"},
+    {"id": "inspect-led", "title": "LED：让输出看得见", "body": "它让你看见程序给出的亮灭状态。有方向，也需要经审核的限流方案，先查资料再接线。", "manualSection": "05.2", "manualActionId": "open_manual", "claim": "用途资料，不是实物安全批准。"}
+  ],
+  "feedbackCandidates": [
+    {"id": "wire-connected", "requires": "B_line_connection_edit_recorded", "text": "已连接两个端子。看看这条线承担什么作用。", "presentation": "端点与新连线短暂强调，可撤销；不播放通关效果。"},
+    {"id": "empty-wiring", "requires": "current_wiring_has_zero_connections", "text": "还有连接待完成。先从一条电源或公共地路径开始。", "presentation": "尚未开始用中性待连接清单；真正错误和短接仍立即明确提示。"},
+    {"id": "base-run-failed", "requires": "E_verified_current_customer_test_failure", "text": "有一处行为和客户预期不同。先看第一条失败记录。", "presentation": "并排输入、时间、预期、实际，定位相关步骤；保留程序和上次记录。"},
+    {"id": "base-run-passed", "requires": "E_verified_all_current_base_customer_cases_passed", "text": "这版作品通过了基础软件测试。看看它怎样回应明暗往返。", "presentation": "作品卡附当前版本与可重放记录；不显示实物验收。"},
+    {"id": "change-revealed", "requires": "base_program_snapshot_preserved_and_customer_change_available", "text": "客户希望灯提早亮：先预测输入 500，再改自己的代码。", "presentation": "同一作品上叠加客户便签，保留旧版可查看；不新开抄写整题。"},
+    {"id": "software-income-demo", "requires": "E_synthetic_software_ledger_event_recorded", "text": "本次软件演示收入已记录。可查看这笔记录的作品依据。", "presentation": "金额从 E 的 synthetic 账本读取；不使用本内容写死数值，不冒充实物交付收入。"}
+  ],
+  "growthCandidates": {
+    "surface": "我的工作档案",
+    "items": [
+      {"label": "我保存过一份方案", "evidence": "requirement_card_snapshot"},
+      {"label": "我运行过客户测试", "evidence": "current_customer_test_run"},
+      {"label": "我记录过一次修复", "evidence": "explicit_bug_hypothesis_change_and_retest_record"},
+      {"label": "我回应过一次客户变更", "evidence": "changed_source_snapshot_and_current_change_test_run"}
+    ],
+    "policy": "展示做过的事与对应作品，标注协助和未完成项，不换算职业能力等级，不按速度排名或要求刷次数。"
+  },
+  "accessibilityAndPacing": {
+    "singleCurrentObjective": true,
+    "dialogueAdvance": "学生主动继续，可立即关闭和重开，不强制逐字等待。",
+    "reducedMotion": "减少动态时用静态高亮与文字呈现同一反馈，功能不缺失。",
+    "sound": "无声也能理解；若以后增加声音，默认关闭并可独立关闭。",
+    "timers": "不设倒计时、每日签到、掉落概率或连击；微循环时长仅供试教观察。",
+    "sceneFirstUse": "场景与普通任务视图提供等价路线；技术操作区保持稳定，不让探索遮挡端子、代码和错误。"
+  }
+}

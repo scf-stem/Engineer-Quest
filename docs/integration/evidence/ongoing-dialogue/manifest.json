@@ -1,0 +1,145 @@
+{
+  "scope": "Synthetic native operations plus explicitly labelled regressions; final candidate source9cce64e9e15b; intermediate screenshots1-8 remain historical",
+  "files": [
+    {
+      "name": "01-frozen-version.png",
+      "bytes": 39107,
+      "sha256": "5c697f523c5fb588a8994474a581dd506eff4841643683a8e091f6192cfd8eb9"
+    },
+    {
+      "name": "02-immediate-note-restored.png",
+      "bytes": 72097,
+      "sha256": "60154e3eb15c81f41efd6f104d2cb7e71460040218c8e4b8f0c2a62050f11708"
+    },
+    {
+      "name": "03-lin-after-base-test.png",
+      "bytes": 97545,
+      "sha256": "1de22ebe0f11e10cfc9f730837d324654a9bd4ccb416b3bc07e54dd7e667771e"
+    },
+    {
+      "name": "04-lin-after-change-test.png",
+      "bytes": 62091,
+      "sha256": "59deb19e06044d002395c245d754ef44d357104b3249a9c88e5796f6c946e93c"
+    },
+    {
+      "name": "05-current-delivery.png",
+      "bytes": 72651,
+      "sha256": "bbc1b65664318a157d5fe05b669bd2f87cd3456b4f7ab89c9363d139f25b2153"
+    },
+    {
+      "name": "06-scene-action-response.png",
+      "bytes": 79709,
+      "sha256": "336ec8ca545bdff41cd20c3f6fcdb299a022409d662e788a73c62baa98d52464"
+    },
+    {
+      "name": "07-player-demonstrates-lamp.png",
+      "bytes": 67980,
+      "sha256": "4a7f3fae10cc553bfb1a1a5f3ee9f70e63fcae3b8932ba1f53ddb175b40cf814"
+    },
+    {
+      "name": "08-lin-after-wire.png",
+      "bytes": 81201,
+      "sha256": "4b362a1acb7c86accee4bf7af917d0100bf184ddb4c93c1e57ba232b5d4a846c"
+    },
+    {
+      "name": "09-final-entry-snap.png",
+      "bytes": 210167,
+      "sha256": "e77ac2a0b3a5399295e33e34ab0922a5f9e2c2ea9a7f815f012ac8d0ecf57c36"
+    },
+    {
+      "name": "10-final-connected-snap-and-dialogue.png",
+      "bytes": 210753,
+      "sha256": "f6497e4f869c2ca1c5bd2ea038fe1d666bddb60a6f9afa9570108ec31cb800ab"
+    },
+    {
+      "name": "11-final-version.png",
+      "bytes": 76948,
+      "sha256": "ce034c288b66ce9ec0778039e7e3d291a77bcc0fcc4aa8042387c4f692e0503b"
+    },
+    {
+      "name": "12-final-restored-receipt.png",
+      "bytes": 73984,
+      "sha256": "c69b6a31609411e7d86fce3f182c503538156df92cf733a043b4b7c7ce5742db"
+    },
+    {
+      "name": "build.json",
+      "bytes": 375,
+      "sha256": "2a64bdc71e41e9c89e49cc508fe17cdfa7abeaf740f2eb5c2c8a55dcbe591049"
+    },
+    {
+      "name": "client/shot-0.png",
+      "bytes": 223169,
+      "sha256": "85fe6baa092c44b44de3b518d4819f4fbce2824d40d40b6930e6e9afd7bc4603"
+    },
+    {
+      "name": "client/state-0.json",
+      "bytes": 713,
+      "sha256": "04037fe98815fd0c7ca3967e635bf7e5c1b1c2ef260c1b76cd7f0bc21139a784"
+    },
+    {
+      "name": "local-backup.json.gz",
+      "bytes": 183832,
+      "sha256": "e9ad5046f4787b61c070c10addb131e42c9e307e2765d76e26441f0a916a9568"
+    },
+    {
+      "name": "own-candidate.ino",
+      "bytes": 1739,
+      "sha256": "af3da73d73f0a4fe6ebd1d1fb459219bf58635324e443e91c64196146476d091"
+    },
+    {
+      "name": "regression/branch-position-retained.png",
+      "bytes": 475238,
+      "sha256": "9049b8f4869049c73d578fafe6658d48b3ea2853c379a78a78bcaaa966d9b345"
+    },
+    {
+      "name": "regression/mobile-full-manual.png",
+      "bytes": 193969,
+      "sha256": "8d2146834a558f4b32453628f1eb79e7bd2b556235d7b96cf99b37ae81f0efa2"
+    },
+    {
+      "name": "regression/player-receipt-mobile.png",
+      "bytes": 130400,
+      "sha256": "728a0e1dae579166dae8c0c112509b96eb7907058267ee3d924664ff983af061"
+    },
+    {
+      "name": "regression/program-responds.png",
+      "bytes": 1302650,
+      "sha256": "64b1a1800f7581f4574c4e7e52ecb5adfc3b1ba76ec72a62e8ac8622fe0e5fdb"
+    },
+    {
+      "name": "regression/real-blank-program.png",
+      "bytes": 405238,
+      "sha256": "98a270feebf82d43d118eedc09c245813a950ef807c45b47c9af39641c1da904"
+    },
+    {
+      "name": "regression/root-snap-is-not-an-error.png",
+      "bytes": 434353,
+      "sha256": "15c5a4e48eb5d6e1fb07e77b7d7595cdd3d625d8fa649411bc06318474e0587d"
+    },
+    {
+      "name": "regression/same-screen-real-failure.png",
+      "bytes": 466214,
+      "sha256": "cbcfab8319316f8f969c330b56e17a202701ff2e4a6f31bb20f37948925e378e"
+    },
+    {
+      "name": "regression/wide-dialogue.png",
+      "bytes": 1821586,
+      "sha256": "4b7c30cf86864f6de5d801bd594fbc1832177bd06d4929cc2aade2c06844adda"
+    },
+    {
+      "name": "regression/wire-responds.png",
+      "bytes": 1302765,
+      "sha256": "b67503b8baa2582c046557c8c0665b02b32d75b7078203048d313960751848d9"
+    },
+    {
+      "name": "replay-result.json",
+      "bytes": 3324,
+      "sha256": "5fa208db86d5a42691041de5578788c2faaf12df6c01a5ef809ead43d7475d17"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 2403,
+      "sha256": "43a57691b5e6318ab00d8f5036b3fc25b81e787120e36b1124746be348a23361"
+    }
+  ]
+}

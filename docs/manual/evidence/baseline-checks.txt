@@ -1,0 +1,29 @@
+✔ candidate identity and physical verification stay explicit and immutable (1.721875ms)
+✔ candidate top/bottom header labels and coordinates match a documented top view (0.109583ms)
+✔ blank work fails with actionable diagnostics and no topology value (1.19275ms)
+✔ approved topology exports the exact A/E pin binding and isolated resistor sides (6.76925ms)
+✔ swapping resistor terminals is allowed (0.221083ms)
+✔ each of the six missing wires prevents a pass (0.551416ms)
+✔ wrong A1 or D8 is identified without silently moving a wire (0.208333ms)
+✔ reversed LED, resistor bypass, power short and crossed signal all fail (0.678ms)
+✔ all three candidate GND header pins are electrically equivalent (0.223416ms)
+✔ exhaustive extra-wire check rejects every bridge between approved nets (4.407292ms)
+✔ unknown, self, duplicate and lesson-disabled terminals fail closed (0.236209ms)
+✔ malformed or stale documents, duplicate instances and budgets cannot produce a topology (0.354458ms)
+✔ profile mapping changes require rewiring; valid alternative mappings are explicit (0.454333ms)
+✔ instance IDs are opaque; terminal lookup and topology follow declared instances (0.131583ms)
+✔ electrical projection ignores display movement, IDs, wire direction and ordering (0.215208ms)
+✔ legacy arrays only migrate explicitly and do not grant a pass (0.213333ms)
+✔ input fixtures preserve explicit integer milliseconds and logical signals without outputs (0.179125ms)
+✔ visual wire routes preserve endpoints and avoid card interiors after leaving a port (0.488458ms)
+✔ terminal lookup tolerates absent/invalid document arrays for the diagnostics view (0.031541ms)
+✔ real A+B+D flow binds pins and time, rejects wrong answers and settles one synthetic income (36.071125ms)
+✔ source binding tolerates syntax positions but rejects different program semantics (1.649959ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.847458

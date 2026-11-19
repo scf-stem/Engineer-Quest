@@ -1,0 +1,50 @@
+# 独立体验截图清单
+
+截图由各自固定候选页面直接取得，JPEG。SHA256见 [manifest.json](manifest.json)。未处理、拼接或生成产品画面。
+
+| 文件 | 固定URL | 实际尺寸 | 字节 |
+| --- | --- | --- | ---: |
+| [e04531f1d59c-00-candidate-1280x720.jpg](e04531f1d59c-00-candidate-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 41583 |
+| [e04531f1d59c-01-G0-observe-1280x720.jpg](e04531f1d59c-01-G0-observe-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 99745 |
+| [e04531f1d59c-02-G0-wrong-note-feedback-1280x720.jpg](e04531f1d59c-02-G0-wrong-note-feedback-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 87347 |
+| [e04531f1d59c-03-graphic-G0-entry-1280x720.jpg](e04531f1d59c-03-graphic-G0-entry-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 110427 |
+| [e04531f1d59c-04-G1-build-1024x768.jpg](e04531f1d59c-04-G1-build-1024x768.jpg) | http://127.0.0.1:5232/ | 1024×768 | 101215 |
+| [e04531f1d59c-05-G2-wide-1440x900.jpg](e04531f1d59c-05-G2-wide-1440x900.jpg) | http://127.0.0.1:5232/ | 1440×900 | 132051 |
+| [e04531f1d59c-06-G2-drag-miss-1280x720.jpg](e04531f1d59c-06-G2-drag-miss-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 117394 |
+| [e04531f1d59c-07-G2-existing-wait-rejected-1280x720.jpg](e04531f1d59c-07-G2-existing-wait-rejected-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 118010 |
+| [e04531f1d59c-08-G2-paused-1280x720.jpg](e04531f1d59c-08-G2-paused-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 55318 |
+| [e04531f1d59c-09-G2-restored-work-1280x720.jpg](e04531f1d59c-09-G2-restored-work-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 117693 |
+| [e04531f1d59c-10-G2-replay-end-1280x720.jpg](e04531f1d59c-10-G2-replay-end-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 123769 |
+| [e04531f1d59c-11-G3-local-help-1280x720.jpg](e04531f1d59c-11-G3-local-help-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 79958 |
+| [e04531f1d59c-12-G3-environment820-sample170-1280x720.jpg](e04531f1d59c-12-G3-environment820-sample170-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 115383 |
+| [e04531f1d59c-13-G3-complete333-1280x720.jpg](e04531f1d59c-13-G3-complete333-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 117204 |
+| [e04531f1d59c-14-legacy-handoff-local-help-1280x720.jpg](e04531f1d59c-14-legacy-handoff-local-help-1280x720.jpg) | http://127.0.0.1:5232/ | 1280×720 | 61222 |
+| [e04531f1d59c-15-legacy-handoff-paused-default.jpg](e04531f1d59c-15-legacy-handoff-paused-default.jpg) | http://127.0.0.1:5232/ | 3394×1195 | 158947 |
+| [b162dbaedb5a-00-candidate-1280x720.jpg](b162dbaedb5a-00-candidate-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 41676 |
+| [b162dbaedb5a-01-G0-1280x720.jpg](b162dbaedb5a-01-G0-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 110478 |
+| [b162dbaedb5a-02-G1-build-1024x768.jpg](b162dbaedb5a-02-G1-build-1024x768.jpg) | http://127.0.0.1:5234/ | 1024×768 | 101008 |
+| [b162dbaedb5a-03-G2-wide-1440x900.jpg](b162dbaedb5a-03-G2-wide-1440x900.jpg) | http://127.0.0.1:5234/ | 1440×900 | 131027 |
+| [b162dbaedb5a-04-G2-clean-entry-1280x720.jpg](b162dbaedb5a-04-G2-clean-entry-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 114279 |
+| [b162dbaedb5a-05-G2-wait-first-feedback-1280x720.jpg](b162dbaedb5a-05-G2-wait-first-feedback-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 115472 |
+| [b162dbaedb5a-06-G2-existing-wait-move-fixed-1280x720.jpg](b162dbaedb5a-06-G2-existing-wait-move-fixed-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 116313 |
+| [b162dbaedb5a-07-G2-ultrawide-3440x1157.jpg](b162dbaedb5a-07-G2-ultrawide-3440x1157.jpg) | http://127.0.0.1:5234/ | 3440×1157 | 221532 |
+| [b162dbaedb5a-08-G2-restored300-1280x720.jpg](b162dbaedb5a-08-G2-restored300-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 124531 |
+| [b162dbaedb5a-09-G2-independent-reordered-1280x720.jpg](b162dbaedb5a-09-G2-independent-reordered-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 120860 |
+| [b162dbaedb5a-10-G3-environment820-sample170-1280x720.jpg](b162dbaedb5a-10-G3-environment820-sample170-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 117181 |
+| [b162dbaedb5a-11-G3-complete412-1280x720.jpg](b162dbaedb5a-11-G3-complete412-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 117281 |
+| [b162dbaedb5a-12-legacy-tools-3440x1157.jpg](b162dbaedb5a-12-legacy-tools-3440x1157.jpg) | http://127.0.0.1:5234/ | 3440×1157 | 148295 |
+| [b162dbaedb5a-13-legacy-read-auto-dialogue-1280x720.jpg](b162dbaedb5a-13-legacy-read-auto-dialogue-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 96365 |
+| [b162dbaedb5a-14-legacy-missing-off-feedback-1280x720.jpg](b162dbaedb5a-14-legacy-missing-off-feedback-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 107168 |
+| [b162dbaedb5a-15-legacy-delay-before-if-failure-1280x720.jpg](b162dbaedb5a-15-legacy-delay-before-if-failure-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 104707 |
+| [b162dbaedb5a-16-legacy-reordered-wait-last-1280x720.jpg](b162dbaedb5a-16-legacy-reordered-wait-last-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 110235 |
+| [b162dbaedb5a-17-basic-test-auto-dialogue-1280x720.jpg](b162dbaedb5a-17-basic-test-auto-dialogue-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 99538 |
+| [b162dbaedb5a-18-basic-26-samples-and-change-1280x720.jpg](b162dbaedb5a-18-basic-26-samples-and-change-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 99340 |
+| [b162dbaedb5a-19-change-failure12of20-sidebar-1280x720.jpg](b162dbaedb5a-19-change-failure12of20-sidebar-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 92694 |
+| [b162dbaedb5a-20-change-customer-failure12of20-1280x720.jpg](b162dbaedb5a-20-change-customer-failure12of20-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 67076 |
+| [b162dbaedb5a-21-delivered100EC-1280x720.jpg](b162dbaedb5a-21-delivered100EC-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 76569 |
+| [b162dbaedb5a-22-change-pass20of20-boundary-1280x720.jpg](b162dbaedb5a-22-change-pass20of20-boundary-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 68202 |
+| [b162dbaedb5a-23-history-failure-retained-1280x720.jpg](b162dbaedb5a-23-history-failure-retained-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 70422 |
+| [b162dbaedb5a-24-basic-history26of26-1280x720.jpg](b162dbaedb5a-24-basic-history26of26-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 67206 |
+| [b162dbaedb5a-25-note-after-refresh-1280x720.jpg](b162dbaedb5a-25-note-after-refresh-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 88164 |
+| [b162dbaedb5a-26-original-blocks-retained-1280x720.jpg](b162dbaedb5a-26-original-blocks-retained-1280x720.jpg) | http://127.0.0.1:5234/ | 1280×720 | 103793 |
+| [b162dbaedb5a-27-final-delivered-note-restored-default.jpg](b162dbaedb5a-27-final-delivered-note-restored-default.jpg) | http://127.0.0.1:5234/ | 3394×1147 | 162369 |

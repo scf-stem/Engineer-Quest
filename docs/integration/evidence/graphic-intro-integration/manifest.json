@@ -1,0 +1,162 @@
+{
+  "candidate": "dialogue-e04531f1d59c",
+  "sourceRevision": "bcb2ae3c696dc88d14e538b459679f33da5be413",
+  "sourceDigest": "sha256:e04531f1d59cf26ac2b98e4e4a759c5e3ace4391eccc6533a4f70f8523527bd4",
+  "rootBrowserOrigin": "http://127.0.0.1:5265/",
+  "fixedReviewOrigin": "http://127.0.0.1:5232/",
+  "scope": "E自动浏览器/单测/历史恢复证据，不替代独立computer use；两个地址服务同一冻结目录",
+  "files": [
+    {
+      "path": "00-fixed-candidate.png",
+      "bytes": 222935,
+      "sha256": "fcc16b41f82059afe2f916ac8e5a4bcbb9dcfa1e6f419127c77cadc95dfdd76c",
+      "scope": "标准游戏客户端核对固定候选；未入职空态，不是学生试玩",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "00-fixed-candidate-state.json",
+      "bytes": 771,
+      "sha256": "2b39a9ed332ea7933299d40029c4e016b3b82319da80019ae5119e702da488fd",
+      "scope": "对应标准游戏客户端只读状态"
+    },
+    {
+      "path": "01-g0-entry-1280.png",
+      "bytes": 731054,
+      "sha256": "a44d15ffbaa62a9c27cb270d23688f59c70fbdd4252c2aacb383f6e1eec9e100",
+      "scope": "正式六线后进入G0，原程序未预填",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "02-g1-error-restored-1280.png",
+      "bytes": 619097,
+      "sha256": "4d8d87ad31fcc5ad0a63b596fa3097f66a6767dd830d390c7b9d961d06869de9",
+      "scope": "真实空值失败、暂停刷新后错误位置/作品保持",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "03-g1-error-restored-1024.png",
+      "bytes": 526098,
+      "sha256": "d5c65b25fd6a7e59634b63759e9dc24ff7d74bea1ced6f465a16520ec72d98a4",
+      "scope": "同一状态1024×768",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "04-g3-second-own-read-1280.png",
+      "bytes": 599091,
+      "sha256": "104f0edc2cb82d09b7d2ac8909fdae5076327e5fe2b33667106845bc8fc5cf15",
+      "scope": "学生第二次实际主动读360后明确继续；非导师成果",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "05-g3-second-own-read-1024.png",
+      "bytes": 517809,
+      "sha256": "110ab95cc5244b3c11e92f51ff53631a1cd12bc6a54933021023b9fff6044d40",
+      "scope": "同一状态1024×768",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "06-real-drag-and-immediate-refresh.png",
+      "bytes": 654887,
+      "sha256": "c22d80bba0d618d6c5aeea6069e7b25fb31433caabd7b2657b9866dc8b582978",
+      "scope": "原生托盘拖放/撤销/替换/移走散落值及字段立即刷新恢复；输出为修改前记录",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "07-legacy-workbench-3440.png",
+      "bytes": 979772,
+      "sha256": "ffa5b63def303ec39fe7b19624791755c959b9ed8afb20e9fff00cdf0e5f725e",
+      "scope": "已有完整编辑器宽屏兼容，不当作新G4课程",
+      "dimensions": [
+        3440,
+        1157
+      ]
+    },
+    {
+      "path": "08-legacy-failure-retained.png",
+      "bytes": 242507,
+      "sha256": "0fcdd2cb74be132b97f16ce7396b46a2d15e04f7889cd08e1a330543aa37a8e8",
+      "scope": "旧真实存档恢复保留失败；档案回放用例，非本轮独立空白首单",
+      "dimensions": [
+        1280,
+        900
+      ]
+    },
+    {
+      "path": "09-legacy-receipt.png",
+      "bytes": 370956,
+      "sha256": "e8fba6ff16bfc808a0e03c5d28c69feee974b83637388bd2713404518e4c6701",
+      "scope": "既有真实本人作品恢复后的客户/收据兼容，不当作本轮从零试玩",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "path": "10-legacy-taskbook.png",
+      "bytes": 164254,
+      "sha256": "fd26648d51eba7ade4a16fcfb267c9927937b2d4d0fbb52c5fc286244b19dcc3",
+      "scope": "旧12页图文册保持可用，不宣称新24页手册",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "unit-193.log",
+      "bytes": 18500,
+      "sha256": "422418390e062f04664052457b4475e186d57a3c1d3085b88aa3990b0ee52da3",
+      "scope": "本次193/193实际单测日志"
+    },
+    {
+      "path": "root-browser-33.log",
+      "bytes": 5481,
+      "sha256": "15861717812daec6bed665145a0bcd194e4c5ebf81f58ca4069c97d8bf73166f",
+      "scope": "同一不可变生产目录33/33 Playwright实际根入口日志；其中3条新入门，非独立CUA"
+    },
+    {
+      "path": "build.log",
+      "bytes": 2766,
+      "sha256": "8b5bc88cc355a592c414cb19eb0dc00f838bc4b8407be842c143e17472522081",
+      "scope": "源码bcb2ae3实际生产构建日志；包含既有JSON属性/大块提示"
+    },
+    {
+      "path": "archive-replay.log",
+      "bytes": 122,
+      "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d",
+      "scope": "旧12报告/100 EC真实历史记录确定性恢复，不是新学生"
+    },
+    {
+      "path": "editor-checks-40.json",
+      "bytes": 3149,
+      "sha256": "4e0b9a3d2b9f42a2b8482a99f87842f46d69ca088057147250c317f70fa1c28d",
+      "scope": "当前根编辑器40项真实浏览器控件检查；独立harness无应用权威"
+    },
+    {
+      "path": "served-resources-20.json",
+      "bytes": 4318,
+      "sha256": "cc848735a6ccb8c382003dd9f2b8bbf42f5d8a89de989c90cb5461060e677836",
+      "scope": "HTTP逐项校验5新美术和15旧图文册资源的字节/摘要，SVG解析通过"
+    }
+  ]
+}

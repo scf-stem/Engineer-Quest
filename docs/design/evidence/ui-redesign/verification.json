@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-11",
+  "branch": "work/ui-redesign",
+  "base": "8bf7386968c71167b2b7170c843e4eb7dfec7598",
+  "unitTests": {
+    "passed": 90,
+    "failed": 0
+  },
+  "browserDevelopment": {
+    "port": 5193,
+    "passed": 10,
+    "failed": 0
+  },
+  "browserProduction": {
+    "port": 5194,
+    "passed": 10,
+    "failed": 0
+  },
+  "build": "passed; existing Blockly language bundle >500kB warning",
+  "firstOrder": {
+    "assistance": "explicit opt-in teaching example recorded",
+    "baseRequirement": "1.0.0",
+    "baseAssertions": 26,
+    "changedRequirement": "1.1.0",
+    "changedAssertions": 20,
+    "old450Rejected": true,
+    "wrong700RejectedByScript": true,
+    "correct600Passed": true,
+    "candidateInoDownloaded": true,
+    "income": 100,
+    "ledgerEventsAfterRepeatedClick": 1,
+    "wireDeleteAndUndoInvalidatesCurrentEvidence": true
+  },
+  "ui": {
+    "viewportSizes": [
+      [
+        1440,
+        900
+      ],
+      [
+        1265,
+        950
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        720,
+        450
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "toolsKeepEditorsMounted": true,
+    "wireUndoHistoryAcrossSwitches": true,
+    "hotspotFocusReturn": true,
+    "manualSearchAndChapterLinks": true,
+    "runtimeErrorsInCoveredMainFlow": [],
+    "keyboardAndFullscreen": "passed; see keyboard-check.json"
+  },
+  "standardGameClient": {
+    "result": "passed",
+    "environmentAdaptation": "unchanged skill script copy with dependency import and installed Chromium path only",
+    "screenshot": "game-client/shot-0.png",
+    "state": "game-client/state-0.json"
+  },
+  "notValidated": [
+    "real students",
+    "physical wiring/electrical parameters",
+    "Arduino target compilation and upload",
+    "teacher hardware acceptance",
+    "NPC component integrated main-flow",
+    "E persistent workspace integrated main-flow",
+    "D new scenario review and learning milestones integrated main-flow",
+    "formal full manual integrated"
+  ],
+  "pushed": false,
+  "deployed": false
+}

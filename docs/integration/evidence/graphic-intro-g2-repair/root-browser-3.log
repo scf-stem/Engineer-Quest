@@ -1,0 +1,12 @@
+[WebServer] (node:51489) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:51563) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/graphic-intro.spec.js:35:1 › new learner gets real G0 and mentor G1, with no whole-program replacement; pause/manual/refresh keep the operation (5.6s)
+  ✓  2 tests/e2e/graphic-intro.spec.js:58:1 › own output, independent repeat, wait hold replay and two active reads restore before the legacy complete workbench (12.4s)
+  ✓  3 tests/e2e/graphic-intro.spec.js:106:1 › root mouse drop, replacement and spare removal stay reversible; immediate refresh recovers the exact local value (7.2s)
+
+  3 passed (26.5s)

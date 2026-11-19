@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-12",
+  "candidate": "dialogue-e04531f1d59c",
+  "url": "http://127.0.0.1:5232/",
+  "source_commit": "bcb2ae3c696dc88d14e538b459679f33da5be413",
+  "content_sha256": "e04531f1d59cf26ac2b98e4e4a759c5e3ace4391eccc6533a4f70f8523527bd4",
+  "identity": "蒲公英新手",
+  "screenshots": [
+    {
+      "file": "e04531f1d59c-00-candidate-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 41583,
+      "sha256": "1932302eab98d2b0890e905484bff8cd4dfa9391a8dfd10ccff4f4b3fe757739"
+    },
+    {
+      "file": "e04531f1d59c-01-G0-observe-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99745,
+      "sha256": "897264e173eedf4a3d62b68f761cad8cf4eca1dbdc57893269f8310534cd8ebf"
+    },
+    {
+      "file": "e04531f1d59c-02-G0-wrong-note-feedback-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 87347,
+      "sha256": "d8e2eebb8aa93f5509d9731c39048ac555e317e40f5fa07f6a1aac1c15841f75"
+    },
+    {
+      "file": "e04531f1d59c-03-graphic-G0-entry-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 110427,
+      "sha256": "7624bcdf85c02af31b7364397ee09f75d4bbcc2bffd51596e8fcb2a0a3a8a170"
+    },
+    {
+      "file": "e04531f1d59c-04-G1-build-1024x768.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1024,
+      "height": 768,
+      "bytes": 101215,
+      "sha256": "3bef830422c2047784366e618bc67c38a529f4e3bf944d83a6389b449fb7ea21"
+    },
+    {
+      "file": "e04531f1d59c-05-G2-wide-1440x900.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 132051,
+      "sha256": "11bd4c795db01cd0d411e4fe5d98833edececb9070b8fcf3430db782da9fc774"
+    },
+    {
+      "file": "e04531f1d59c-06-G2-drag-miss-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117394,
+      "sha256": "e3108a4d0ce79df4f82ffb2fbe0a032da1e54b8eaa6f3b8912bfd7e8a7b21391"
+    },
+    {
+      "file": "e04531f1d59c-07-G2-existing-wait-rejected-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 118010,
+      "sha256": "eb99c6b29554e74c294cd8188efb535bce4a8261cab7ac7effea92f2e8390efc"
+    },
+    {
+      "file": "e04531f1d59c-08-G2-paused-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 55318,
+      "sha256": "785f02de279926b8c27456f46b430ecfb3e8ff9331c9bc4d86b61a5804023fe0"
+    },
+    {
+      "file": "e04531f1d59c-09-G2-restored-work-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117693,
+      "sha256": "ef76b7dc09d15f32f13345969184d1458cf1489a6be8f13b736968176dc407a0"
+    },
+    {
+      "file": "e04531f1d59c-10-G2-replay-end-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 123769,
+      "sha256": "2a812d87acdfa473df5f0a3b38ad366012ecf66d3d0d3ba47c62e9aa006ea634"
+    },
+    {
+      "file": "e04531f1d59c-11-G3-local-help-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 79958,
+      "sha256": "2e8cf118c21705c23ae0454e6d944f8190d05b237d63b6cd22b1ab06bac48942"
+    },
+    {
+      "file": "e04531f1d59c-12-G3-environment820-sample170-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 115383,
+      "sha256": "5336f764106565c51512c648b19fd31e9a65440aaa1967c791a0f01847477e1c"
+    },
+    {
+      "file": "e04531f1d59c-13-G3-complete333-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117204,
+      "sha256": "04a00b1ea9e917a7d3598c897a38ccbd3cc1825e138c314d58ce7b8daec03525"
+    },
+    {
+      "file": "e04531f1d59c-14-legacy-handoff-local-help-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 61222,
+      "sha256": "d3e303a58f5845fa429789e0ec42dda15ae3c38f8b25f5c38a49108f4df7bc09"
+    },
+    {
+      "file": "e04531f1d59c-15-legacy-handoff-paused-default.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 3394,
+      "height": 1195,
+      "bytes": 158947,
+      "sha256": "2212e6967783684f6e83341210bce76104a880289f9fcf40c6d55b13d155b33d"
+    }
+  ]
+}

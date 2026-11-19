@@ -1,0 +1,36 @@
+
+> engineer-quest@0.2.0 build
+> vite build --outDir /tmp/eq-post-intro-build-0746fe9
+
+vite v7.3.8 building client environment for production...
+transforming...
+Module "src/integration/learning-policy-adapter.js" tried to import "content/learning/auto-lamp-progression.json" with no attributes, but it was already imported elsewhere with "type": "json" attributes. Please ensure that import attributes for the same module are always consistent.
+✓ 180 modules transformed.
+
+(!) outDir /tmp/eq-post-intro-build-0746fe9 is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../tmp/eq-post-intro-build-0746fe9/candidate-build.json                   0.38 kB │ gzip:   0.27 kB
+../../../../tmp/eq-post-intro-build-0746fe9/index.html                             0.45 kB │ gzip:   0.32 kB
+../../../../tmp/eq-post-intro-build-0746fe9/legacy.html                            0.53 kB │ gzip:   0.34 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/首单虚拟接线-CeXvSOmR.svg             4.80 kB │ gzip:   1.91 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/legacy-Bjn7rD1L.css             4.20 kB │ gzip:   1.53 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/ProgramBlocks-B-nODVPR.css      7.93 kB │ gzip:   1.89 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/ProgramTeaching-SDpAGcMT.css   14.03 kB │ gzip:   3.73 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/main-YaDl1Lvb.css             176.66 kB │ gzip:  35.55 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/runtime-iWamjmhF.js            10.65 kB │ gzip:   4.84 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/program-CDr8T8Zc.js            16.03 kB │ gzip:   6.81 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/legacy-DJcBrZM1.js             21.26 kB │ gzip:   8.77 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/ProgramBlocks-CVDmE2lW.js      23.76 kB │ gzip:   9.40 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/ProgramTeaching-DRLKAcU6.js    42.61 kB │ gzip:  15.38 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/client-aY1eXhyH.js            222.19 kB │ gzip:  69.12 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/main-BeAY9hm6.js              491.53 kB │ gzip: 180.78 kB
+../../../../tmp/eq-post-intro-build-0746fe9/assets/zh-hans-TJFS4uYg.js           753.17 kB │ gzip: 193.62 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.93s

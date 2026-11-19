@@ -1,0 +1,8 @@
+body{margin:0;background:#080f19}
+.eq-ui .eq-skip-link{top:0;transform:none}
+.eq-ui .eq-skip-link:not(:focus){clip-path:inset(50%);width:1px;height:1px;padding:0;overflow:hidden}
+.eq-ui .eq-skip-link:focus{top:10px;transform:none;clip-path:none}
+.eq-ui .eq-live-label{display:block;font-size:13px;font-weight:500;margin:18px 0}
+.eq-ui .eq-live-label input{display:block;width:100%;margin-top:8px}
+.eq-ui .eq-live-version-details pre{font:10px/1.7 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0 0}
+.eq-ui.eq-app-loading{padding:50px;font-family:system-ui;background:#0b1928;color:#c7dfeb}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:engineer-quest:program:0.1",
+  "title": "Engineer Quest composable ProgramIR candidate 0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "languageProfileRef", "variables", "setup", "loop"],
+  "properties": {
+    "schemaVersion": {"const": "eq-program/0.1"},
+    "languageProfileRef": {"$ref": "#/$defs/ref"},
+    "variables": {"type": "array", "maxItems": 64, "items": {"$ref": "#/$defs/declaration"}},
+    "setup": {"$ref": "#/$defs/statements"},
+    "loop": {"$ref": "#/$defs/statements"}
+  },
+  "$defs": {
+    "ref": {
+      "type": "object", "required": ["id", "version", "digest"],
+      "properties": {"id": {"type": "string", "minLength": 1, "maxLength": 200}, "version": {"type": "string", "minLength": 1, "maxLength": 200}, "digest": {"type": "string", "minLength": 1, "maxLength": 200}}
+    },
+    "name": {"type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9_]{0,31}$"},
+    "node": {
+      "type": "object", "required": ["id"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1, "maxLength": 120},
+        "sourceRange": {
+          "type": "object", "additionalProperties": false, "required": ["start", "end"],
+          "properties": {"start": {"type": "integer", "minimum": 0, "maximum": 24000}, "end": {"type": "integer", "minimum": 0, "maximum": 24000}}
+        }
+      }
+    },
+    "literal": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "value"],
+      "properties": {"kind": {"const": "literal"}, "value": {"oneOf": [{"type": "boolean"}, {"type": "integer", "minimum": -32768, "maximum": 32767}]}}
+    },
+    "declaration": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["name", "type", "constant", "initial"],
+      "properties": {"name": {"$ref": "#/$defs/name"}, "type": {"enum": ["int", "bool"]}, "constant": {"type": "boolean"}, "initial": {"$ref": "#/$defs/literal"}}
+    },
+    "variable": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "name"], "properties": {"kind": {"const": "variable"}, "name": {"$ref": "#/$defs/name"}}
+    },
+    "read": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "port", "signalType"], "properties": {"kind": {"const": "read"}, "port": {"$ref": "#/$defs/name"}, "signalType": {"enum": ["analog", "digital"]}}
+    },
+    "unary": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "op", "operand"], "properties": {"kind": {"const": "unary"}, "op": {"enum": ["!", "-"]}, "operand": {"$ref": "#/$defs/expression"}}
+    },
+    "binary": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "op", "left", "right"],
+      "properties": {"kind": {"const": "binary"}, "op": {"enum": ["+", "-", "*", "/", "%", "<", "<=", ">", ">=", "==", "!=", "&&", "||"]}, "left": {"$ref": "#/$defs/expression"}, "right": {"$ref": "#/$defs/expression"}}
+    },
+    "expression": {"oneOf": [{"$ref": "#/$defs/literal"}, {"$ref": "#/$defs/variable"}, {"$ref": "#/$defs/read"}, {"$ref": "#/$defs/unary"}, {"$ref": "#/$defs/binary"}]},
+    "assign": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "name", "value"], "properties": {"kind": {"const": "assign"}, "name": {"$ref": "#/$defs/name"}, "value": {"$ref": "#/$defs/expression"}}
+    },
+    "write": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "port", "value"], "properties": {"kind": {"const": "write"}, "port": {"$ref": "#/$defs/name"}, "value": {"$ref": "#/$defs/expression"}}
+    },
+    "wait": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "duration"], "properties": {"kind": {"const": "wait"}, "duration": {"$ref": "#/$defs/expression"}}
+    },
+    "if": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "condition", "then", "else"], "properties": {"kind": {"const": "if"}, "condition": {"$ref": "#/$defs/expression"}, "then": {"$ref": "#/$defs/statements"}, "else": {"$ref": "#/$defs/statements"}}
+    },
+    "while": {
+      "allOf": [{"$ref": "#/$defs/node"}], "unevaluatedProperties": false,
+      "required": ["kind", "condition", "body"], "properties": {"kind": {"const": "while"}, "condition": {"$ref": "#/$defs/expression"}, "body": {"$ref": "#/$defs/statements"}}
+    },
+    "statements": {"type": "array", "maxItems": 1000, "items": {"oneOf": [{"$ref": "#/$defs/assign"}, {"$ref": "#/$defs/write"}, {"$ref": "#/$defs/wait"}, {"$ref": "#/$defs/if"}, {"$ref": "#/$defs/while"}]}}
+  }
+}

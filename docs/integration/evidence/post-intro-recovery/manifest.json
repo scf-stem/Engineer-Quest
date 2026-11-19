@@ -1,0 +1,226 @@
+{
+  "format": "eq.scoped-evidence/1",
+  "candidate": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-13c382b9a7f2",
+    "sourceDigest": "sha256:13c382b9a7f28218a0ebc5a4ef51894e57208531d1444e9c828401bf1849faa1",
+    "sourceRevision": "041a0411a506c67f3df1402603d320e9b4d50c4e",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "staticOrigin": "http://127.0.0.1:5238/",
+  "sameDirectoryE2eOrigin": "http://127.0.0.1:5271/",
+  "warning": "自动化/独占组件/旧档重演不等于独立CUA；新的熟悉复验另存post-intro-recovery-independent，首次陌生5236记录不改。",
+  "files": [
+    {
+      "path": "production/00-version.png",
+      "scope": "standard-game-client",
+      "note": "E实际目检候选/源码/摘要。",
+      "bytes": 222930,
+      "sha256": "989e2e8a1187300f7912a40938bc5adde256976e4cac4aad42b9dfa9f36328a1",
+      "testedUrl": "http://127.0.0.1:5238/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/00-text-state.json",
+      "scope": "standard-game-client",
+      "note": "只读render_game_to_text，不是通过注入。",
+      "bytes": 792,
+      "sha256": "9936116696b07c44b8b240e0b155a2625833c8381664a0c09f458a21fa505cc6",
+      "testedUrl": "http://127.0.0.1:5238/"
+    },
+    {
+      "path": "production/01-visible-failure-1280.png",
+      "scope": "same-frozen-production-directory",
+      "note": "实际已有观察后同if可见编辑，使旧记录待复核；1280零高问题已修，首个99ms失败真实可见。",
+      "bytes": 300662,
+      "sha256": "ec740715005f5fee85d88fb21eda6f52265baf174ee491553c992d2a29d6bf05",
+      "testedUrl": "http://127.0.0.1:5271/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/02-repaired-real-observation-and-test.png",
+      "scope": "same-frozen-production-directory",
+      "note": "同一个if移位/撤销/再修正，实际重新运行当前连续变化与基础26/26，非纯旧记录复用。",
+      "bytes": 285207,
+      "sha256": "0d8d893516bd43b1ba18128bc6772f9ad706b4f7d227397778b731b8c7450e44",
+      "testedUrl": "http://127.0.0.1:5271/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/03-code-3440.png",
+      "scope": "same-frozen-production-directory",
+      "note": "超宽中间代码与400px结果栏/换行场景标签可对照，原场景露在窗口外。",
+      "bytes": 1908280,
+      "sha256": "73ac3a1c3940070e5207cf3f28d9c99c7348a000ca77070e04eb9f36b69feea8",
+      "testedUrl": "http://127.0.0.1:5271/",
+      "width": 3440,
+      "height": 1157
+    },
+    {
+      "path": "production/04-base-refresh-keeps-600-current-20.png",
+      "scope": "same-frozen-production-directory",
+      "note": "真实同句移动/撤销→新基础回信→明确保留600重关联→当前新版20/20，收入仍100。",
+      "bytes": 321279,
+      "sha256": "c599436eaebd374d3ab543540aa0411fc2d890ab545ef16ae7df8975be227cd1",
+      "testedUrl": "http://127.0.0.1:5271/",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "production/05-same-name-distinct-slots.png",
+      "scope": "same-frozen-production-directory",
+      "note": "报到可直接返回；同名工位序号和实际领证时间，不按昵称自动认领。",
+      "bytes": 626658,
+      "sha256": "635db827989d5e4d36cfdfd6159840246c647fc9f0697d6864c9c350c87e2bf4",
+      "testedUrl": "http://127.0.0.1:5271/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "logs/210-unit.log",
+      "scope": "root-validation",
+      "note": "最终相关源全部210单测通过。",
+      "bytes": 20337,
+      "sha256": "67c97db650b0ef561ba711b656ec861479e1e96ea2d5fb92e43609f0538c8969"
+    },
+    {
+      "path": "logs/36-production-ui.log",
+      "scope": "root-validation",
+      "note": "同静态目录完整36/36，无跳过。",
+      "bytes": 6022,
+      "sha256": "901d2b58cc2c0c9cc2a0304d762e915a85e477bf06270a3d5e0ea80292950ad1"
+    },
+    {
+      "path": "logs/first-production-selector-failure.log",
+      "scope": "root-validation",
+      "note": "保留首轮35过/1旧等待显示名选择器失败，不倒改为全部成功。",
+      "bytes": 8784,
+      "sha256": "16c62b167a6540d07d5b557f7c84b0a9f7467f00d9b7c7344607db873fe192c6"
+    },
+    {
+      "path": "logs/g0-g3-selector-recheck.log",
+      "scope": "root-validation",
+      "note": "选择器更新为有值/序号的新名称后，完整入门1项通过；最终完整36另跑。",
+      "bytes": 577,
+      "sha256": "e8f1629ad68436f7e1082a80dad272b958e25578d9c0ec52332e250f0e9d8d6a"
+    },
+    {
+      "path": "logs/build.log",
+      "scope": "root-validation",
+      "note": "041a041构建，相关源干净。",
+      "bytes": 2802,
+      "sha256": "39f8469a42e893a205ccbfbccfd263e38ab4fd64d979923ccfe9c5153390a4de"
+    },
+    {
+      "path": "logs/historical-record.log",
+      "scope": "root-validation",
+      "note": "原12测试/六线/确切源码/一笔100EC确定性重演，不是新员工CUA。",
+      "bytes": 122,
+      "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d"
+    },
+    {
+      "path": "component-native/original-before.json",
+      "scope": "isolated-component-harness",
+      "note": "921af0e组件基线，原生实际脱离入口误报已接。",
+      "bytes": 69465,
+      "sha256": "119d57dcf173b526ccd81ff47ca9578d15abc6096b4e21bf9d75f6cd4ef41553",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1"
+    },
+    {
+      "path": "component-native/noop-before.json",
+      "scope": "isolated-component-harness",
+      "note": "b5e718f组件，虽已修连接提示，但无变化往返仍显示撤销入口。",
+      "bytes": 98113,
+      "sha256": "1c9a97abcbc83b74eb973f6c54b51ccb55f1c5be25a0814afe20015894899bd9",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1"
+    },
+    {
+      "path": "component-native/final-15-checks.json",
+      "scope": "isolated-component-harness",
+      "note": "797f45c组件15定向，确实改图且有本次undo组才撤；无变化保留旧undo对象及顺序。",
+      "bytes": 98588,
+      "sha256": "a9ff4f9d5fc7dfaddbcb0ef2a1e02e00f06a37063c417fbc555042c10d30f8dd",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1"
+    },
+    {
+      "path": "component-native/01-original-detached-false-success.png",
+      "scope": "isolated-component-harness",
+      "note": "原错误实际图，不是最终行为。",
+      "bytes": 97935,
+      "sha256": "f2c9b2357ead7ea507b8bbe26e4edc80c28744155b53dd2f540b4cf5446a2c60",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "component-native/02-held-self-tail-conflict.png",
+      "scope": "isolated-component-harness",
+      "note": "最终原生按住自尾目标，明确整串不可自接。",
+      "bytes": 97465,
+      "sha256": "34b3d4cc0cde6b83d81f685b800c6d2576caaf68465ed127c333dfc6fe80a3ea",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "component-native/03-actual-detached-help.png",
+      "scope": "isolated-component-harness",
+      "note": "最终真实落点未进入口；可见由用户触发的本次undo+单句退路。",
+      "bytes": 110935,
+      "sha256": "c0fa61e6107cc0d59781c764fafa828fd343c22e5f62c550b02ec497d0326110",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "component-native/04-explicit-single-preview.png",
+      "scope": "isolated-component-harness",
+      "note": "真实undo后同if已准备单句，仍要预览/可取消/确认，不自动接回或自动通过。",
+      "bytes": 107106,
+      "sha256": "a9c6d05c8ec72e526559fc7b370f1c6b9dead216f3e5224f347697e4f68d0d1f",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "component-native/05-no-change-before.png",
+      "scope": "isolated-component-harness",
+      "note": "无变化会触及旧撤销入口的旧缺陷。",
+      "bytes": 118400,
+      "sha256": "f2af0ee147b3301be23e4a49df579ff1b2048d71895156eadd23580f8ba73734",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "component-native/06-no-change-after.png",
+      "scope": "isolated-component-harness",
+      "note": "无变化只改用单句，不undo旧编辑。",
+      "bytes": 117589,
+      "sha256": "68f32f041892debd703f603aeaff1c4431b09da208062f2d03037b17e67b7174",
+      "testedUrl": "http://127.0.0.1:5242/tests/workbench-repair/harness.html?compact=1",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "served-resources-20.json",
+      "scope": "http-resources",
+      "note": "实际5238的美术/图文册20资源。",
+      "bytes": 4355,
+      "sha256": "d787f57007f90f12c3db26c628afd4360dbee7c7b488ab5bc1a7f437c43e86d6",
+      "testedUrl": "http://127.0.0.1:5238/"
+    },
+    {
+      "path": "source-content-identity.json",
+      "scope": "read-only-source-content-and-lock-check",
+      "note": "冻结应用源041a041与当前仅文档/测试更新的工作区构建相关内容摘要一致；附实际Node与锁定依赖版本。",
+      "bytes": 1185,
+      "sha256": "683523f533f1cc54cad32431901d0fce592e806600a1a8ad75a9ab43fc3aceec"
+    }
+  ]
+}

@@ -1,0 +1,3206 @@
+{
+  "ids": {
+    "root": "dcr.Z2{^[TRvw`~=7Z!P",
+    "read": "tal[nIf@MS?%Fb%/hOHI",
+    "if": "{L#M,w~Kw:Lw:%jje_h`",
+    "wait": "x!-N3k7s@1}5Z;i+6{Vk",
+    "on": "uZv)G4tRYnpiXUqH)^m4",
+    "off": "Y6.K/x2]-nBb%V4}nb`="
+  },
+  "checks": [
+    "real native drag keeps if branches and its original wait as a detached group",
+    "no callback is emitted during drag and one final actual orphan graph is published",
+    "while held the self-tail conflict is explained instead of promising a snap",
+    "a detached stack is never described as a successful attachment",
+    "visible fallback restores the original actual graph before single-statement selection",
+    "fallback selects the same if and explicit single-statement mode",
+    "single-move preview cancellation leaves the restored graph unchanged",
+    "same-if single point move produces read wait if with both branches preserved",
+    "single move native undo restores read if wait",
+    "a failed selected statement input cannot reuse a prior success message",
+    "native context undo restores the graph and removes stale disconnected feedback",
+    "returning an already loose stack leaves exact state and callbacks unchanged despite older undo history",
+    "no-change conflict offers point selection without an undo action",
+    "point-only fallback preserves the prior undo records and actual loose graph",
+    "no browser errors"
+  ],
+  "errors": [],
+  "baseline": {
+    "label": "baseline",
+    "phase": "self-tail",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI",
+      "{L#M,w~Kw:Lw:%jje_h`",
+      "x!-N3k7s@1}5Z;i+6{Vk"
+    ],
+    "ifParent": "tal[nIf@MS?%Fb%/hOHI",
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "抓住文字旁实心边缘，避开齿轮和字段；对准黄色口，看到插入预览再松手。也可点选移动 / 插入。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "controls_if",
+                      "id": "{L#M,w~Kw:Lw:%jje_h`",
+                      "extraState": {
+                        "hasElse": true
+                      },
+                      "inputs": {
+                        "IF0": {
+                          "block": {
+                            "type": "logic_compare",
+                            "id": "xWEbs`-!kuV7vSci|]#G",
+                            "fields": {
+                              "OP": "LT"
+                            },
+                            "inputs": {
+                              "A": {
+                                "block": {
+                                  "type": "eqp_get",
+                                  "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                  "fields": {
+                                    "NAME": "light"
+                                  }
+                                }
+                              },
+                              "B": {
+                                "block": {
+                                  "type": "math_number",
+                                  "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                  "fields": {
+                                    "NUM": 450
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "DO0": {
+                          "block": {
+                            "type": "eqp_write",
+                            "id": "uZv)G4tRYnpiXUqH)^m4",
+                            "fields": {
+                              "PORT": "LAMP"
+                            },
+                            "inputs": {
+                              "VALUE": {
+                                "block": {
+                                  "type": "logic_boolean",
+                                  "id": "luAgJ.iFA~vE=#I=#SLn",
+                                  "fields": {
+                                    "BOOL": "TRUE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ELSE": {
+                          "block": {
+                            "type": "eqp_write",
+                            "id": "Y6.K/x2]-nBb%V4}nb`=",
+                            "fields": {
+                              "PORT": "LAMP"
+                            },
+                            "inputs": {
+                              "VALUE": {
+                                "block": {
+                                  "type": "logic_boolean",
+                                  "id": "yR8=v%rsF=^B@;m(o3H-",
+                                  "fields": {
+                                    "BOOL": "FALSE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "eqp_wait",
+                          "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                          "inputs": {
+                            "MS": {
+                              "block": {
+                                "type": "math_number",
+                                "id": "_iK`UCO%u_J7?ohMIndW",
+                                "fields": {
+                                  "NUM": 100
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 0
+  },
+  "held": {
+    "label": "held-self-tail",
+    "phase": "self-tail",
+    "dragging": true,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI"
+    ],
+    "ifParent": null,
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "原生拖动会带后续整串；目标在自己的整串内，无法吸附。结束拖动后可改用单句点选。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "controls_if",
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "x": 634,
+            "y": 369,
+            "extraState": {
+              "hasElse": true
+            },
+            "inputs": {
+              "IF0": {
+                "block": {
+                  "type": "logic_compare",
+                  "id": "xWEbs`-!kuV7vSci|]#G",
+                  "fields": {
+                    "OP": "LT"
+                  },
+                  "inputs": {
+                    "A": {
+                      "block": {
+                        "type": "eqp_get",
+                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                        "fields": {
+                          "NAME": "light"
+                        }
+                      }
+                    },
+                    "B": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                        "fields": {
+                          "NUM": 450
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DO0": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                        "fields": {
+                          "BOOL": "TRUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ELSE": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                        "fields": {
+                          "BOOL": "FALSE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "eqp_wait",
+                "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                "inputs": {
+                  "MS": {
+                    "block": {
+                      "type": "math_number",
+                      "id": "_iK`UCO%u_J7?ohMIndW",
+                      "fields": {
+                        "NUM": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 0
+  },
+  "dropped": {
+    "label": "self-tail-dropped",
+    "phase": "self-tail",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI"
+    ],
+    "ifParent": null,
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "尚未接入程序入口。以「如果」开头的这组积木仍在工作区。原生拖动会携带后续整串，不能接到自己或自己的尾块。请撤销并改用单句点选。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "controls_if",
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "x": 634,
+            "y": 369,
+            "extraState": {
+              "hasElse": true
+            },
+            "inputs": {
+              "IF0": {
+                "block": {
+                  "type": "logic_compare",
+                  "id": "xWEbs`-!kuV7vSci|]#G",
+                  "fields": {
+                    "OP": "LT"
+                  },
+                  "inputs": {
+                    "A": {
+                      "block": {
+                        "type": "eqp_get",
+                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                        "fields": {
+                          "NAME": "light"
+                        }
+                      }
+                    },
+                    "B": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                        "fields": {
+                          "NUM": 450
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DO0": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                        "fields": {
+                          "BOOL": "TRUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ELSE": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                        "fields": {
+                          "BOOL": "FALSE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "eqp_wait",
+                "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                "inputs": {
+                  "MS": {
+                    "block": {
+                      "type": "math_number",
+                      "id": "_iK`UCO%u_J7?ohMIndW",
+                      "fields": {
+                        "NUM": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 1
+  },
+  "point": {
+    "label": "single-confirmed",
+    "phase": "single-confirm",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI",
+      "x!-N3k7s@1}5Z;i+6{Vk",
+      "{L#M,w~Kw:Lw:%jje_h`"
+    ],
+    "ifParent": "x!-N3k7s@1}5Z;i+6{Vk",
+    "ifNext": null,
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "已按预览连接。原后续与分支保留，可以撤销这一步。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "eqp_wait",
+                      "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                      "inputs": {
+                        "MS": {
+                          "block": {
+                            "type": "math_number",
+                            "id": "_iK`UCO%u_J7?ohMIndW",
+                            "fields": {
+                              "NUM": 100
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "controls_if",
+                          "id": "{L#M,w~Kw:Lw:%jje_h`",
+                          "extraState": {
+                            "hasElse": true
+                          },
+                          "inputs": {
+                            "IF0": {
+                              "block": {
+                                "type": "logic_compare",
+                                "id": "xWEbs`-!kuV7vSci|]#G",
+                                "fields": {
+                                  "OP": "LT"
+                                },
+                                "inputs": {
+                                  "A": {
+                                    "block": {
+                                      "type": "eqp_get",
+                                      "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                      "fields": {
+                                        "NAME": "light"
+                                      }
+                                    }
+                                  },
+                                  "B": {
+                                    "block": {
+                                      "type": "math_number",
+                                      "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                      "fields": {
+                                        "NUM": 450
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "DO0": {
+                              "block": {
+                                "type": "eqp_write",
+                                "id": "uZv)G4tRYnpiXUqH)^m4",
+                                "fields": {
+                                  "PORT": "LAMP"
+                                },
+                                "inputs": {
+                                  "VALUE": {
+                                    "block": {
+                                      "type": "logic_boolean",
+                                      "id": "luAgJ.iFA~vE=#I=#SLn",
+                                      "fields": {
+                                        "BOOL": "TRUE"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "ELSE": {
+                              "block": {
+                                "type": "eqp_write",
+                                "id": "Y6.K/x2]-nBb%V4}nb`=",
+                                "fields": {
+                                  "PORT": "LAMP"
+                                },
+                                "inputs": {
+                                  "VALUE": {
+                                    "block": {
+                                      "type": "logic_boolean",
+                                      "id": "yR8=v%rsF=^B@;m(o3H-",
+                                      "fields": {
+                                        "BOOL": "FALSE"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 3
+  },
+  "inputMiss": {
+    "label": "input-miss",
+    "phase": "input-miss",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI"
+    ],
+    "ifParent": null,
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "尚未接入程序入口。以「如果」开头的这组积木仍在工作区。未接到所选「程序入口 1 · 启动时（空）」。可撤销或重新选择连接口。 本次检查提示：请对准当前高亮的语句连接口，或取消目标后自由拖动。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "controls_if",
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "x": 1154,
+            "y": 93,
+            "extraState": {
+              "hasElse": true
+            },
+            "inputs": {
+              "IF0": {
+                "block": {
+                  "type": "logic_compare",
+                  "id": "xWEbs`-!kuV7vSci|]#G",
+                  "fields": {
+                    "OP": "LT"
+                  },
+                  "inputs": {
+                    "A": {
+                      "block": {
+                        "type": "eqp_get",
+                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                        "fields": {
+                          "NAME": "light"
+                        }
+                      }
+                    },
+                    "B": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                        "fields": {
+                          "NUM": 450
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DO0": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                        "fields": {
+                          "BOOL": "TRUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ELSE": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                        "fields": {
+                          "BOOL": "FALSE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "eqp_wait",
+                "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                "inputs": {
+                  "MS": {
+                    "block": {
+                      "type": "math_number",
+                      "id": "_iK`UCO%u_J7?ohMIndW",
+                      "fields": {
+                        "NUM": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 5
+  },
+  "noChangeBefore": {
+    "label": "loose-before-no-change",
+    "phase": "no-change-setup",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI"
+    ],
+    "ifParent": null,
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "尚未接入程序入口。以「如果」开头的这组积木仍在工作区。原生拖动会携带后续整串，不能接到自己或自己的尾块。请撤销并改用单句点选。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "controls_if",
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "x": 634,
+            "y": 369,
+            "extraState": {
+              "hasElse": true
+            },
+            "inputs": {
+              "IF0": {
+                "block": {
+                  "type": "logic_compare",
+                  "id": "xWEbs`-!kuV7vSci|]#G",
+                  "fields": {
+                    "OP": "LT"
+                  },
+                  "inputs": {
+                    "A": {
+                      "block": {
+                        "type": "eqp_get",
+                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                        "fields": {
+                          "NAME": "light"
+                        }
+                      }
+                    },
+                    "B": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                        "fields": {
+                          "NUM": 450
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DO0": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                        "fields": {
+                          "BOOL": "TRUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ELSE": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                        "fields": {
+                          "BOOL": "FALSE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "eqp_wait",
+                "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                "inputs": {
+                  "MS": {
+                    "block": {
+                      "type": "math_number",
+                      "id": "_iK`UCO%u_J7?ohMIndW",
+                      "fields": {
+                        "NUM": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 7
+  },
+  "noChangeAfter": {
+    "label": "loose-returned-unchanged",
+    "phase": "no-change-drag",
+    "dragging": false,
+    "chain": [
+      "tal[nIf@MS?%Fb%/hOHI"
+    ],
+    "ifParent": null,
+    "ifNext": "x!-N3k7s@1}5Z;i+6{Vk",
+    "branches": [
+      "uZv)G4tRYnpiXUqH)^m4",
+      "Y6.K/x2]-nBb%V4}nb`="
+    ],
+    "feedback": "尚未接入程序入口。以「如果」开头的这组积木仍在工作区。原生拖动会携带后续整串，不能接到自己或自己的尾块。请改用单句点选。",
+    "markers": 0,
+    "state": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "dcr.Z2{^[TRvw`~=7Z!P",
+            "x": 554,
+            "y": 68,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "csbKgPTn89Yroi*r;8Bn",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "tal[nIf@MS?%Fb%/hOHI",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "aro0_S1Wl4$wTV50[|9F",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "controls_if",
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "x": 634,
+            "y": 369,
+            "extraState": {
+              "hasElse": true
+            },
+            "inputs": {
+              "IF0": {
+                "block": {
+                  "type": "logic_compare",
+                  "id": "xWEbs`-!kuV7vSci|]#G",
+                  "fields": {
+                    "OP": "LT"
+                  },
+                  "inputs": {
+                    "A": {
+                      "block": {
+                        "type": "eqp_get",
+                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                        "fields": {
+                          "NAME": "light"
+                        }
+                      }
+                    },
+                    "B": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                        "fields": {
+                          "NUM": 450
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DO0": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                        "fields": {
+                          "BOOL": "TRUE"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ELSE": {
+                "block": {
+                  "type": "eqp_write",
+                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                  "fields": {
+                    "PORT": "LAMP"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "logic_boolean",
+                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                        "fields": {
+                          "BOOL": "FALSE"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "type": "eqp_wait",
+                "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                "inputs": {
+                  "MS": {
+                    "block": {
+                      "type": "math_number",
+                      "id": "_iK`UCO%u_J7?ohMIndW",
+                      "fields": {
+                        "NUM": 100
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "edits": 7
+  },
+  "noChangeAction": "整串不能接到自己或自己的尾块。可直接改用单句点选，预览后再确认。改用单句点选",
+  "phase": "no-change-drag",
+  "calls": [
+    {
+      "origin": "edit",
+      "program": null,
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "controls_if",
+              "id": "{L#M,w~Kw:Lw:%jje_h`",
+              "x": 634,
+              "y": 369,
+              "extraState": {
+                "hasElse": true
+              },
+              "inputs": {
+                "IF0": {
+                  "block": {
+                    "type": "logic_compare",
+                    "id": "xWEbs`-!kuV7vSci|]#G",
+                    "fields": {
+                      "OP": "LT"
+                    },
+                    "inputs": {
+                      "A": {
+                        "block": {
+                          "type": "eqp_get",
+                          "id": "Hwb=E6sO%P@r5yr0jCi.",
+                          "fields": {
+                            "NAME": "light"
+                          }
+                        }
+                      },
+                      "B": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "dFHb(;7h]R8Vk#wcsUZr",
+                          "fields": {
+                            "NUM": 450
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "DO0": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "uZv)G4tRYnpiXUqH)^m4",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "luAgJ.iFA~vE=#I=#SLn",
+                          "fields": {
+                            "BOOL": "TRUE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ELSE": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "Y6.K/x2]-nBb%V4}nb`=",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "yR8=v%rsF=^B@;m(o3H-",
+                          "fields": {
+                            "BOOL": "FALSE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "eqp_wait",
+                  "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                  "inputs": {
+                    "MS": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "_iK`UCO%u_J7?ohMIndW",
+                        "fields": {
+                          "NUM": 100
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。",
+      "phase": "self-tail",
+      "dragging": false,
+      "at": 1944.6000001430511
+    },
+    {
+      "origin": "edit",
+      "program": {
+        "schemaVersion": "eq-program/0.1",
+        "languageProfileRef": {
+          "id": "eq-short-cpp",
+          "version": "0.1",
+          "digest": "candidate-0.1"
+        },
+        "variables": [
+          {
+            "id": "Hqjjlzc_rl-:Q2=Bgpho",
+            "name": "light",
+            "type": "int",
+            "constant": false,
+            "initial": {
+              "id": "csbKgPTn89Yroi*r;8Bn",
+              "kind": "literal",
+              "value": 0
+            }
+          }
+        ],
+        "setup": [],
+        "loop": [
+          {
+            "id": "tal[nIf@MS?%Fb%/hOHI",
+            "kind": "assign",
+            "name": "light",
+            "value": {
+              "id": "aro0_S1Wl4$wTV50[|9F",
+              "kind": "read",
+              "port": "LIGHT",
+              "signalType": "analog"
+            }
+          },
+          {
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "kind": "if",
+            "condition": {
+              "id": "xWEbs`-!kuV7vSci|]#G",
+              "kind": "binary",
+              "op": "<",
+              "left": {
+                "id": "Hwb=E6sO%P@r5yr0jCi.",
+                "kind": "variable",
+                "name": "light"
+              },
+              "right": {
+                "id": "dFHb(;7h]R8Vk#wcsUZr",
+                "kind": "literal",
+                "value": 450
+              }
+            },
+            "then": [
+              {
+                "id": "uZv)G4tRYnpiXUqH)^m4",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "luAgJ.iFA~vE=#I=#SLn",
+                  "kind": "literal",
+                  "value": true
+                }
+              }
+            ],
+            "else": [
+              {
+                "id": "Y6.K/x2]-nBb%V4}nb`=",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "yR8=v%rsF=^B@;m(o3H-",
+                  "kind": "literal",
+                  "value": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+            "kind": "wait",
+            "duration": {
+              "id": "_iK`UCO%u_J7?ohMIndW",
+              "kind": "literal",
+              "value": 100
+            }
+          }
+        ]
+      },
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "controls_if",
+                        "id": "{L#M,w~Kw:Lw:%jje_h`",
+                        "extraState": {
+                          "hasElse": true
+                        },
+                        "inputs": {
+                          "IF0": {
+                            "block": {
+                              "type": "logic_compare",
+                              "id": "xWEbs`-!kuV7vSci|]#G",
+                              "fields": {
+                                "OP": "LT"
+                              },
+                              "inputs": {
+                                "A": {
+                                  "block": {
+                                    "type": "eqp_get",
+                                    "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                    "fields": {
+                                      "NAME": "light"
+                                    }
+                                  }
+                                },
+                                "B": {
+                                  "block": {
+                                    "type": "math_number",
+                                    "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                    "fields": {
+                                      "NUM": 450
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "DO0": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "uZv)G4tRYnpiXUqH)^m4",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "luAgJ.iFA~vE=#I=#SLn",
+                                    "fields": {
+                                      "BOOL": "TRUE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "ELSE": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "Y6.K/x2]-nBb%V4}nb`=",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "yR8=v%rsF=^B@;m(o3H-",
+                                    "fields": {
+                                      "BOOL": "FALSE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "eqp_wait",
+                            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                            "inputs": {
+                              "MS": {
+                                "block": {
+                                  "type": "math_number",
+                                  "id": "_iK`UCO%u_J7?ohMIndW",
+                                  "fields": {
+                                    "NUM": 100
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "",
+      "action": "undo",
+      "phase": "fallback-undo",
+      "dragging": false,
+      "at": 2474.800000190735
+    },
+    {
+      "origin": "edit",
+      "program": {
+        "schemaVersion": "eq-program/0.1",
+        "languageProfileRef": {
+          "id": "eq-short-cpp",
+          "version": "0.1",
+          "digest": "candidate-0.1"
+        },
+        "variables": [
+          {
+            "id": "Hqjjlzc_rl-:Q2=Bgpho",
+            "name": "light",
+            "type": "int",
+            "constant": false,
+            "initial": {
+              "id": "csbKgPTn89Yroi*r;8Bn",
+              "kind": "literal",
+              "value": 0
+            }
+          }
+        ],
+        "setup": [],
+        "loop": [
+          {
+            "id": "tal[nIf@MS?%Fb%/hOHI",
+            "kind": "assign",
+            "name": "light",
+            "value": {
+              "id": "aro0_S1Wl4$wTV50[|9F",
+              "kind": "read",
+              "port": "LIGHT",
+              "signalType": "analog"
+            }
+          },
+          {
+            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+            "kind": "wait",
+            "duration": {
+              "id": "_iK`UCO%u_J7?ohMIndW",
+              "kind": "literal",
+              "value": 100
+            }
+          },
+          {
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "kind": "if",
+            "condition": {
+              "id": "xWEbs`-!kuV7vSci|]#G",
+              "kind": "binary",
+              "op": "<",
+              "left": {
+                "id": "Hwb=E6sO%P@r5yr0jCi.",
+                "kind": "variable",
+                "name": "light"
+              },
+              "right": {
+                "id": "dFHb(;7h]R8Vk#wcsUZr",
+                "kind": "literal",
+                "value": 450
+              }
+            },
+            "then": [
+              {
+                "id": "uZv)G4tRYnpiXUqH)^m4",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "luAgJ.iFA~vE=#I=#SLn",
+                  "kind": "literal",
+                  "value": true
+                }
+              }
+            ],
+            "else": [
+              {
+                "id": "Y6.K/x2]-nBb%V4}nb`=",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "yR8=v%rsF=^B@;m(o3H-",
+                  "kind": "literal",
+                  "value": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "eqp_wait",
+                        "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                        "inputs": {
+                          "MS": {
+                            "block": {
+                              "type": "math_number",
+                              "id": "_iK`UCO%u_J7?ohMIndW",
+                              "fields": {
+                                "NUM": 100
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "controls_if",
+                            "id": "{L#M,w~Kw:Lw:%jje_h`",
+                            "extraState": {
+                              "hasElse": true
+                            },
+                            "inputs": {
+                              "IF0": {
+                                "block": {
+                                  "type": "logic_compare",
+                                  "id": "xWEbs`-!kuV7vSci|]#G",
+                                  "fields": {
+                                    "OP": "LT"
+                                  },
+                                  "inputs": {
+                                    "A": {
+                                      "block": {
+                                        "type": "eqp_get",
+                                        "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                        "fields": {
+                                          "NAME": "light"
+                                        }
+                                      }
+                                    },
+                                    "B": {
+                                      "block": {
+                                        "type": "math_number",
+                                        "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                        "fields": {
+                                          "NUM": 450
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "DO0": {
+                                "block": {
+                                  "type": "eqp_write",
+                                  "id": "uZv)G4tRYnpiXUqH)^m4",
+                                  "fields": {
+                                    "PORT": "LAMP"
+                                  },
+                                  "inputs": {
+                                    "VALUE": {
+                                      "block": {
+                                        "type": "logic_boolean",
+                                        "id": "luAgJ.iFA~vE=#I=#SLn",
+                                        "fields": {
+                                          "BOOL": "TRUE"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "ELSE": {
+                                "block": {
+                                  "type": "eqp_write",
+                                  "id": "Y6.K/x2]-nBb%V4}nb`=",
+                                  "fields": {
+                                    "PORT": "LAMP"
+                                  },
+                                  "inputs": {
+                                    "VALUE": {
+                                      "block": {
+                                        "type": "logic_boolean",
+                                        "id": "yR8=v%rsF=^B@;m(o3H-",
+                                        "fields": {
+                                          "BOOL": "FALSE"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "",
+      "phase": "single-confirm",
+      "dragging": false,
+      "at": 3562.4000000953674
+    },
+    {
+      "origin": "edit",
+      "program": {
+        "schemaVersion": "eq-program/0.1",
+        "languageProfileRef": {
+          "id": "eq-short-cpp",
+          "version": "0.1",
+          "digest": "candidate-0.1"
+        },
+        "variables": [
+          {
+            "id": "Hqjjlzc_rl-:Q2=Bgpho",
+            "name": "light",
+            "type": "int",
+            "constant": false,
+            "initial": {
+              "id": "csbKgPTn89Yroi*r;8Bn",
+              "kind": "literal",
+              "value": 0
+            }
+          }
+        ],
+        "setup": [],
+        "loop": [
+          {
+            "id": "tal[nIf@MS?%Fb%/hOHI",
+            "kind": "assign",
+            "name": "light",
+            "value": {
+              "id": "aro0_S1Wl4$wTV50[|9F",
+              "kind": "read",
+              "port": "LIGHT",
+              "signalType": "analog"
+            }
+          },
+          {
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "kind": "if",
+            "condition": {
+              "id": "xWEbs`-!kuV7vSci|]#G",
+              "kind": "binary",
+              "op": "<",
+              "left": {
+                "id": "Hwb=E6sO%P@r5yr0jCi.",
+                "kind": "variable",
+                "name": "light"
+              },
+              "right": {
+                "id": "dFHb(;7h]R8Vk#wcsUZr",
+                "kind": "literal",
+                "value": 450
+              }
+            },
+            "then": [
+              {
+                "id": "uZv)G4tRYnpiXUqH)^m4",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "luAgJ.iFA~vE=#I=#SLn",
+                  "kind": "literal",
+                  "value": true
+                }
+              }
+            ],
+            "else": [
+              {
+                "id": "Y6.K/x2]-nBb%V4}nb`=",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "yR8=v%rsF=^B@;m(o3H-",
+                  "kind": "literal",
+                  "value": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+            "kind": "wait",
+            "duration": {
+              "id": "_iK`UCO%u_J7?ohMIndW",
+              "kind": "literal",
+              "value": 100
+            }
+          }
+        ]
+      },
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "controls_if",
+                        "id": "{L#M,w~Kw:Lw:%jje_h`",
+                        "extraState": {
+                          "hasElse": true
+                        },
+                        "inputs": {
+                          "IF0": {
+                            "block": {
+                              "type": "logic_compare",
+                              "id": "xWEbs`-!kuV7vSci|]#G",
+                              "fields": {
+                                "OP": "LT"
+                              },
+                              "inputs": {
+                                "A": {
+                                  "block": {
+                                    "type": "eqp_get",
+                                    "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                    "fields": {
+                                      "NAME": "light"
+                                    }
+                                  }
+                                },
+                                "B": {
+                                  "block": {
+                                    "type": "math_number",
+                                    "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                    "fields": {
+                                      "NUM": 450
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "DO0": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "uZv)G4tRYnpiXUqH)^m4",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "luAgJ.iFA~vE=#I=#SLn",
+                                    "fields": {
+                                      "BOOL": "TRUE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "ELSE": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "Y6.K/x2]-nBb%V4}nb`=",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "yR8=v%rsF=^B@;m(o3H-",
+                                    "fields": {
+                                      "BOOL": "FALSE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "eqp_wait",
+                            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                            "inputs": {
+                              "MS": {
+                                "block": {
+                                  "type": "math_number",
+                                  "id": "_iK`UCO%u_J7?ohMIndW",
+                                  "fields": {
+                                    "NUM": 100
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "",
+      "action": "undo",
+      "phase": "single-confirm",
+      "dragging": false,
+      "at": 3857.5
+    },
+    {
+      "origin": "edit",
+      "program": null,
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "controls_if",
+              "id": "{L#M,w~Kw:Lw:%jje_h`",
+              "x": 1154,
+              "y": 93,
+              "extraState": {
+                "hasElse": true
+              },
+              "inputs": {
+                "IF0": {
+                  "block": {
+                    "type": "logic_compare",
+                    "id": "xWEbs`-!kuV7vSci|]#G",
+                    "fields": {
+                      "OP": "LT"
+                    },
+                    "inputs": {
+                      "A": {
+                        "block": {
+                          "type": "eqp_get",
+                          "id": "Hwb=E6sO%P@r5yr0jCi.",
+                          "fields": {
+                            "NAME": "light"
+                          }
+                        }
+                      },
+                      "B": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "dFHb(;7h]R8Vk#wcsUZr",
+                          "fields": {
+                            "NUM": 450
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "DO0": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "uZv)G4tRYnpiXUqH)^m4",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "luAgJ.iFA~vE=#I=#SLn",
+                          "fields": {
+                            "BOOL": "TRUE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ELSE": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "Y6.K/x2]-nBb%V4}nb`=",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "yR8=v%rsF=^B@;m(o3H-",
+                          "fields": {
+                            "BOOL": "FALSE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "eqp_wait",
+                  "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                  "inputs": {
+                    "MS": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "_iK`UCO%u_J7?ohMIndW",
+                        "fields": {
+                          "NUM": 100
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。",
+      "phase": "input-miss",
+      "dragging": false,
+      "at": 5440.300000190735
+    },
+    {
+      "origin": "edit",
+      "program": {
+        "schemaVersion": "eq-program/0.1",
+        "languageProfileRef": {
+          "id": "eq-short-cpp",
+          "version": "0.1",
+          "digest": "candidate-0.1"
+        },
+        "variables": [
+          {
+            "id": "Hqjjlzc_rl-:Q2=Bgpho",
+            "name": "light",
+            "type": "int",
+            "constant": false,
+            "initial": {
+              "id": "csbKgPTn89Yroi*r;8Bn",
+              "kind": "literal",
+              "value": 0
+            }
+          }
+        ],
+        "setup": [],
+        "loop": [
+          {
+            "id": "tal[nIf@MS?%Fb%/hOHI",
+            "kind": "assign",
+            "name": "light",
+            "value": {
+              "id": "aro0_S1Wl4$wTV50[|9F",
+              "kind": "read",
+              "port": "LIGHT",
+              "signalType": "analog"
+            }
+          },
+          {
+            "id": "{L#M,w~Kw:Lw:%jje_h`",
+            "kind": "if",
+            "condition": {
+              "id": "xWEbs`-!kuV7vSci|]#G",
+              "kind": "binary",
+              "op": "<",
+              "left": {
+                "id": "Hwb=E6sO%P@r5yr0jCi.",
+                "kind": "variable",
+                "name": "light"
+              },
+              "right": {
+                "id": "dFHb(;7h]R8Vk#wcsUZr",
+                "kind": "literal",
+                "value": 450
+              }
+            },
+            "then": [
+              {
+                "id": "uZv)G4tRYnpiXUqH)^m4",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "luAgJ.iFA~vE=#I=#SLn",
+                  "kind": "literal",
+                  "value": true
+                }
+              }
+            ],
+            "else": [
+              {
+                "id": "Y6.K/x2]-nBb%V4}nb`=",
+                "kind": "write",
+                "port": "LAMP",
+                "value": {
+                  "id": "yR8=v%rsF=^B@;m(o3H-",
+                  "kind": "literal",
+                  "value": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+            "kind": "wait",
+            "duration": {
+              "id": "_iK`UCO%u_J7?ohMIndW",
+              "kind": "literal",
+              "value": 100
+            }
+          }
+        ]
+      },
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    },
+                    "next": {
+                      "block": {
+                        "type": "controls_if",
+                        "id": "{L#M,w~Kw:Lw:%jje_h`",
+                        "extraState": {
+                          "hasElse": true
+                        },
+                        "inputs": {
+                          "IF0": {
+                            "block": {
+                              "type": "logic_compare",
+                              "id": "xWEbs`-!kuV7vSci|]#G",
+                              "fields": {
+                                "OP": "LT"
+                              },
+                              "inputs": {
+                                "A": {
+                                  "block": {
+                                    "type": "eqp_get",
+                                    "id": "Hwb=E6sO%P@r5yr0jCi.",
+                                    "fields": {
+                                      "NAME": "light"
+                                    }
+                                  }
+                                },
+                                "B": {
+                                  "block": {
+                                    "type": "math_number",
+                                    "id": "dFHb(;7h]R8Vk#wcsUZr",
+                                    "fields": {
+                                      "NUM": 450
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "DO0": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "uZv)G4tRYnpiXUqH)^m4",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "luAgJ.iFA~vE=#I=#SLn",
+                                    "fields": {
+                                      "BOOL": "TRUE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "ELSE": {
+                            "block": {
+                              "type": "eqp_write",
+                              "id": "Y6.K/x2]-nBb%V4}nb`=",
+                              "fields": {
+                                "PORT": "LAMP"
+                              },
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "type": "logic_boolean",
+                                    "id": "yR8=v%rsF=^B@;m(o3H-",
+                                    "fields": {
+                                      "BOOL": "FALSE"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "type": "eqp_wait",
+                            "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                            "inputs": {
+                              "MS": {
+                                "block": {
+                                  "type": "math_number",
+                                  "id": "_iK`UCO%u_J7?ohMIndW",
+                                  "fields": {
+                                    "NUM": 100
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "",
+      "phase": "input-native-undo",
+      "dragging": false,
+      "at": 5773.200000047684
+    },
+    {
+      "origin": "edit",
+      "program": null,
+      "workspace": {
+        "blocks": {
+          "languageVersion": 0,
+          "blocks": [
+            {
+              "type": "eqp_program",
+              "id": "dcr.Z2{^[TRvw`~=7Z!P",
+              "x": 554,
+              "y": 68,
+              "inputs": {
+                "VARIABLES": {
+                  "block": {
+                    "type": "eqp_declare",
+                    "id": "Hqjjlzc_rl-:Q2=Bgpho",
+                    "fields": {
+                      "NAME": "light",
+                      "TYPE": "int",
+                      "CONSTANT": "FALSE"
+                    },
+                    "inputs": {
+                      "INITIAL": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "csbKgPTn89Yroi*r;8Bn",
+                          "fields": {
+                            "NUM": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "LOOP": {
+                  "block": {
+                    "type": "eqp_set",
+                    "id": "tal[nIf@MS?%Fb%/hOHI",
+                    "fields": {
+                      "NAME": "light"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "eqp_read_analog",
+                          "id": "aro0_S1Wl4$wTV50[|9F",
+                          "fields": {
+                            "PORT": "LIGHT"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "controls_if",
+              "id": "{L#M,w~Kw:Lw:%jje_h`",
+              "x": 634,
+              "y": 369,
+              "extraState": {
+                "hasElse": true
+              },
+              "inputs": {
+                "IF0": {
+                  "block": {
+                    "type": "logic_compare",
+                    "id": "xWEbs`-!kuV7vSci|]#G",
+                    "fields": {
+                      "OP": "LT"
+                    },
+                    "inputs": {
+                      "A": {
+                        "block": {
+                          "type": "eqp_get",
+                          "id": "Hwb=E6sO%P@r5yr0jCi.",
+                          "fields": {
+                            "NAME": "light"
+                          }
+                        }
+                      },
+                      "B": {
+                        "block": {
+                          "type": "math_number",
+                          "id": "dFHb(;7h]R8Vk#wcsUZr",
+                          "fields": {
+                            "NUM": 450
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "DO0": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "uZv)G4tRYnpiXUqH)^m4",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "luAgJ.iFA~vE=#I=#SLn",
+                          "fields": {
+                            "BOOL": "TRUE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ELSE": {
+                  "block": {
+                    "type": "eqp_write",
+                    "id": "Y6.K/x2]-nBb%V4}nb`=",
+                    "fields": {
+                      "PORT": "LAMP"
+                    },
+                    "inputs": {
+                      "VALUE": {
+                        "block": {
+                          "type": "logic_boolean",
+                          "id": "yR8=v%rsF=^B@;m(o3H-",
+                          "fields": {
+                            "BOOL": "FALSE"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "eqp_wait",
+                  "id": "x!-N3k7s@1}5Z;i+6{Vk",
+                  "inputs": {
+                    "MS": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "_iK`UCO%u_J7?ohMIndW",
+                        "fields": {
+                          "NUM": 100
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。",
+      "phase": "no-change-setup",
+      "dragging": false,
+      "at": 7323.400000095367
+    }
+  ],
+  "events": [
+    {
+      "phase": "self-tail",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": true,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "self-tail",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "self-tail",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "fallback-undo",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "fallback-undo",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "fallback-undo",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "single-confirm",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": true,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "input-miss",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-miss",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-native-undo",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-native-undo",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "input-native-undo",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": true,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "move",
+      "isUiEvent": false,
+      "recordUndo": true,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-setup",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": true,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": true
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "drag",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "isStart": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "selected",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    },
+    {
+      "phase": "no-change-drag",
+      "type": "viewport_change",
+      "isUiEvent": true,
+      "recordUndo": false,
+      "dragging": false
+    }
+  ]
+}

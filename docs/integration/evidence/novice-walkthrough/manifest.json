@@ -1,0 +1,80 @@
+{
+  "scope": "E native mouse walkthrough; synthetic identity only",
+  "files": [
+    {
+      "name": "01-mentor.png",
+      "bytes": 57522,
+      "sha256": "70900bad1a286edadd001d735b3a6d21d8ab8a38745006c6e8ac40044243563c"
+    },
+    {
+      "name": "02-requirement-wrong.png",
+      "bytes": 73748,
+      "sha256": "c39837a4ab89ed912b202e9d09d5da3a650fde41264b2b382e2166f35240a008"
+    },
+    {
+      "name": "03-requirements-ready.png",
+      "bytes": 90029,
+      "sha256": "ae6a62d83b352acfa5db9f9dd49955f7c1fc4ec08ff916482a375ac3d14069dd"
+    },
+    {
+      "name": "04-six-wires.png",
+      "bytes": 80378,
+      "sha256": "f039b4c196127e088692d5720a4d38d4e84ef5bb138f98b945a3686e095ed6ca"
+    },
+    {
+      "name": "05-full-manual.png",
+      "bytes": 97106,
+      "sha256": "2c94183bba4f35fab5f0dda8a54fb193fa1cc843309f3d20dc3d788615e0c45c"
+    },
+    {
+      "name": "06-manual-diagram.png",
+      "bytes": 93684,
+      "sha256": "1b3df689e7fa8e0b0be0aef35f17bc82d5a96e99e5596f9f409ed9cd9c20ff51"
+    },
+    {
+      "name": "07-partial-blocks-fit.png",
+      "bytes": 86276,
+      "sha256": "21148927735613a077373239353ce31345f5c6b5afe75fef13f07bb68671c787"
+    },
+    {
+      "name": "08-base-tests.png",
+      "bytes": 93704,
+      "sha256": "cdfef563eb868bb04a6535ec1d11c493a9f7a70652b98f89564cc4f048b4532a"
+    },
+    {
+      "name": "09-change-failed.png",
+      "bytes": 59642,
+      "sha256": "235d10c613f6755732da9c552a218a6feac128ad3c79deb6adb4c951e53e93b8"
+    },
+    {
+      "name": "10-income-restored.png",
+      "bytes": 102277,
+      "sha256": "ce270c0d819e46f6c978ce75c7426712002d53e4abdeb6a7c0f1390561978633"
+    },
+    {
+      "name": "11-mentor-restored.png",
+      "bytes": 56326,
+      "sha256": "bce403fd27333cbcd5ad0000c15a29a63ca02f519834f436982e04c9a3df4fed"
+    },
+    {
+      "name": "12-station-complete.png",
+      "bytes": 127985,
+      "sha256": "640b85f08519b46b45910fd05d65f2cb091e61390879dc66d0ea706fddbd3aa4"
+    },
+    {
+      "name": "local-backup.json.gz",
+      "bytes": 74605,
+      "sha256": "0118604f4909bcfd5225b3684b85b1a0f710aa39ce9d94435ff00af881906ddf"
+    },
+    {
+      "name": "own-candidate.ino",
+      "bytes": 1739,
+      "sha256": "af3da73d73f0a4fe6ebd1d1fb459219bf58635324e443e91c64196146476d091"
+    },
+    {
+      "name": "replay-result.json",
+      "bytes": 1830,
+      "sha256": "a8746cb45f92649a21fa29da5bd559e52c9187b7fefb1f137c93a1d5e246209f"
+    }
+  ]
+}

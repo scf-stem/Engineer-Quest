@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {createSyntheticLab} from '../src/integration/synthetic-lab.js';
+import {createLegacyAdapter} from '../src/integration/legacy-adapter.js';
+import {CORRECT_WIRING} from '../src/engine.js';
+
+const adapter = await createLegacyAdapter();
+const lab = createSyntheticLab({evaluate:adapter.evaluate});
+const {session,student} = lab.enroll('合成演示员工');
+const project = lab.createProject(session,adapter.refs.taskRef);
+const {taskRef,...workRefs} = adapter.refs;
+const program = {version:1,sensorThreshold:450,lampOnWhenDark:true,delayMs:100};
+const work = {...workRefs,program,wiring:{schemaVersion:'legacy-wires/1',legacyConnections:CORRECT_WIRING},source:adapter.generateSource(program),requirementCard:{explanation:'读光敏值，暗时开灯，亮时关灯，持续检查。'},phase:'short-cpp'};
+const snapshot = await lab.submit(session,project.id,{expectedRevision:0,...work});
+const proof = await lab.runTests(session,snapshot.id);
+assert.equal(proof.report.passed,true);
+lab.settleSoftwareDemo(session,{evidenceId:proof.id});
+lab.settleSoftwareDemo(session,{evidenceId:proof.id});
+assert.equal(lab.getLedger(session).events.length,1);
+const wrong = {...program,sensorThreshold:500};
+const changed = await lab.submit(session,project.id,{...work,expectedRevision:1,program:wrong,source:adapter.generateSource(wrong)});
+const failed = await lab.runTests(session,changed.id);
+assert.equal(failed.report.passed,false);
+assert.equal(lab.listEvidence(session,project.id)[0].current,false);
+assert.throws(()=>lab.settleSoftwareDemo(session,{evidenceId:proof.id}),{code:'STALE_SNAPSHOT'});
+console.log(JSON.stringify({mode:lab.mode,student:student.nickname,checks:proof.report.cases.length,wrongThresholdRejected:!failed.report.passed,oldEvidenceInvalidated:true,ledger:lab.getLedger(session),hardware:lab.hardwareStatus(),limitations:proof.report.limitations},null,2));

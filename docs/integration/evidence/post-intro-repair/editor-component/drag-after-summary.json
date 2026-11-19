@@ -1,0 +1,77 @@
+{
+  "callbacks": 7,
+  "duringDrag": 0,
+  "phases": [
+    {
+      "phase": "existing-move:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "escape:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "flyout:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": "BLOCK_INPUT：请补齐 MS 中的积木"
+    },
+    {
+      "phase": "field:ordinary",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "field:native-undo",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "field:shadow",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "field:shadow-undo",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    }
+  ],
+  "errors": []
+}

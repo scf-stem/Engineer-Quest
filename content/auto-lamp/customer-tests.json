@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "eq-customer-tests/0.1",
+  "status": "synthetic_fixture",
+  "logicalPorts": {"input": "light", "output": "lamp"},
+  "semantics": {
+    "input": "整数 0–1023，低值表示暗；仅用于合成演示，不能视作实物校准。",
+    "output": "布尔值 true 表示亮，false 表示灭。",
+    "inputHold": "某次输入保持到下次输入；同毫秒先应用输入，之后由解释器执行。",
+    "outputHold": "某次输出保持到下次输出；断言读取不晚于断言时刻的最近一次明确输出。",
+    "responseWithinMs": 200,
+    "assertionTiming": "在输入变化后 200 毫秒及该稳定区间末尾取样；不要求程序使用某个固定等待常数。",
+    "coverageLimit": "这是固定离散客户场景，不证明连续时间任意瞬态、电流、电压、噪声或所有可能程序正确。",
+    "truthSource": "本文件的字面量断言；不得从学生阈值、输出分支或程序反推。"
+  },
+  "suites": [
+    {
+      "ref": {"id": "eq-customer-tests-auto-lamp", "version": "1.0.0"},
+      "requirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.0.0"},
+      "title": "基础客户测试 · 边界 450",
+      "tests": [
+        {"id": "base-dark", "requirementId": "eq-requirement-auto-lamp", "name": "全暗与稳定暗处", "inputTimeline": [{"atMs": 0, "signals": {"light": 0}}, {"atMs": 600, "signals": {"light": 150}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 599, "output": "lamp", "equals": true}, {"atMs": 800, "output": "lamp", "equals": true}, {"atMs": 1199, "output": "lamp", "equals": true}], "maxSteps": 10000, "maxTimeMs": 1200, "manualSection": "09.1", "failureHint": "暗处应持续亮灯。检查读入的值与开灯分支。"},
+        {"id": "base-bright", "requirementId": "eq-requirement-auto-lamp", "name": "全亮与稳定亮处", "inputTimeline": [{"atMs": 0, "signals": {"light": 1023}}, {"atMs": 600, "signals": {"light": 850}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": false}, {"atMs": 599, "output": "lamp", "equals": false}, {"atMs": 800, "output": "lamp", "equals": false}, {"atMs": 1199, "output": "lamp", "equals": false}], "maxSteps": 10000, "maxTimeMs": 1200, "manualSection": "07.2", "failureHint": "亮处应关灯。两个分支都需要给出明确动作。"},
+        {"id": "base-boundary", "requirementId": "eq-requirement-auto-lamp", "name": "449、450、451 的边界", "inputTimeline": [{"atMs": 0, "signals": {"light": 449}}, {"atMs": 600, "signals": {"light": 450}}, {"atMs": 1200, "signals": {"light": 451}}, {"atMs": 1800, "signals": {"light": 449}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 599, "output": "lamp", "equals": true}, {"atMs": 800, "output": "lamp", "equals": false}, {"atMs": 1199, "output": "lamp", "equals": false}, {"atMs": 1400, "output": "lamp", "equals": false}, {"atMs": 1799, "output": "lamp", "equals": false}, {"atMs": 2000, "output": "lamp", "equals": true}, {"atMs": 2399, "output": "lamp", "equals": true}], "maxSteps": 20000, "maxTimeMs": 2400, "manualSection": "09.1", "failureHint": "客户规定小于 450 才亮；等于 450 应灭。测试边界不会跟随代码改变。"},
+        {"id": "base-changing", "requirementId": "eq-requirement-auto-lamp", "name": "暗亮往返与重新读取", "inputTimeline": [{"atMs": 0, "signals": {"light": 150}}, {"atMs": 575, "signals": {"light": 850}}, {"atMs": 1135, "signals": {"light": 200}}, {"atMs": 1715, "signals": {"light": 900}}, {"atMs": 2305, "signals": {"light": 150}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 574, "output": "lamp", "equals": true}, {"atMs": 775, "output": "lamp", "equals": false}, {"atMs": 1134, "output": "lamp", "equals": false}, {"atMs": 1335, "output": "lamp", "equals": true}, {"atMs": 1714, "output": "lamp", "equals": true}, {"atMs": 1915, "output": "lamp", "equals": false}, {"atMs": 2304, "output": "lamp", "equals": false}, {"atMs": 2505, "output": "lamp", "equals": true}, {"atMs": 2899, "output": "lamp", "equals": true}], "maxSteps": 25000, "maxTimeMs": 2900, "manualSection": "07.1", "failureHint": "检查重复执行中是否重新读取输入，以及变亮后是否关闭了之前点亮的灯。"}
+      ]
+    },
+    {
+      "ref": {"id": "eq-customer-tests-auto-lamp", "version": "1.1.0"},
+      "requirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.1.0"},
+      "title": "轻代码变更测试 · 边界 600",
+      "tests": [
+        {"id": "change-dark-bright", "requirementId": "eq-requirement-auto-lamp", "name": "原有暗亮功能继续工作", "inputTimeline": [{"atMs": 0, "signals": {"light": 0}}, {"atMs": 600, "signals": {"light": 1023}}, {"atMs": 1200, "signals": {"light": 150}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 599, "output": "lamp", "equals": true}, {"atMs": 800, "output": "lamp", "equals": false}, {"atMs": 1199, "output": "lamp", "equals": false}, {"atMs": 1400, "output": "lamp", "equals": true}, {"atMs": 1799, "output": "lamp", "equals": true}], "maxSteps": 15000, "maxTimeMs": 1800, "manualSection": "09.1", "failureHint": "客户变更不能破坏原有的暗亮与持续运行功能。"},
+        {"id": "change-middle", "requirementId": "eq-requirement-auto-lamp", "name": "新旧需求区别：500 应亮", "inputTimeline": [{"atMs": 0, "signals": {"light": 500}}, {"atMs": 575, "signals": {"light": 850}}, {"atMs": 1135, "signals": {"light": 500}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 574, "output": "lamp", "equals": true}, {"atMs": 775, "output": "lamp", "equals": false}, {"atMs": 1134, "output": "lamp", "equals": false}, {"atMs": 1335, "output": "lamp", "equals": true}, {"atMs": 1699, "output": "lamp", "equals": true}], "maxSteps": 15000, "maxTimeMs": 1700, "manualSection": "08.1", "failureHint": "输入 500 在旧需求下灭、新需求下亮；确认运行的是你修改后的代码与新版测试。"},
+        {"id": "change-boundary", "requirementId": "eq-requirement-auto-lamp", "name": "599、600、601 的新边界", "inputTimeline": [{"atMs": 0, "signals": {"light": 599}}, {"atMs": 600, "signals": {"light": 600}}, {"atMs": 1200, "signals": {"light": 601}}, {"atMs": 1800, "signals": {"light": 599}}], "assertions": [{"atMs": 200, "output": "lamp", "equals": true}, {"atMs": 599, "output": "lamp", "equals": true}, {"atMs": 800, "output": "lamp", "equals": false}, {"atMs": 1199, "output": "lamp", "equals": false}, {"atMs": 1400, "output": "lamp", "equals": false}, {"atMs": 1799, "output": "lamp", "equals": false}, {"atMs": 2000, "output": "lamp", "equals": true}, {"atMs": 2399, "output": "lamp", "equals": true}], "maxSteps": 20000, "maxTimeMs": 2400, "manualSection": "09.1", "failureHint": "新需求仍使用严格小于；等于 600 时应关闭。"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "baseline": "b616c2a469bd90fa6b212cac72015f18613b617d",
+  "scope": "本轮只增只读说明/界面；所列A执行/学习判定、D门槛、固定客户期望、候选奖励及依赖逐字节未变，不是实物验收",
+  "files": [
+    {
+      "path": "src/program/learning-actions.js",
+      "bytes": 5610,
+      "baselineSha256": "90203fb9a40926b3f7bb26343beeab4a472a106da29c279e55a6dc68bb37bbb2",
+      "currentSha256": "90203fb9a40926b3f7bb26343beeab4a472a106da29c279e55a6dc68bb37bbb2",
+      "equal": true
+    },
+    {
+      "path": "src/program/simulate.js",
+      "bytes": 11502,
+      "baselineSha256": "882db617a14479cb9e94e8b10552cdbea22dbcf4de566282de267e7b5eeee877",
+      "currentSha256": "882db617a14479cb9e94e8b10552cdbea22dbcf4de566282de267e7b5eeee877",
+      "equal": true
+    },
+    {
+      "path": "src/program/validate.js",
+      "bytes": 9422,
+      "baselineSha256": "38bffdd31ed96cb098dc54edb404b08822fe1384aacb10461ca969103e2241d9",
+      "currentSha256": "38bffdd31ed96cb098dc54edb404b08822fe1384aacb10461ca969103e2241d9",
+      "equal": true
+    },
+    {
+      "path": "src/program/parser.js",
+      "bytes": 6684,
+      "baselineSha256": "572c2ee426d5c539060348388e09e317fc22a645fce9bbdacfac59194f3a443e",
+      "currentSha256": "572c2ee426d5c539060348388e09e317fc22a645fce9bbdacfac59194f3a443e",
+      "equal": true
+    },
+    {
+      "path": "src/program/common.js",
+      "bytes": 3636,
+      "baselineSha256": "bd3826b416f99ff22c19c84289b852e395399acfd3df37f750639cc7d90eb64c",
+      "currentSha256": "bd3826b416f99ff22c19c84289b852e395399acfd3df37f750639cc7d90eb64c",
+      "equal": true
+    },
+    {
+      "path": "src/integration/learning-policy-adapter.js",
+      "bytes": 3286,
+      "baselineSha256": "cc9cf49eb959b97a448a3f627429dc2173cbefd67e8c1bd18fba6b2d82e24b15",
+      "currentSha256": "cc9cf49eb959b97a448a3f627429dc2173cbefd67e8c1bd18fba6b2d82e24b15",
+      "equal": true
+    },
+    {
+      "path": "content/learning-progress.js",
+      "bytes": 10064,
+      "baselineSha256": "319e9e1d35f0bced09f707ac3ba863a0df7f8dfddb048e927f9b8f380ba2d9ef",
+      "currentSha256": "319e9e1d35f0bced09f707ac3ba863a0df7f8dfddb048e927f9b8f380ba2d9ef",
+      "equal": true
+    },
+    {
+      "path": "content/requirements-review.js",
+      "bytes": 15448,
+      "baselineSha256": "5fee65ec92c2390e73872a4df07389f7587d543fae7939dab620a75cf1908560",
+      "currentSha256": "5fee65ec92c2390e73872a4df07389f7587d543fae7939dab620a75cf1908560",
+      "equal": true
+    },
+    {
+      "path": "content/auto-lamp/customer-tests.json",
+      "bytes": 6908,
+      "baselineSha256": "f494bf92ecd920466b064d2e77e7bed45b547963704026811e8fde5a3f4fc30e",
+      "currentSha256": "f494bf92ecd920466b064d2e77e7bed45b547963704026811e8fde5a3f4fc30e",
+      "equal": true
+    },
+    {
+      "path": "content/auto-lamp/order.json",
+      "bytes": 5276,
+      "baselineSha256": "482d140655da4552c3f89b0ae8cd87f904bb691e51c3f4c486bc366d00c9f0b2",
+      "currentSha256": "482d140655da4552c3f89b0ae8cd87f904bb691e51c3f4c486bc366d00c9f0b2",
+      "equal": true
+    },
+    {
+      "path": "content/auto-lamp/economy.candidate.json",
+      "bytes": 3785,
+      "baselineSha256": "07e845bc2b1dfbcc304ef8638c7fc11c643bb5a4e0c7b72ff7a1c9a4293f9e4e",
+      "currentSha256": "07e845bc2b1dfbcc304ef8638c7fc11c643bb5a4e0c7b72ff7a1c9a4293f9e4e",
+      "equal": true
+    },
+    {
+      "path": "content/learning/auto-lamp-progression.json",
+      "bytes": 20907,
+      "baselineSha256": "1751969924f0cd7febf63db90965a85e996b99c1ee807c61aad3b3bdd6f6879c",
+      "currentSha256": "1751969924f0cd7febf63db90965a85e996b99c1ee807c61aad3b3bdd6f6879c",
+      "equal": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 611,
+      "baselineSha256": "63636f0433f9e2fbfbf53f733afda10dec05b24b10b359a5489896912867e275",
+      "currentSha256": "63636f0433f9e2fbfbf53f733afda10dec05b24b10b359a5489896912867e275",
+      "equal": true
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 55345,
+      "baselineSha256": "46e8d1650b0d1af1e30c6abef2d9ea7b2e81401455112fe4dde980615f17f200",
+      "currentSha256": "46e8d1650b0d1af1e30c6abef2d9ea7b2e81401455112fe4dde980615f17f200",
+      "equal": true
+    }
+  ],
+  "candidate": "dialogue-13c382b9a7f2",
+  "controllerChange": "本轮local-workspace增加旧基础回信关联前置拒绝和事实投影，明确学生保留代码重关联再执行；本清单A/D/客户/奖励/依赖14文件仍未改。"
+}

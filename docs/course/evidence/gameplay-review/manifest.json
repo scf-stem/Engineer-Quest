@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "eq-gameplay-review-evidence/0.1",
+  "dataClass": "synthetic",
+  "method": "Codex in-app browser via cua_repl; full-page original screenshots; saved files opened and visually inspected",
+  "surfaces": {
+    "ui-preview": {
+      "url": "http://127.0.0.1:4175/src/ui/preview.html",
+      "referenceCommitAtAudit": "6c26d5fff27a84c8b8c9bf906740c939569854e0",
+      "scope": "independent visual sample; not the integrated business flow"
+    },
+    "integrated-main": {
+      "url": "http://127.0.0.1:5180/",
+      "referenceGitHeadAtAudit": "df53a658c984d26961edf569f647053ec2a68a06",
+      "includesUncommittedIntegrationChanges": true,
+      "scope": "directly reviewed onboarding, order/card and entry to empty wiring; did not rerun the entire programming/reward flow"
+    }
+  },
+  "limitations": [
+    "Not a real-student trial",
+    "No full keyboard, screen-reader, mobile or motion audit",
+    "No online AI, compilation, upload or physical safety verification",
+    "Later C/E fixes are coordination reports until their separate browser verification"
+  ],
+  "captures": [
+    {
+      "file": "01-desk.jpg",
+      "surface": "ui-preview",
+      "step": "工位与委托入口",
+      "capturedAt": "2026-11-11T11:45:10.739Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1177,
+      "bytes": 153878,
+      "sha256": "99707ce9504b8f5aac67d6353a4490774b9d2eaaef09eee9725ba4a5dc1299a0",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "02-order-mail.jpg",
+      "surface": "ui-preview",
+      "step": "客户委托与中文卡",
+      "capturedAt": "2026-11-11T11:45:39.426Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1401,
+      "bytes": 140706,
+      "sha256": "babf3ed27c8c91d1a79f9598dbad3d18f77d31938ff9099992265b72a4dd4d8c",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "03-draft-saved.jpg",
+      "surface": "ui-preview",
+      "step": "合成草稿保存",
+      "capturedAt": "2026-11-11T11:45:57.959Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1401,
+      "bytes": 146356,
+      "sha256": "4aa7b69c290d64059bdb18016c043b4e3162b2d2c91689abe25ffbd40d1af32b",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "04-component-inspection.jpg",
+      "surface": "ui-preview",
+      "step": "点选 A0 用途",
+      "capturedAt": "2026-11-11T11:46:21.043Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1100,
+      "bytes": 108367,
+      "sha256": "5f597dae6d18423d7c56782f37bec5f89c292826784f1b37635530af841bea7e",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "05-tests-pending.jpg",
+      "surface": "ui-preview",
+      "step": "未运行客户测试空态",
+      "capturedAt": "2026-11-11T11:46:37.949Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1014,
+      "bytes": 88151,
+      "sha256": "854f79ae8b5fc62a19e9cdfbff94edfd5cb334fc020bd8cc51cc3235168dc606",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "06-income.jpg",
+      "surface": "ui-preview",
+      "step": "合成收入样式",
+      "capturedAt": "2026-11-11T11:46:51.402Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1014,
+      "bytes": 82462,
+      "sha256": "4aec8381c91f1986bf7b2a8e09105a329742b87d9bcc1ce273120ab00a33d63a",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "07-integrated-onboarding.jpg",
+      "surface": "integrated-main",
+      "step": "个人入职起点",
+      "capturedAt": "2026-11-11T11:50:03.578Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1041,
+      "bytes": 133332,
+      "sha256": "b94167072cc92bad1c0928f6699bdce7dd7e5f9ade3b574b49cdb4685d0437ce",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "08-integrated-card-saved.jpg",
+      "surface": "integrated-main",
+      "step": "方案已保存、解释待核对",
+      "capturedAt": "2026-11-11T11:50:31.727Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1484,
+      "bytes": 165348,
+      "sha256": "9958a016efd8ac1883a776caa26853875bf27805212e3871fc67ad59d763271a",
+      "savedFileVisuallyInspected": true
+    },
+    {
+      "file": "09-integrated-empty-wiring.jpg",
+      "surface": "integrated-main",
+      "step": "零连线的 B 工作台",
+      "capturedAt": "2026-11-11T11:51:02.567Z",
+      "mimeType": "image/jpeg",
+      "width": 1265,
+      "height": 1499,
+      "bytes": 161714,
+      "sha256": "a0a5edbb8c25dbe932a0232efbadbe3a539184a37f179896c03871591a78e51f",
+      "savedFileVisuallyInspected": true
+    }
+  ]
+}

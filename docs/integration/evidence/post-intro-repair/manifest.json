@@ -1,0 +1,179 @@
+{
+  "format": "eq.scoped-evidence/1",
+  "candidate": {
+    "url": "http://127.0.0.1:5236/",
+    "id": "dialogue-b5f9c38b347f",
+    "sourceRevision": "0746fe929bc7bbd76db168ac8e9a958d9a1e61ac",
+    "sourceDigest": "sha256:b5f9c38b347f352df8eed50c829240ab6e4f58a3fcb44939783ef4f19c765989"
+  },
+  "warning": "自动化/独占组件/历史重演均不等于新的独立首次体验，native CU另存。",
+  "files": [
+    {
+      "path": "production/01-read-result-stays.png",
+      "scope": "frozen-production-5236",
+      "note": "实际最小读取结果保留；自动化使用明确标注的旧作品检查点，不是新学生。",
+      "bytes": 276181,
+      "sha256": "152ff966a7505b2c1e15fb97ba9643ea0a1f42909693a19ea5af183b1b3bc81d",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/02-actual-window-diagnosis.png",
+      "scope": "frozen-production-5236",
+      "note": "真实read/wait100/if执行；99/199/299ms的学习观察诊断，不冒充正式客户超时。",
+      "bytes": 295772,
+      "sha256": "0208196cd4020aa73aedebfd0eb0ccbffc82c919546570b69c5ab437179a1440",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/03-same-statement-repaired.png",
+      "scope": "frozen-production-5236",
+      "note": "可见点选移动同一个if、undo、再次修正及真实观察和基础客户26/26；自动化。",
+      "bytes": 285228,
+      "sha256": "441233b11ff5a41b2df19a342f112de9a0befbd57ca3bac41501960aae3e5810",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/04-base-result-stays.png",
+      "scope": "frozen-production-5236",
+      "note": "基础测试结果现场/回看/刷新，明确继续才进入对话。",
+      "bytes": 928290,
+      "sha256": "df076e24b7b11b89ed90079922722ddf505b22b27f9836e7dad986dd92c7eae8",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/05-changed-result-stays.png",
+      "scope": "frozen-production-5236",
+      "note": "当前600源码实测20/20，明确继续前交付入口禁用。",
+      "bytes": 301643,
+      "sha256": "632e24a995e0bc46fa0eaa3b8a518bb17c9fca1614c3e61354ba452b7fc23066",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "production/06-wide-workspace.png",
+      "scope": "frozen-production-5236",
+      "note": "3440完整工位与操作可见；自动化。",
+      "bytes": 1008242,
+      "sha256": "795f985ac98fe9a43cdf93602dad92356136a9efe71752d9d9e4515385671ba9",
+      "width": 3440,
+      "height": 1157
+    },
+    {
+      "path": "production/07-value-mouth-highlight.png",
+      "scope": "frozen-production-5236",
+      "note": "左值槽实际目标高亮，保护整个if条件。",
+      "bytes": 698866,
+      "sha256": "0b319ff7874a610ccb7906219ed90810568a3e704bc9589ea165960aab9eaab3",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "production/00-version.png",
+      "scope": "frozen-production-5236",
+      "note": "标准游戏客户端实际页面候选标识，E已目检。",
+      "bytes": 223124,
+      "sha256": "bbf8d3abc7d2b16b4976122e774fb55a482e35d1d97b65c7f75048d939176e9d",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/00-text-state.json",
+      "scope": "frozen-production-5236",
+      "note": "标准客户端render_game_to_text只读状态；不是通过证据注入。",
+      "bytes": 792,
+      "sha256": "fd17b34a9da3432f7978249db9b58eea666f6ea33c5aac6419f8ccacc9488872"
+    },
+    {
+      "path": "logs/209-unit.log",
+      "scope": "component-or-regression-evidence",
+      "note": "最终根目录单测209/209。",
+      "bytes": 20287,
+      "sha256": "d98ea1cc4d6138b30c00a98727c3caae63178f3366db4c21a19d68ffe3d46848"
+    },
+    {
+      "path": "logs/35-production-ui.log",
+      "scope": "component-or-regression-evidence",
+      "note": "同一冻结生产目录35/35完整回归，无跳过。",
+      "bytes": 5845,
+      "sha256": "b05782f3d1575e8d9841a6ef70c8ce381b2454aa031ba8a3eb7f4b26fa2f77f4"
+    },
+    {
+      "path": "logs/historical-record-replay.log",
+      "scope": "component-or-regression-evidence",
+      "note": "原12测试报告/六线/确切源码/单笔100EC确定性重演；不是fresh CU。",
+      "bytes": 122,
+      "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d"
+    },
+    {
+      "path": "logs/build.log",
+      "scope": "component-or-regression-evidence",
+      "note": "0746fe9相关源干净的生产构建。",
+      "bytes": 2784,
+      "sha256": "d9ef15cd3f7246e2a273a13e45181692aac4bb5bd0ca112187514ca14c22de14"
+    },
+    {
+      "path": "editor-component/statement-checks.json",
+      "scope": "component-or-regression-evidence",
+      "note": "原独占组件人工构造检查台34检查，不能当主入口首次学生。",
+      "bytes": 7830,
+      "sha256": "2c0216199c24555166b58e78a4b0e9d0e02abe027d18c98742bd2445276292fc"
+    },
+    {
+      "path": "editor-component/viewport-checks.json",
+      "scope": "component-or-regression-evidence",
+      "note": "独占组件25视口检查，分开真实旧坐标与额外700变体。",
+      "bytes": 322176,
+      "sha256": "2cafdc26b109fd8059fbadfbc34b218f62607a3836a864d68f1a64b59ecf25af"
+    },
+    {
+      "path": "editor-component/drag-before-summary.json",
+      "scope": "component-or-regression-evidence",
+      "note": "修复前回调诊断，历史问题。",
+      "bytes": 2328,
+      "sha256": "bb30c46263a3018f8b4ee6ea287ee26ff94973ae12ecc1e9d3351958b67f7ecc"
+    },
+    {
+      "path": "editor-component/drag-before-callbacks.json",
+      "scope": "component-or-regression-evidence",
+      "note": "修复前，非最终行为。",
+      "bytes": 202032,
+      "sha256": "91c75712787bbeaa5c3055c9179503389a47365abe87510bc91373432cf9eae4"
+    },
+    {
+      "path": "editor-component/drag-after-summary.json",
+      "scope": "component-or-regression-evidence",
+      "note": "修复后实际拖动中不发布临时图，真实松手才发布。",
+      "bytes": 1498,
+      "sha256": "855e30777196c4ab8e01adb2a0ec268341299fa8d6fb88831a342ed0d3f5107e"
+    },
+    {
+      "path": "editor-component/drag-after-callbacks.json",
+      "scope": "component-or-regression-evidence",
+      "note": "最终拖动事件及原生undo同步。",
+      "bytes": 426619,
+      "sha256": "d2b645aa4f9fa7602b2aca91a2bea4e5ed1d23d7db82f3c95a8fe4f48a9b72b3"
+    },
+    {
+      "path": "editor-component/01-original-restored.png",
+      "scope": "component-or-regression-evidence",
+      "note": "真实旧根坐标554/68，只取景不改坐标/草稿。",
+      "bytes": 111356,
+      "sha256": "4adcff092aedd2cf3c36b6684122dd041930437adf46048df144e0d271f54be7",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "editor-component/02-deep-target.png",
+      "scope": "component-or-regression-evidence",
+      "note": "深层实际连接点优先，可见端口，不改作品。",
+      "bytes": 96058,
+      "sha256": "047e1cd7f9c0588e48519cb1836306f3e095fa3e653bbbcde5595d470eb4348a",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

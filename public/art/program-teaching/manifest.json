@@ -1,0 +1,37 @@
+{
+  "version": "eq.graphic-intro-art/1",
+  "origin": "Approved V0.2 local design assets; original source left unchanged",
+  "scope": "Visual scene only; execution feedback is driven by program events. P07/P09 samples only, not a complete 24-page manual.",
+  "files": [
+    {
+      "path": "scene-off.webp",
+      "source": "docs/program-teaching-design-2026-11-12/mockups/v2/assets/scene-off.webp",
+      "bytes": 1309140,
+      "sha256": "a8c8f93c40d5769750323cdf484cee1f43a11b2531f907f756d7e6b7174082e8"
+    },
+    {
+      "path": "scene-on.webp",
+      "source": "docs/program-teaching-design-2026-11-12/mockups/v2/assets/scene-on.webp",
+      "bytes": 1265728,
+      "sha256": "0574c603bc2901f197ee61b074a1c791454b228d80c4782afb594e22c0daac80"
+    },
+    {
+      "path": "read-block.svg",
+      "source": "docs/program-teaching-design-2026-11-12/mockups/assets/blocks/input-0-eqp_read_analog.svg",
+      "bytes": 1977,
+      "sha256": "96879c86a67b5c64502c28a0258e56e6af43330ee3dc2e06aeeae71e46f61941"
+    },
+    {
+      "path": "output-empty.svg",
+      "source": "docs/program-teaching-design-2026-11-12/mockups/v2/assets/diagrams/output-empty-close.svg",
+      "bytes": 5143,
+      "sha256": "b268db71769f6e298e615f793743058d3d89ad460dc33cd202619e215b97c86e"
+    },
+    {
+      "path": "output-on.svg",
+      "source": "docs/program-teaching-design-2026-11-12/mockups/v2/assets/diagrams/output-on-close.svg",
+      "bytes": 6575,
+      "sha256": "e89c69c7ce094ed4cc3ff2a42c4fe33f786ff2ed20713b8714992fc107d7e822"
+    }
+  ]
+}

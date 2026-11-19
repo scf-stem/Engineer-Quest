@@ -1,0 +1,114 @@
+{
+  "candidate": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-13c382b9a7f2",
+    "sourceDigest": "sha256:13c382b9a7f28218a0ebc5a4ef51894e57208531d1444e9c828401bf1849faa1",
+    "sourceRevision": "041a0411a506c67f3df1402603d320e9b4d50c4e",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "origin": "http://127.0.0.1:5238",
+  "checked": [
+    {
+      "path": "/art/program-teaching/scene-off.webp",
+      "bytes": 1309140,
+      "sha256": "a8c8f93c40d5769750323cdf484cee1f43a11b2531f907f756d7e6b7174082e8"
+    },
+    {
+      "path": "/art/program-teaching/scene-on.webp",
+      "bytes": 1265728,
+      "sha256": "0574c603bc2901f197ee61b074a1c791454b228d80c4782afb594e22c0daac80"
+    },
+    {
+      "path": "/art/program-teaching/read-block.svg",
+      "bytes": 1977,
+      "sha256": "96879c86a67b5c64502c28a0258e56e6af43330ee3dc2e06aeeae71e46f61941"
+    },
+    {
+      "path": "/art/program-teaching/output-empty.svg",
+      "bytes": 5143,
+      "sha256": "b268db71769f6e298e615f793743058d3d89ad460dc33cd202619e215b97c86e"
+    },
+    {
+      "path": "/art/program-teaching/output-on.svg",
+      "bytes": 6575,
+      "sha256": "e89c69c7ce094ed4cc3ff2a42c4fe33f786ff2ed20713b8714992fc107d7e822"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-02-auto-onboard-1280x720-826e80d93cbd.jpg",
+      "bytes": 99410,
+      "sha256": "8b352b59c911117857638c5b8d1f653a27290d1737cf0ab31ac10ce0ec70f299"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-05-wiring-1440x900-826e80d93cbd.jpg",
+      "bytes": 99945,
+      "sha256": "5bc348cebf158964355aa271fb81a6992005d9e2ec3fc593d01a3bc2c5b0ae30"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-06-on-waits-off-correct-mentor-826e80d93cbd.jpg",
+      "bytes": 95840,
+      "sha256": "5d8149ca38500b832e3013149ebd08d051098f0ef5cc7d9d97f5fbe5010df7f7"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-08-read-next-declare-hint-826e80d93cbd.jpg",
+      "bytes": 103449,
+      "sha256": "17d16744597184e1c265cb79c3431c45f9a0dec92dbc0c0cc337f994973d52ec"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-11-own-blocks-1280x720-826e80d93cbd.jpg",
+      "bytes": 105588,
+      "sha256": "435f852f70f6c6ccb07220405de3f80772d90ac4ae2b0c0e363d7f18bc429e7a"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-12-dynamic-third-reading-826e80d93cbd.jpg",
+      "bytes": 104334,
+      "sha256": "22a0a5dab746cd9537f8c58dd2defc8bf71acee558d529879476a161a9f4b11b"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-15-code-first-visible-1280x720-826e80d93cbd.jpg",
+      "bytes": 99772,
+      "sha256": "a59b6c0d6afa66116498a2be9cff51aad1f28491a18eae933648682352df59c7"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-16-old450-new-test-failure-826e80d93cbd.jpg",
+      "bytes": 98213,
+      "sha256": "dbc3eec16cc436f7f1f3fa61da933ec139da95627e07626ce8ce8040345eb723"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-17-own600-20of20-1280x720-826e80d93cbd.jpg",
+      "bytes": 99479,
+      "sha256": "a9382b59559b57b3c6d1f6ba43277f4f968e36cffeca3f4f88374f14619ef21b"
+    },
+    {
+      "path": "/manual/first-order-v1/assets/final-18-delivery100EC-1440x900-826e80d93cbd.jpg",
+      "bytes": 99053,
+      "sha256": "792534e542849c2ca9050a38cc2d38417bec30e1103498fec41e37bd2b6caf7f"
+    },
+    {
+      "path": "/manual/first-order-v1/evidence/novice-03-compare-empty.png",
+      "bytes": 172142,
+      "sha256": "3846c78a96a61f9f98e26ad2eabd3dd7ddca2ad0dd7a919aa94aaaa79b01db28"
+    },
+    {
+      "path": "/manual/first-order-v1/index.html",
+      "bytes": 22507,
+      "sha256": "919894e2315d9fa30d642269d02e68911312c70a1bad29e39e3057eb18b86deb"
+    },
+    {
+      "path": "/manual/first-order-v1/reader.css",
+      "bytes": 1520,
+      "sha256": "b2fae28517afe3d8cf1a493c1f16afce9d2f1dde60626e8198ed9ffa342f9d6c"
+    },
+    {
+      "path": "/manual/first-order-v1/reader.js",
+      "bytes": 1747,
+      "sha256": "8a639532553bbb0c05c7513377bd9614a2642cfb10336c8c663b5e838ba96dbd"
+    },
+    {
+      "path": "/manual/first-order-v1/首单图文任务书.pdf",
+      "bytes": 1668866,
+      "sha256": "c4e8ff5e904d61a8029e43080d3554b58e77d3bbec513bc40d6cabff187c4019"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+
+Running 1 test using 1 worker
+
+(node:57001) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/integration.spec.js:4:1 › integrated personal flow uses real wiring, Blockly, changed requirements and idempotent synthetic income (4.2s)
+
+  1 passed (5.8s)

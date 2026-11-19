@@ -1,0 +1,11 @@
+{
+  "asset": "public/art/eq-night-lab-v2.webp",
+  "created": "2026-11-11",
+  "origin": "Built-in image generation tool; original project asset, no commercial game assets used",
+  "model": "not disclosed by tool",
+  "dimensions": [1672, 941],
+  "bytes": 209130,
+  "source": "generated_images/exec-da96a5c5-5cc9-4e90-993c-d4f8fc4e0e83.png",
+  "conversion": "cwebp -q 84, image content unchanged",
+  "prompt": "Original wide 16:9 hand-painted 2.5D near-future coastal electronics R&D studio at night. Dark navy/slate, restrained cyan practical lighting, small amber indicators. Left communication terminal, center workbench, right reference shelf, rainy city windows, open floor. No people, UI overlays, labels, readable text, brands or watermarks. Real game controls and technical pins drawn separately in HTML/SVG."
+}

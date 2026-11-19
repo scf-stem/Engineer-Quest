@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Engineer Quest · 编程语义实验台</title>
+  <style>
+    :root{font:15px/1.6 system-ui,sans-serif;color:#e7edf8;background:#111a29;color-scheme:dark}*{box-sizing:border-box}body{margin:0;padding:24px;max-width:1800px}header{display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:25px;margin:0}h2{font-size:18px;margin:0 0 12px}p{margin:8px 0}.muted{color:#b7c5d8}.badge{border:1px solid #4d6a85;border-radius:20px;padding:5px 12px;white-space:nowrap}.notice{background:#233345;border-left:3px solid #68dbcc;padding:12px 16px;margin:18px 0}.grid{display:grid;grid-template-columns:minmax(420px,1.25fr) minmax(360px,1fr);gap:16px}.panel{background:#1a283b;border:1px solid #36516c;border-radius:12px;padding:18px;min-width:0}.toolbar{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}button{font:inherit;border:1px solid #6d8da8;border-radius:7px;padding:8px 14px;background:#294059;color:#f4f8ff;cursor:pointer}button.primary{background:#72e4ce;border-color:#72e4ce;color:#0b2330;font-weight:650}button:disabled{opacity:.45;cursor:default}button:focus-visible,textarea:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #f7c65f;outline-offset:3px}#workspace{height:470px;background:#f4f7fa;border-radius:8px;overflow:hidden}textarea{width:100%;min-height:315px;padding:14px;background:#101b2b;color:#ebf7ff;border:1px solid #57728c;border-radius:8px;resize:vertical;font:14px/1.7 ui-monospace,SFMono-Regular,monospace;tab-size:2}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#101b2b;border-radius:7px;padding:12px;max-height:340px;overflow:auto;font:13px/1.65 ui-monospace,monospace}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:9px 6px;border-bottom:1px solid #3a5268}th{color:#bdd0e4;font-weight:500}#status{padding:8px 12px;background:#101b2b;border-radius:8px;min-height:42px}#status[data-state=pass]{border-left:4px solid #72e4ce}#status[data-state=fail]{border-left:4px solid #f7a99e}.trace{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.lamp{display:inline-block;width:16px;height:16px;border-radius:50%;background:#567084;vertical-align:middle;margin-right:8px}.lamp.on{background:#f7c65f;box-shadow:0 0 14px #f7c65f66}input[type=range]{width:100%;accent-color:#72e4ce}summary{cursor:pointer;color:#b7ddd9}label{display:block}.trace label{margin-top:12px}@media(max-width:1000px){.grid,.trace{grid-template-columns:1fr}body{padding:16px}header{align-items:flex-start;flex-direction:column}#workspace{height:400px}}
+    #workspace .blocklyToolbox{background:#e3ebf4;color:#1b2f44}#workspace .blocklyToolboxCategoryLabel{color:#1b2f44}#workspace .blocklyToolboxSelected{background:#245668!important}#workspace .blocklyToolboxSelected .blocklyToolboxCategoryLabel{color:#fff}
+    .guide{background:#203c48;border-left:3px solid #72e4ce;padding:12px 16px;margin:14px 0;border-radius:5px}.guide p{margin:4px 0}.practice{margin:16px 0}select{font:inherit;padding:8px;max-width:100%;background:#101b2b;color:#e7edf8;border:1px solid #6d8da8;border-radius:6px}.practice ol{padding-left:23px}.prediction{display:flex;gap:20px}.prediction label{display:inline-flex;gap:6px;align-items:center}.evidence{margin-top:16px}.evidence ol{padding-left:22px}#map-node{width:100%}.counterexample{border-left:3px solid #f7a99e;padding:8px 12px;margin:12px 0}.counterexample button{margin:6px 0}.origin{color:#f7d894}
+    .guide{height:190px;overflow:auto}
+  </style>
+</head>
+<body>
+  <header><div><p class="muted">ENGINEER QUEST / A 线独立开发模块</p><h1>编程语义实验台</h1></div><span class="badge">候选语言 0.1 · 合成数据</span></header>
+  <p class="notice">先搭输入、判断、输出和等待，再观察程序如何随时间执行。这里只验证逻辑；板卡代际、传感器校准、目标编译与实物均待验证。</p>
+  <main>
+    <section class="panel practice"><h2>当前小步练习</h2><label for="exercise">练习目标</label><select id="exercise"></select><p id="goal"></p><ol id="instructions"></ol><p id="checkpoint"></p><div class="prediction"><label><input type="radio" name="prediction" value="true">我预测灯会亮</label><label><input type="radio" name="prediction" value="false">我预测灯会灭</label></div><div class="toolbar"><button id="predict">记录当前版本预测</button><button id="bug-starter" hidden>打开含故障的练习代码</button></div><p id="prediction-status" class="muted">先按当前程序预测，再运行观察。预测错也可以继续排查。</p><p id="origin" class="origin">从空白开始；系统不会据此认定独立完成。</p></section>
+    <div class="grid">
+      <section class="panel"><h2>01 / 从空白积木开始</h2><p class="muted">从「变量与流程」拖入程序入口。变量区声明名称，赋值与取值积木使用同一名称。</p>
+        <div id="guidance" class="guide" aria-live="polite"></div>
+        <div class="toolbar"><button id="load">查看完整参考（记录协助）</button><button id="from-blocks" class="primary">保存积木快照并对照轻代码</button><button id="center-blocks">查看完整积木</button></div>
+        <div id="workspace" aria-label="积木工作区"></div>
+        <p id="snapshot-status" class="muted">进入文本编辑前会保存积木快照。</p>
+        <button id="snapshot" disabled>查看旧积木快照 JSON</button><pre id="snapshot-view" hidden></pre>
+      </section>
+      <section class="panel"><h2>02 / 简写 C++</h2><p class="muted">逻辑端口：LIGHT → A0、BUTTON → D2、LAMP → D9。整数范围 −32768…32767。</p>
+        <label for="source">教学代码（修改后需重新运行）</label><textarea id="source" spellcheck="false" placeholder="void loop() {&#10;  // 在这里编写程序&#10;}"></textarea>
+        <p id="mode" class="muted">执行来源：当前积木。</p><div class="toolbar"><button id="run" class="primary">运行当前练习</button><button id="generated" disabled>查看对应 Arduino 源码</button></div>
+        <p id="status" role="status" aria-live="polite">先按左侧提示放好第一块入口。</p>
+        <label for="map-node">积木与代码对应（选择一项可定位）</label><select id="map-node" disabled><option>生成代码后查看对应关系</option></select><p id="map-meaning" class="muted"></p>
+        <details><summary>原始诊断与技术详情</summary><pre id="technical">暂无诊断。</pre></details>
+        <details id="arduino"><summary>完整源码与工具链要求（未执行目标编译）</summary><pre id="arduino-source"></pre><pre id="toolchain"></pre></details>
+      </section>
+    </div>
+    <div class="trace">
+      <section class="panel"><h2>03 / 真实运行与调试</h2><p class="muted">固定教学场景，单独记录；不替换正式客户订单。修改程序不会改变预期。表中检查该毫秒内动作完成后的状态；滑块还能看执行前与中间步骤。</p><table><thead><tr><th>时间</th><th>预期灯状态</th><th>实际</th><th>结果</th></tr></thead><tbody id="assertions"><tr><td colspan="4">尚未运行</td></tr></tbody></table><div id="counterexamples"></div></section>
+      <section class="panel"><h2>04 / 执行轨迹</h2><p><span id="lamp" class="lamp"></span><strong id="lamp-state">灯状态未知</strong></p><label for="step">逐步查看（含读取、分支、等待和状态保持）</label><input id="step" type="range" min="0" max="0" value="0" disabled><pre id="event">运行后可拖动查看。</pre></section>
+    </div>
+    <section class="panel evidence"><h2>本轮练习证据</h2><p id="review"></p><ol id="progress"></ol><p class="muted">只记录本机这一轮。行为通过、使用协助、调试记录与理解评价分别处理；不发放收入或课程通关。</p><details><summary>失败与修复版本记录</summary><pre id="attempt-history">尚无记录。</pre></details></section>
+  </main>
+  <script type="module" src="./lab.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 1973,
+    "sha256": "b97b80dcd365cb137d8f9563430bec7ec9938f1a2e90aaf74c7a5c2993341ca4"
+  },
+  {
+    "path": "actual-cu-download.json",
+    "bytes": 391,
+    "sha256": "14ca87b284645728820985d931642180967f56f1673493e17d9e954f4989aee1"
+  },
+  {
+    "path": "browser.log",
+    "bytes": 3483,
+    "sha256": "4d23409da34eb1c8899532595735d4318e5df38eada75b04b9c5e8e3e6965c8a"
+  },
+  {
+    "path": "build.log",
+    "bytes": 2380,
+    "sha256": "3002fe73ef9c2852c00767735afcbca7403384cde6c73f36f612dae3a18fc0c8"
+  },
+  {
+    "path": "candidate-build.json",
+    "bytes": 375,
+    "sha256": "3d801605ece6b964fe0eb3bfe227c86557ff685fa44bea35cb74f78c008fb25a"
+  },
+  {
+    "path": "client/shot-0.png",
+    "bytes": 223017,
+    "sha256": "fd7e4ac8cd635d4e4e4669bc72f1b38363a5f657de9de621fd4758a54e199ecd"
+  },
+  {
+    "path": "client/state-0.json",
+    "bytes": 726,
+    "sha256": "61adfdf8abc400e337ff66f9027d69ce83c6f08d365b4bb26d288a2ec5b6a1d4"
+  },
+  {
+    "path": "historical-replay.log",
+    "bytes": 122,
+    "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d"
+  },
+  {
+    "path": "intermediate-847eda/candidate-build.json",
+    "bytes": 375,
+    "sha256": "feb7080bde0cb9d16dee153538bf5402e67ecfbb6093934b5804c613914709df"
+  },
+  {
+    "path": "intermediate-847eda/client/shot-0.png",
+    "bytes": 223569,
+    "sha256": "6aab5cff0ed4e8b66cc98dba767bdf873c3c70562a47a3ee9a26a11286508061"
+  },
+  {
+    "path": "intermediate-847eda/client/state-0.json",
+    "bytes": 726,
+    "sha256": "0da3e985fcab1c0101e1a43b4d4f7ae3d399eea33cbc68bb8a3a1922f0e258fb"
+  },
+  {
+    "path": "package-check.log",
+    "bytes": 127,
+    "sha256": "1f6d24009a0924c252a29ca7897a3b0d0aa41cf9fc632863c0da860a0a31b0c3"
+  },
+  {
+    "path": "pdf-page-08.png",
+    "bytes": 94396,
+    "sha256": "312be3380f455f6d2a693ded34abbc3e1568667b10bd771969291ca28eff8898"
+  },
+  {
+    "path": "pdf-pages-01-06.png",
+    "bytes": 575804,
+    "sha256": "4c963df3e3425f3476ba08d1820fed568b53bd078a30c435a0b1da757a5a99cd"
+  },
+  {
+    "path": "pdf-pages-07-12.png",
+    "bytes": 680049,
+    "sha256": "ae3c74aacafafe74842328e80812cb7d3c3ed0fe34a304c4e4c71fe869c0a00f"
+  },
+  {
+    "path": "print-metrics.json",
+    "bytes": 1110,
+    "sha256": "3039696ef58c684c48395c15eb1e87cf23790132217973555c643894e30a4bc0"
+  },
+  {
+    "path": "reader-page08-1280.png",
+    "bytes": 155344,
+    "sha256": "c0252ef512e5a07afd45e2c7be584f19285cd026f40bf1ae72952f97a392d2be"
+  },
+  {
+    "path": "reader-page12-mobile.png",
+    "bytes": 111697,
+    "sha256": "709d9536ed07972ca58844d864261a16daea9eab4d58f62522327278dfe0e22b"
+  },
+  {
+    "path": "served-dependencies.json",
+    "bytes": 1990,
+    "sha256": "d5ae30a5a8eedc7f14294bb7fa0d7867f766ad3dfae5ac22252285b1ba52e244"
+  },
+  {
+    "path": "unit.log",
+    "bytes": 16299,
+    "sha256": "3bb8cb8b8d2678bdb928831d167a5bdc4b5f3c9405ab9ed183fdf7a86697d8bf"
+  }
+]

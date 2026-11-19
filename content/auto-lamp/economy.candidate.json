@@ -1,0 +1,53 @@
+{
+  "ref": {"id": "eq-personal-economy-candidate", "version": "0.1.0"},
+  "status": "proposal_unconfirmed",
+  "executionMode": "synthetic_only",
+  "confirmed": {"participation": "individual", "leaderboardMetric": "income"},
+  "currency": {"code": "EC", "label": "工程币", "realMoney": false},
+  "candidateAccounting": {
+    "initialIncome": 0,
+    "initialBalance": 0,
+    "incomeMetric": "sum_of_accepted_order_income_less_explicit_reversals",
+    "balanceMetric": "income_minus_purchases_plus_refunds",
+    "purchaseChangesIncome": false,
+    "hintsCost": 0,
+    "failurePenalty": 0,
+    "baseMaterialsCost": 0,
+    "allowNegativeBalance": false,
+    "ranking": "income_descending_dense_rank",
+    "ties": "同收入同名次，展示顺序用不透明个人 ID 稳定排序，不以速度或 AI 评价破同分。",
+    "visibility": "默认不公开；本轮仅合成人员在本地演示，正式展示范围待确认。",
+    "reasonForChoice": "购买模块不降低累计收入名次，求助与失败不扣款；收入撤销必须有明确纠错证据。"
+  },
+  "candidateRewards": [
+    {"id": "reward-auto-lamp-delivery", "orderId": "eq-task-auto-lamp", "amount": 300, "requires": "version_bound_teacher_physical_acceptance_and_delivery", "settlementScope": "one_per_student_and_order", "resubmissionReward": 0},
+    {"id": "reward-reviewed-upgrade", "orderId": "eq-task-upgrade-candidate", "amount": 100, "requires": "reviewed_upgrade_order_and_its_acceptance", "settlementScope": "one_per_student_and_upgrade_order", "resubmissionReward": 0}
+  ],
+  "ledgerContractCandidate": {
+    "ownerField": "studentId",
+    "immutable": true,
+    "eventKinds": ["order_income", "purchase", "refund", "income_reversal"],
+    "amountConvention": "正整数 EC；方向由 kind 决定，不用浮点数。",
+    "requiredFields": ["id", "studentId", "kind", "amount", "reason", "sourceEvidenceId", "idempotencyKey", "createdAt"],
+    "reversal": "引用 reversesEventId，金额与原收入一致；纠错记录不可覆盖原事件。",
+    "duplicatePolicy": "重复 idempotencyKey 不增发；换键重试仍按个人与订单唯一结算，不按提交次数发放。",
+    "authority": "E线合成账本实施。本配置不记账；正式执行须服务端权限、版本校验、事务与幂等。NPC 无写权限。",
+    "acceptanceReopen": "修改作品不自动追加奖励；旧验收过期与收入纠错是两个独立事件。"
+  },
+  "shopPolicyCandidate": {
+    "unlocksAfter": "delivery",
+    "baseMaterialsFree": true,
+    "purchaseSeparateFromPickup": true,
+    "realInventorySeparateFromVirtual": true,
+    "stockout": "不扣款，提供替代或保存探索提案。",
+    "refund": "未领料或教师确认退回后，按原购买记录退款一次；退款增加余额，不增加收入。",
+    "requiredListingEvidence": ["component_model_verified", "manual_ready", "language_support_verified", "compile_verified", "physical_validation_verified"],
+    "optionalDoesNotBlockGraduation": true
+  },
+  "candidateCatalog": [
+    {"id": "shop-button", "label": "按钮模块：手动模式提案", "candidatePrice": 80, "listingStatus": "blocked_pending_validation", "realStock": null, "requiredNewOrder": true},
+    {"id": "shop-display", "label": "显示模块：读数显示提案", "candidatePrice": 150, "listingStatus": "blocked_pending_validation", "realStock": null, "requiredNewOrder": true}
+  ],
+  "openDecisions": ["累计收入及撤销口径", "300/100 EC 奖励与商品价格", "同收入排序与展示范围", "正式结算权限和纠错流程", "可售模块、库存、退换与领料细则"],
+  "notice": "所有金额与会计细则仅为合成演示默认候选，未经用户确认；本文件不发真实奖励、不启动采购。"
+}

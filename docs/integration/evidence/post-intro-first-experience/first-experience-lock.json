@@ -1,0 +1,11 @@
+{
+  "status": "first-experience-conclusions-locked-before-directed-retest",
+  "locked_at_utc": "2026-11-12T12:29:24.384893+00:00",
+  "report": "docs/integration/后半程修复首次体验_2026-11-12.md",
+  "report_sha256": "eb256426a54379c28e9942f99908b67d56142339fe8fb1ddeeb83375eb98d7b9",
+  "manifest_sha256": "a780ea3aec06780722b37d8d09f4aab4e90e9d4919c744406aef2dc958b0fca9",
+  "screenshot_count": 30,
+  "primary_employee": "初晴N12 (first entry; delivered 100 EC)",
+  "supplemental_employee": "初晴N12 (second same-name entry; paused at first intro sentence)",
+  "directed_retest_performed": false
+}

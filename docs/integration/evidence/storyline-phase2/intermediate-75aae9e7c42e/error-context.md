@@ -1,0 +1,162 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: wiring-usability.spec.js >> uncompleted scenarios block shortcuts; six keyboard wires open a genuinely blank program
+- Location: tests/e2e/wiring-usability.spec.js:4:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - img "原创夜间研发室：左侧通信终端、中央电子工位、右侧资料柜，窗外是雨夜城市" [ref=e5]
+    - link "跳到主要内容" [ref=e6] [cursor=pointer]:
+      - /url: "#_r_1_"
+    - banner [ref=e7]:
+      - button "Engineer Quest 研发室" [ref=e8] [cursor=pointer]:
+        - generic [ref=e12]:
+          - text: ENGINEER QUEST
+          - generic [ref=e13]: 微光硬件工作室 / 研发部
+      - button "查看候选版本" [ref=e14] [cursor=pointer]: 候选 75aae9e7c42e
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "本机界面测试 · 员工菜单" [ref=e17] [cursor=pointer]
+          - generic [ref=e18]: 见习工程师
+        - generic [ref=e19]: 0 EC
+      - button "打开工程手册" [ref=e20] [cursor=pointer]:
+        - generic [ref=e23]: 手册
+        - generic [ref=e24]: M
+      - button "现场求助说明" [ref=e25] [cursor=pointer]
+    - main [ref=e29]:
+      - region "图形程序" [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [aria-hidden] [ref=e33]: ◆
+            - generic [ref=e34]: EQ / 图形程序
+            - generic [ref=e35]: ORDER 001
+          - button "关闭工具，返回研发室" [ref=e36] [cursor=pointer]:
+            - text: 返回研发室
+            - generic [ref=e37]: Esc
+        - region "电子工作台" [ref=e42]:
+          - tabpanel [ref=e43]:
+            - text: 林工：
+            - generic [ref=e45]:
+              - complementary [ref=e46]:
+                - region "当前编程练习" [ref=e47]:
+                  - heading "读取并观察一个当前值" [level=2] [ref=e49]
+                  - generic [ref=e50]:
+                    - paragraph [ref=e51]: 先从「变量与流程」拖一个程序入口。再看图解，接变量、读取和等待。
+                    - button "看这一步的图解" [ref=e52] [cursor=pointer]
+                  - generic "当前动手操作" [ref=e53]:
+                    - generic [ref=e54]:
+                      - text: 本次虚拟光照：150
+                      - slider "练习光照读数" [ref=e55]: "150"
+                    - button "运行一次，查看实际读取" [disabled] [ref=e57]
+                  - generic [ref=e58]:
+                    - region "和林工一起做" [ref=e59]:
+                      - generic [ref=e60]:
+                        - status [ref=e61]: 刚才你让 LED 熄灭了。这是你发出的输出。 先从「变量与流程」拖一个程序入口。
+                        - generic "回应林工" [ref=e62]:
+                          - button "听林工接着说 ▷" [ref=e63] [cursor=pointer]
+                          - button "林工，我卡在这里" [ref=e64] [cursor=pointer]
+                          - button "为什么要这样做？" [ref=e65] [cursor=pointer]
+                          - button "一起翻手册 §07.1 ↗" [ref=e66] [cursor=pointer]
+                    - complementary [ref=e67]:
+                      - heading "先搭一个能读取的最小程序" [level=3] [ref=e68]
+                      - paragraph [ref=e69]: 这一步只需要变量、读取和等待，按下方步骤逐个连接。
+                    - group [ref=e70]:
+                      - generic "这一步怎样搭 / 遇到困难时查看" [ref=e71] [cursor=pointer]
+                    - group "上一次实际操作" [ref=e72]:
+                      - generic "上一次实际操作 · LED 实际灭 · 有观察记录" [ref=e73] [cursor=pointer]
+                    - button "查手册 §07.1 ↗" [ref=e74] [cursor=pointer]
+                    - group [ref=e75]:
+                      - generic "当前版本的学习记录" [ref=e76] [cursor=pointer]
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - button "查看完整积木" [ref=e80] [cursor=pointer]
+                  - button "找到等待积木" [ref=e81] [cursor=pointer]
+                  - button "撤销一步" [ref=e82] [cursor=pointer]
+                  - button "看看全部积木" [ref=e83] [cursor=pointer]
+                - generic [ref=e85]:
+                  - text: 精确槽位
+                  - combobox "准备接入的精确槽位" [ref=e86]:
+                    - option "自由拖动 · 保护已占用值槽" [selected]
+                - status [ref=e87]: 先选精确槽位可高亮并锁定目标；自由拖动时，已占用值槽受到保护。
+                - generic [ref=e89]:
+                  - tree [ref=e91]:
+                    - treeitem "变量与流程" [level=1] [ref=e92]
+                    - treeitem "输入与判断" [level=1] [ref=e94]
+                    - treeitem "等待" [level=1] [ref=e96]
+                  - img [ref=e98]:
+                    - generic "Blockly工作区" [ref=e99]
+              - complementary [ref=e112]:
+                - region "程序实际观察" [ref=e113]:
+                  - generic [ref=e114]:
+                    - strong [ref=e115]: 我的装置 · 实际运行记录
+                    - generic [ref=e116]: 这份作品的记录
+                  - generic [ref=e117]:
+                    - generic [ref=e118]: LED 灭
+                    - generic [ref=e121]:
+                      - generic [ref=e122]: 实际光照读数
+                      - text: 未读取
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: 最近一次判断
+                      - text: 尚无判断
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: 隔离点灯练习 · 0 ms
+                    - group "查看实际变化时刻" [ref=e127]:
+                      - button "0 ms" [pressed] [ref=e128] [cursor=pointer]
+    - generic [ref=e129]:
+      - generic [ref=e130]: ›
+      - status [ref=e131]: 本机已保存 · 先和林工看懂客户桌面的变化，再到这里接线。
+      - button "展开完整工作反馈" [ref=e132] [cursor=pointer]: 反馈 ↗
+    - contentinfo [ref=e133]:
+      - navigation "工程工具" [ref=e134]:
+        - button "1 研发室" [ref=e135] [cursor=pointer]:
+          - generic [ref=e136]: "1"
+          - generic [ref=e139]: 研发室
+        - button "2 委托档案" [ref=e140] [cursor=pointer]:
+          - generic [ref=e141]: "2"
+          - generic [ref=e145]: 委托档案
+        - button "3 虚拟接线" [ref=e146] [cursor=pointer]:
+          - generic [ref=e147]: "3"
+          - generic [ref=e151]: 虚拟接线
+        - button "4 图形程序" [ref=e152] [cursor=pointer]:
+          - generic [ref=e153]: "4"
+          - generic [ref=e156]: 图形程序
+      - group [ref=e157]:
+        - generic "工具柜" [ref=e158] [cursor=pointer]
+      - generic [ref=e159]:
+        - button "林工 工作提示" [ref=e160] [cursor=pointer]:
+          - text: 林工
+          - generic [ref=e161]: 工作提示
+        - button "实物待验" [ref=e162] [cursor=pointer]
+        - generic [ref=e163]:
+          - checkbox "减少动效" [ref=e164]
+          - text: 减少动效
+  - dialog "给装置一双眼睛" [ref=e165]:
+    - generic [ref=e166]:
+      - text: WEIGUANG / 第一份委托
+      - heading "给装置一双眼睛" [level=1] [ref=e167]
+      - generic [ref=e168]: 本机界面测试 · 见习工程师
+    - img "林工在研发室伸手迎接你" [ref=e169]
+    - generic [ref=e170]:
+      - generic [ref=e171]: 林工 你的带教同事
+      - status [ref=e172]: 刚才灯真的回应了你的指令。可你不能一直站在展台边替它开关。让它先读到眼前的光照吧。
+      - generic [ref=e173]:
+        - button "下一句 ▷" [active] [ref=e174] [cursor=pointer]
+        - button "暂停，稍后继续" [ref=e175] [cursor=pointer]
+        - button "回看刚才的话" [ref=e176] [cursor=pointer]
+        - button "看看这一页" [ref=e177] [cursor=pointer]
+```

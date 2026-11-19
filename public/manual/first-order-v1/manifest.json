@@ -1,0 +1,93 @@
+{
+  "format": "eq.illustrated-taskbook/1",
+  "version": "0.1.2-local",
+  "pages": 12,
+  "sourceDirectory": "docs/manual-visual-proposal/release-826e80d93cbd",
+  "sourceCandidate": "dialogue-826e80d93cbd",
+  "sourceRevision": "11612f9bd29a107c9540716038c794a4cb894a3f",
+  "sourceHtmlSha256": "7662531082445bbee8a5234c3bb5900671f97d4ae90d0c15e06726c55829ffed",
+  "sourcePdfSha256": "aa8f7ef9d8a55a4391748237a14065d49b0f22e6e1b9a9229674b3b2e3c9c0fa",
+  "integrationEdits": [
+    "Correct page3 pending-wiring wording to actual current UI; regenerated 12-page PDF from packaged HTML.",
+    "Add stable page anchors, viewport metadata and isolated reader CSS/JS for screen navigation and image zoom.",
+    "Preserve source pages7/8/12 final revisions and original screenshot bytes; responsive crop layout does not change print content.",
+    "Label reused illustrations as reference examples from 826e/11612f9 in both HTML and PDF, not the current game candidate."
+  ],
+  "files": [
+    {
+      "path": "assets/final-02-auto-onboard-1280x720-826e80d93cbd.jpg",
+      "bytes": 99410,
+      "sha256": "8b352b59c911117857638c5b8d1f653a27290d1737cf0ab31ac10ce0ec70f299"
+    },
+    {
+      "path": "assets/final-05-wiring-1440x900-826e80d93cbd.jpg",
+      "bytes": 99945,
+      "sha256": "5bc348cebf158964355aa271fb81a6992005d9e2ec3fc593d01a3bc2c5b0ae30"
+    },
+    {
+      "path": "assets/final-06-on-waits-off-correct-mentor-826e80d93cbd.jpg",
+      "bytes": 95840,
+      "sha256": "5d8149ca38500b832e3013149ebd08d051098f0ef5cc7d9d97f5fbe5010df7f7"
+    },
+    {
+      "path": "assets/final-08-read-next-declare-hint-826e80d93cbd.jpg",
+      "bytes": 103449,
+      "sha256": "17d16744597184e1c265cb79c3431c45f9a0dec92dbc0c0cc337f994973d52ec"
+    },
+    {
+      "path": "assets/final-11-own-blocks-1280x720-826e80d93cbd.jpg",
+      "bytes": 105588,
+      "sha256": "435f852f70f6c6ccb07220405de3f80772d90ac4ae2b0c0e363d7f18bc429e7a"
+    },
+    {
+      "path": "assets/final-12-dynamic-third-reading-826e80d93cbd.jpg",
+      "bytes": 104334,
+      "sha256": "22a0a5dab746cd9537f8c58dd2defc8bf71acee558d529879476a161a9f4b11b"
+    },
+    {
+      "path": "assets/final-15-code-first-visible-1280x720-826e80d93cbd.jpg",
+      "bytes": 99772,
+      "sha256": "a59b6c0d6afa66116498a2be9cff51aad1f28491a18eae933648682352df59c7"
+    },
+    {
+      "path": "assets/final-16-old450-new-test-failure-826e80d93cbd.jpg",
+      "bytes": 98213,
+      "sha256": "dbc3eec16cc436f7f1f3fa61da933ec139da95627e07626ce8ce8040345eb723"
+    },
+    {
+      "path": "assets/final-17-own600-20of20-1280x720-826e80d93cbd.jpg",
+      "bytes": 99479,
+      "sha256": "a9382b59559b57b3c6d1f6ba43277f4f968e36cffeca3f4f88374f14619ef21b"
+    },
+    {
+      "path": "assets/final-18-delivery100EC-1440x900-826e80d93cbd.jpg",
+      "bytes": 99053,
+      "sha256": "792534e542849c2ca9050a38cc2d38417bec30e1103498fec41e37bd2b6caf7f"
+    },
+    {
+      "path": "evidence/novice-03-compare-empty.png",
+      "bytes": 172142,
+      "sha256": "3846c78a96a61f9f98e26ad2eabd3dd7ddca2ad0dd7a919aa94aaaa79b01db28"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22507,
+      "sha256": "919894e2315d9fa30d642269d02e68911312c70a1bad29e39e3057eb18b86deb"
+    },
+    {
+      "path": "reader.css",
+      "bytes": 1520,
+      "sha256": "b2fae28517afe3d8cf1a493c1f16afce9d2f1dde60626e8198ed9ffa342f9d6c"
+    },
+    {
+      "path": "reader.js",
+      "bytes": 1747,
+      "sha256": "8a639532553bbb0c05c7513377bd9614a2642cfb10336c8c663b5e838ba96dbd"
+    },
+    {
+      "path": "首单图文任务书.pdf",
+      "bytes": 1668866,
+      "sha256": "c4e8ff5e904d61a8029e43080d3554b58e77d3bbec513bc40d6cabff187c4019"
+    }
+  ]
+}

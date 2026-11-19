@@ -1,0 +1,75 @@
+{
+  "candidate": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-ac548cce4d84",
+    "sourceDigest": "sha256:ac548cce4d84379ae3b6a92520a5959290d5bc3688979cc20c524814bfcbfc04",
+    "sourceRevision": "a5721d0fdbfe4bd53dba467bc392857abff45986",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "packageVersion": "0.1.2-local",
+  "servedManifestSha256": "9755d1e98d22f689404bf1e1acc11433c1e4bf84bcbc4c27bd5ce2775fc15bfb",
+  "files": [
+    {
+      "path": "assets/final-02-auto-onboard-1280x720-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-05-wiring-1440x900-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-06-on-waits-off-correct-mentor-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-08-read-next-declare-hint-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-11-own-blocks-1280x720-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-12-dynamic-third-reading-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-15-code-first-visible-1280x720-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-16-old450-new-test-failure-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-17-own600-20of20-1280x720-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "assets/final-18-delivery100EC-1440x900-826e80d93cbd.jpg",
+      "matches": true
+    },
+    {
+      "path": "evidence/novice-03-compare-empty.png",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "matches": true
+    },
+    {
+      "path": "reader.css",
+      "matches": true
+    },
+    {
+      "path": "reader.js",
+      "matches": true
+    },
+    {
+      "path": "首单图文任务书.pdf",
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+import {test,expect} from '@playwright/test';
+import {restoreRecordedWorkspace} from './recorded-workspace.js';
+import {finishStory,read,answerScene} from './game-helpers.js';
+
+test('real own base work drives letters, own mapping, failure, current-code retest and one player receipt',async({page})=>{
+  await page.setViewportSize({width:1440,height:900});await restoreRecordedWorkspace(page,{beforeStoryChange:true});
+  await expect(page.getByRole('region',{name:'先查看这次结果'})).toContainText('26/26');await expect(page.locator('[data-story-scene="base"]')).toHaveCount(0);
+  await page.getByRole('button',{name:'看完结果，继续客户来信 →',exact:true}).click();
+  await expect(page.locator('[data-story-scene="base"]')).toBeVisible();expect((await read(page)).baseReady).toBe(true);
+  await finishStory(page);await expect(page.locator('[data-option-id="now-on"]')).toBeVisible();
+  await answerScene(page,'now-on');await answerScene(page,'lamp-off');
+  await page.locator('[data-change-node="comparison"]').click();await expect(page.locator('[data-scene-continue]')).toBeVisible();await page.locator('[data-scene-continue]').click();
+  await expect(page.getByRole('region',{name:'带着作品回客户桌前',exact:true})).toContainText('26 条采样符合');
+  await page.locator('[data-option-id="new-current-suite"]').click();await expect(page.locator('.eq-requirement-stage')).toHaveAttribute('data-stage-response','accepted');
+  await expect.poll(async()=>(await read(page)).stage).toBe('short-cpp');expect((await read(page)).requirementsScene.handoffPending).toBe(true);
+  await expect(page.locator('[data-story-scene="code"]')).toHaveCount(0);await page.locator('[data-scene-continue]').click();
+  await expect(page.locator('[data-story-scene="code"]')).toBeVisible();await finishStory(page);
+  await expect.poll(async()=>(await read(page)).practice.teachingId).toBe('change-delivery');
+  await expect(page.locator('aside.eq-learning-scene')).toContainText('(light < 450)');
+  await expect(page.locator('aside.eq-learning-scene')).toContainText('保留的基础积木');
+  const editorBox=await page.getByRole('textbox',{name:'当前简写 C++',exact:true}).boundingBox();expect(editorBox.y+editorBox.height).toBeLessThan(820);
+  await page.getByRole('button',{name:'运行变更客户测试',exact:true}).click();
+  await expect(page.getByRole('region',{name:'独立客户测试结果',exact:true})).toContainText('12/20');
+  const own=page.getByRole('textbox',{name:'当前简写 C++',exact:true});await own.fill((await own.inputValue()).replace('450','600'));
+  await page.getByRole('button',{name:'运行变更客户测试',exact:true}).click();await expect.poll(async()=>(await read(page)).codeReady).toBe(true);
+  await expect(page.locator('[data-story-scene="delivery"]')).toHaveCount(0);await expect(page.getByRole('region',{name:'先查看这次结果'})).toContainText('20/20');
+  const next=await page.getByRole('button',{name:'看完结果，继续软件交付 →',exact:true}).boundingBox();expect(next.y+next.height).toBeLessThan(820);
+  await page.screenshot({path:test.info().outputPath('changed-result-waits-before-delivery.png')});
+  for(const [width,height]of [[1024,768],[1280,720],[1440,900]]){
+    await page.setViewportSize({width,height});
+    const compactTabs=page.locator('.eq-game-code-results .eq-game-case-tabs');await compactTabs.scrollIntoViewIfNeeded();
+    for(let i=0;i<await compactTabs.locator('button').count();i++){
+      await compactTabs.locator('button').nth(i).click();
+      expect(await compactTabs.evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+      expect(await page.locator('.eq-game-code-results .eq-game-assertion-table').evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+    }
+    await page.screenshot({path:test.info().outputPath(`${width}-readable-code-results-no-horizontal-scroll.png`),animations:'disabled'});
+  }
+  await page.setViewportSize({width:3440,height:1157});
+  await expect.poll(async()=>(await page.locator('.eq-game-code-layout').boundingBox()).width).toBeLessThanOrEqual(1920);
+  expect((await page.locator('.eq-game-code-results').boundingBox()).width).toBeGreaterThanOrEqual(380);
+  const tabs=page.locator('.eq-game-code-results .eq-game-case-tabs');
+  expect(await tabs.evaluate(el=>el.scrollWidth<=el.clientWidth+1)).toBe(true);
+  await expect(page.getByRole('button',{name:'看完结果，继续软件交付 →',exact:true})).toBeInViewport();
+  await page.screenshot({path:test.info().outputPath('3440-readable-code-and-client-results.png'),animations:'disabled'});
+  await page.setViewportSize({width:1440,height:900});
+  await page.getByRole('button',{name:'打开完整客户测试台 ↗',exact:true}).click();await expect(page.getByRole('region',{name:'独立客户测试结果',exact:true})).toContainText('20/20');
+  await page.reload();await expect(page.locator('[data-story-scene="delivery"]')).toHaveCount(0);await expect(page.getByRole('region',{name:'先查看这次结果'})).toContainText('20/20');
+  await page.getByRole('button',{name:'看完结果，继续软件交付 →',exact:true}).click();await expect(page.locator('[data-story-scene="delivery"]')).toBeVisible();await finishStory(page);
+  await expect(page.getByRole('heading',{name:'首单软件演示已交付',exact:true})).toBeVisible();expect((await read(page)).income).toBe(100);
+  await page.screenshot({path:test.info().outputPath('story-player-receipt.png'),animations:'disabled'});await page.reload();
+  await expect(page.getByRole('heading',{name:'首单软件演示已交付',exact:true})).toBeVisible();expect((await read(page)).income).toBe(100);
+  await page.locator('[data-game-tool="blocks"]').click();await page.getByRole('button',{name:'编辑积木新版本（保留短代码）',exact:true}).click();
+  await page.getByRole('button',{name:'点选移动 / 插入',exact:true}).click();
+  const mover=page.getByRole('combobox',{name:'选择要移动或插入的积木',exact:true}),target=page.getByRole('combobox',{name:'准备接入的精确槽位',exact:true});
+  await mover.selectOption(await mover.locator('optgroup[label="工作区已有积木"] option').filter({hasText:/^如果 ·/}).first().getAttribute('value'));
+  await target.selectOption(await target.locator('option').filter({hasText:/^等待 1 · 后面/}).getAttribute('value'));
+  await page.getByRole('button',{name:'2 预览连接',exact:true}).click();await page.getByRole('button',{name:'确认连接',exact:true}).click();
+  await page.getByRole('button',{name:'撤销一步',exact:true}).click();
+  await page.locator('.eq-practice-repeat-again summary').click();await page.getByRole('button',{name:'重新运行暗 → 亮 → 暗（当前作品）',exact:true}).click();
+  await page.getByRole('button',{name:'运行当前基础客户测试',exact:true}).click();
+  await expect.poll(async()=>!(await read(page)).pending).toBe(true);await page.locator('[data-game-tool="code"]').click();
+  await expect(page.getByRole('button',{name:'运行变更客户测试',exact:true})).toBeDisabled();
+  await expect(page.getByRole('button',{name:'运行当前变更客户测试',exact:true})).toBeDisabled();
+  await expect(page.locator('.eq-code-base-refresh')).toContainText('积木逻辑与原来相同');
+  await page.getByRole('button',{name:'关联这次基础回信，保留当前代码',exact:true}).click();
+  await expect(own).toHaveValue(/light < 600/);await page.getByRole('button',{name:'运行变更客户测试',exact:true}).click();
+  await expect.poll(async()=>(await read(page)).codeReady).toBe(true);expect((await read(page)).income).toBe(100);
+  await expect(page.locator('.eq-game-code-results')).toContainText('20/20');
+  await page.screenshot({path:test.info().outputPath('refreshed-base-keeps-600-and-new-current-proof.png'),animations:'disabled'});
+});

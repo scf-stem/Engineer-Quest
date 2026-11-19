@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-11",
+  "scope": "UI binding to E durable workspace; teaching policies explicit test doubles only",
+  "dependency": {
+    "original": "7a26fcd",
+    "localReplay": "022681e",
+    "localControllerModified": false
+  },
+  "unitTests": {
+    "passed": 97,
+    "failed": 0
+  },
+  "defaultEntry": {
+    "development": {
+      "passed": 5,
+      "failed": 0
+    },
+    "productionPreview": {
+      "passed": 5,
+      "failed": 0
+    },
+    "oldCardCannotAdvance": true,
+    "productionPoliciesNotInjectedInThisBranch": true
+  },
+  "bindingHarness": {
+    "development": {
+      "passed": 5,
+      "failed": 0
+    },
+    "productionPreview": {
+      "passed": 5,
+      "failed": 0
+    },
+    "mobileRepeatedPasses": 3,
+    "createContextInjected": true,
+    "realIndexedDB": true,
+    "realSoftwareExecutionAndCustomerTests": true,
+    "teachingPolicies": "tests/integration/local-workspace.fixture.js; test double ONLY",
+    "restoredSameLearnerAndAttempt": true,
+    "restoredReports": [
+      true,
+      false,
+      true
+    ],
+    "restoredExactSource600": true,
+    "readOnlyBlocksPreserveEvidence": true,
+    "incomeRetained": 100,
+    "duplicateIncomeEvents": 1,
+    "restartPreservesHistoryAndIncome": true,
+    "resumeOriginalAttempt": true,
+    "saveFailureBufferedTextBackupAndRetry": true,
+    "crossTabConflictAndExplicitReload": true,
+    "completeExampleButtonHiddenInMain": true
+  },
+  "builds": [
+    "production build passed",
+    "separate test build passed to /tmp/eq-ui-workspace-build",
+    "existing Blockly bundle size warning remains"
+  ],
+  "standardGameClient": {
+    "passed": true,
+    "errors": [],
+    "state": "game-client/state-0.json",
+    "screenshot": "game-client/shot-0.png"
+  },
+  "notClaimed": [
+    "formal D/A teaching validation",
+    "real student trial",
+    "NPC real component integrated in this branch",
+    "formal full manual integrated",
+    "real accounts or cloud sync",
+    "Arduino target compile/upload",
+    "physical acceptance"
+  ],
+  "pushed": false,
+  "deployed": false
+}

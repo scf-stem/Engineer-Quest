@@ -1,0 +1,228 @@
+{
+  "format": "eq.integration-evidence/1",
+  "report": "../../主线第二次独立体验_2026-11-12.md",
+  "reportSha256": "35af706c445e9e8a6805a7d3d6cd8ed5b1c87ca5b139c7bde0a5bd1e285e61c4",
+  "files": [
+    {
+      "path": "01-candidate-75aae9e7c42e.jpg",
+      "bytes": 99337,
+      "sha256": "5dc2e0cf6d4a31a21586363ef532551d2fda841686b71d044937304858789cb3",
+      "width": 3440,
+      "height": 1157,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "02-resume-same-line-1280x720-75aae9e7c42e.jpg",
+      "bytes": 100757,
+      "sha256": "0d6b033999cee5cdd2f94e9bdb4a1912ccfee86210ae28d1c8b46332e9f2059a",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "03-locked-tool-position-75aae9e7c42e.jpg",
+      "bytes": 67492,
+      "sha256": "b442dee65b14b6d3976aa496e2615f957b02c33f534476b9ab9f1c54dec16897",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "04-wiring-1440x900-75aae9e7c42e.jpg",
+      "bytes": 98533,
+      "sha256": "08864623144fd638a0463ba043ceaf387a2c19bcd342836f501f43f659fdedc9",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "05-after-on-still-needs-off-hint-75aae9e7c42e.jpg",
+      "bytes": 95909,
+      "sha256": "5befc347719d0e085bf4604b4c32a187f2a6ce25f0eccba05146bc45885a1c6f",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "06-read-correct-next-block-hint-75aae9e7c42e.jpg",
+      "bytes": 103518,
+      "sha256": "00bef89d6b58d548509b992705211b1826b3eda15725c194554eb01a0484ebfa",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "07-revisit-wire-no-replay-75aae9e7c42e.jpg",
+      "bytes": 104038,
+      "sha256": "b44ee675fe2b8c52453952cee500dd3ec0c989affe17b895c92917868b31993c",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-75aae9e7c42e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3122,
+      "sha256": "6edc4fc112f1e167e0a847056e63513fe521dc3a8271d36b544baee7a0f5fce5"
+    },
+    {
+      "path": "final-01-candidate-826e80d93cbd.jpg",
+      "bytes": 96929,
+      "sha256": "0912475b0923bbc35f55b00f89da364db29d1be646eeac34ffa672ac25e5b904",
+      "width": 3440,
+      "height": 1101,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-02-auto-onboard-1280x720-826e80d93cbd.jpg",
+      "bytes": 99410,
+      "sha256": "8b352b59c911117857638c5b8d1f653a27290d1737cf0ab31ac10ce0ec70f299",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-03-resumed-same-line-826e80d93cbd.jpg",
+      "bytes": 100615,
+      "sha256": "b71f4a545f660941f009257a148540891d654fa9b8eb71a250cedd6ef342ccb3",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-04-locked-tool-retains-view-826e80d93cbd.jpg",
+      "bytes": 67482,
+      "sha256": "ed22a61e9ebe9ae69d56d37d589ff3d0237c33502d270d38fb26c8ea72769e9c",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-05-wiring-1440x900-826e80d93cbd.jpg",
+      "bytes": 99945,
+      "sha256": "5bc348cebf158964355aa271fb81a6992005d9e2ec3fc593d01a3bc2c5b0ae30",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-06-on-waits-off-correct-mentor-826e80d93cbd.jpg",
+      "bytes": 95840,
+      "sha256": "5d8149ca38500b832e3013149ebd08d051098f0ef5cc7d9d97f5fbe5010df7f7",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-07-output-only-manual-826e80d93cbd.jpg",
+      "bytes": 61241,
+      "sha256": "df87b7394d540ca51d9f3a79e04716835d80de6380d85ba6f816fc015f7a71ba",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-08-read-next-declare-hint-826e80d93cbd.jpg",
+      "bytes": 103449,
+      "sha256": "17d16744597184e1c265cb79c3431c45f9a0dec92dbc0c0cc337f994973d52ec",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-09-revisit-wiring-no-replay-826e80d93cbd.jpg",
+      "bytes": 104252,
+      "sha256": "cb56527bfe8b426595a3ce68ad6d1d963ca697a208d152617566cf06844f5894",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-10-loop-dialogue-before-exercise-826e80d93cbd.jpg",
+      "bytes": 119967,
+      "sha256": "a5aa0ec84f65f4f1c8009eaa0e7f1dd21fc5b2a2a1ef8792b68fd464ecac2cd6",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-11-own-blocks-1280x720-826e80d93cbd.jpg",
+      "bytes": 105588,
+      "sha256": "435f852f70f6c6ccb07220405de3f80772d90ac4ae2b0c0e363d7f18bc429e7a",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-12-dynamic-third-reading-826e80d93cbd.jpg",
+      "bytes": 104334,
+      "sha256": "22a0a5dab746cd9537f8c58dd2defc8bf71acee558d529879476a161a9f4b11b",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-13-base26of26-826e80d93cbd.jpg",
+      "bytes": 68667,
+      "sha256": "477a57dcc358968a2d799531a629f4d83187d548c5ae8c3b27e80099f99bae2c",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-14-own-comparison-mapping-826e80d93cbd.jpg",
+      "bytes": 90434,
+      "sha256": "89a6bbca8a9cbc83e0c5ac043715fcdc0f706ae4d26949e3116e4741a4d1c074",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-15-code-first-visible-1280x720-826e80d93cbd.jpg",
+      "bytes": 99772,
+      "sha256": "a59b6c0d6afa66116498a2be9cff51aad1f28491a18eae933648682352df59c7",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-16-old450-new-test-failure-826e80d93cbd.jpg",
+      "bytes": 98213,
+      "sha256": "dbc3eec16cc436f7f1f3fa61da933ec139da95627e07626ce8ce8040345eb723",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-17-own600-20of20-1280x720-826e80d93cbd.jpg",
+      "bytes": 99479,
+      "sha256": "a9382b59559b57b3c6d1f6ba43277f4f968e36cffeca3f4f88374f14619ef21b",
+      "width": 1280,
+      "height": 720,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-18-delivery100EC-1440x900-826e80d93cbd.jpg",
+      "bytes": 99053,
+      "sha256": "792534e542849c2ca9050a38cc2d38417bec30e1103498fec41e37bd2b6caf7f",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-19-note-immediate-refresh-restored-826e80d93cbd.jpg",
+      "bytes": 108914,
+      "sha256": "d318e1e53abe36bc5a18b9de46645a8b24278b67947cf2d30f25ce8cd43e57aa",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    },
+    {
+      "path": "final-20-completed-viewport-reset-826e80d93cbd.jpg",
+      "bytes": 104977,
+      "sha256": "fb7a9dfceaeaca2f007c5172bf6deec9ddeb371ab659eb84cda2079399aa5ea5",
+      "width": 1440,
+      "height": 900,
+      "candidate": "dialogue-826e80d93cbd"
+    }
+  ]
+}

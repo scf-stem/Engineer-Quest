@@ -1,0 +1,419 @@
+{
+  "date": "2026-11-12",
+  "method": "全部应用动作仅CUA；只读取可见UI/DOM定位；报告和截图文件操作",
+  "candidates": [
+    {
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "source_commit": "bcb2ae3c696dc88d14e538b459679f33da5be413",
+      "content_sha256": "e04531f1d59cf26ac2b98e4e4a759c5e3ace4391eccc6533a4f70f8523527bd4",
+      "identity": "蒲公英新手"
+    },
+    {
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "source_commit": "ceeb1817170db40e0de355d5a76a5d4d3c82b830",
+      "content_sha256": "b162dbaedb5ab2e57cc59bac90529e941ba74a32155918525dd1b48d9eebf0ff",
+      "identity": "青禾复验生"
+    }
+  ],
+  "screenshot_count": 44,
+  "screenshots": [
+    {
+      "file": "e04531f1d59c-00-candidate-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 41583,
+      "sha256": "1932302eab98d2b0890e905484bff8cd4dfa9391a8dfd10ccff4f4b3fe757739"
+    },
+    {
+      "file": "e04531f1d59c-01-G0-observe-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99745,
+      "sha256": "897264e173eedf4a3d62b68f761cad8cf4eca1dbdc57893269f8310534cd8ebf"
+    },
+    {
+      "file": "e04531f1d59c-02-G0-wrong-note-feedback-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 87347,
+      "sha256": "d8e2eebb8aa93f5509d9731c39048ac555e317e40f5fa07f6a1aac1c15841f75"
+    },
+    {
+      "file": "e04531f1d59c-03-graphic-G0-entry-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 110427,
+      "sha256": "7624bcdf85c02af31b7364397ee09f75d4bbcc2bffd51596e8fcb2a0a3a8a170"
+    },
+    {
+      "file": "e04531f1d59c-04-G1-build-1024x768.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1024,
+      "height": 768,
+      "bytes": 101215,
+      "sha256": "3bef830422c2047784366e618bc67c38a529f4e3bf944d83a6389b449fb7ea21"
+    },
+    {
+      "file": "e04531f1d59c-05-G2-wide-1440x900.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 132051,
+      "sha256": "11bd4c795db01cd0d411e4fe5d98833edececb9070b8fcf3430db782da9fc774"
+    },
+    {
+      "file": "e04531f1d59c-06-G2-drag-miss-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117394,
+      "sha256": "e3108a4d0ce79df4f82ffb2fbe0a032da1e54b8eaa6f3b8912bfd7e8a7b21391"
+    },
+    {
+      "file": "e04531f1d59c-07-G2-existing-wait-rejected-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 118010,
+      "sha256": "eb99c6b29554e74c294cd8188efb535bce4a8261cab7ac7effea92f2e8390efc"
+    },
+    {
+      "file": "e04531f1d59c-08-G2-paused-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 55318,
+      "sha256": "785f02de279926b8c27456f46b430ecfb3e8ff9331c9bc4d86b61a5804023fe0"
+    },
+    {
+      "file": "e04531f1d59c-09-G2-restored-work-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117693,
+      "sha256": "ef76b7dc09d15f32f13345969184d1458cf1489a6be8f13b736968176dc407a0"
+    },
+    {
+      "file": "e04531f1d59c-10-G2-replay-end-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 123769,
+      "sha256": "2a812d87acdfa473df5f0a3b38ad366012ecf66d3d0d3ba47c62e9aa006ea634"
+    },
+    {
+      "file": "e04531f1d59c-11-G3-local-help-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 79958,
+      "sha256": "2e8cf118c21705c23ae0454e6d944f8190d05b237d63b6cd22b1ab06bac48942"
+    },
+    {
+      "file": "e04531f1d59c-12-G3-environment820-sample170-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 115383,
+      "sha256": "5336f764106565c51512c648b19fd31e9a65440aaa1967c791a0f01847477e1c"
+    },
+    {
+      "file": "e04531f1d59c-13-G3-complete333-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117204,
+      "sha256": "04a00b1ea9e917a7d3598c897a38ccbd3cc1825e138c314d58ce7b8daec03525"
+    },
+    {
+      "file": "e04531f1d59c-14-legacy-handoff-local-help-1280x720.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 61222,
+      "sha256": "d3e303a58f5845fa429789e0ec42dda15ae3c38f8b25f5c38a49108f4df7bc09"
+    },
+    {
+      "file": "e04531f1d59c-15-legacy-handoff-paused-default.jpg",
+      "candidate": "dialogue-e04531f1d59c",
+      "url": "http://127.0.0.1:5232/",
+      "width": 3394,
+      "height": 1195,
+      "bytes": 158947,
+      "sha256": "2212e6967783684f6e83341210bce76104a880289f9fcf40c6d55b13d155b33d"
+    },
+    {
+      "file": "b162dbaedb5a-00-candidate-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 41676,
+      "sha256": "babc98bb08cce48c51a73b3a0125eb8e1b9f3ee2f847348e3d75c8dd3af794d0"
+    },
+    {
+      "file": "b162dbaedb5a-01-G0-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 110478,
+      "sha256": "343cc3f5c49680b4b33087b81dd480a5c981655366ed3a36ea5c5ce308afc495"
+    },
+    {
+      "file": "b162dbaedb5a-02-G1-build-1024x768.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1024,
+      "height": 768,
+      "bytes": 101008,
+      "sha256": "d1837982a93c2dfb6e61a5c48195eecde96c457cd092b2802b9eabe8df22422f"
+    },
+    {
+      "file": "b162dbaedb5a-03-G2-wide-1440x900.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1440,
+      "height": 900,
+      "bytes": 131027,
+      "sha256": "88dfb148127da0c20e4c30dc7e5f2ad60a8f907b9fa18de959e756b5d347610c"
+    },
+    {
+      "file": "b162dbaedb5a-04-G2-clean-entry-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 114279,
+      "sha256": "b1c7da843a4bb42e56a61c33511357d68186a740493080a32a8fd96ff07902fc"
+    },
+    {
+      "file": "b162dbaedb5a-05-G2-wait-first-feedback-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 115472,
+      "sha256": "b9eef50f3ada0153e6054ed2e5b0a26f450a3d31cc03d8b41572bffe8059c59a"
+    },
+    {
+      "file": "b162dbaedb5a-06-G2-existing-wait-move-fixed-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 116313,
+      "sha256": "74e43cfb9b9d207bbd9af83fdcecada4d9a65f455d2e3509244e4d1b50663cae"
+    },
+    {
+      "file": "b162dbaedb5a-07-G2-ultrawide-3440x1157.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 3440,
+      "height": 1157,
+      "bytes": 221532,
+      "sha256": "21598938a1e6d393e2495e2c93f4b50189f4968fabaf03345d33d2e340022e29"
+    },
+    {
+      "file": "b162dbaedb5a-08-G2-restored300-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 124531,
+      "sha256": "b22542a16b617ad027d35b9982e151023a669b6632a1f5212e9334e7fe9aab25"
+    },
+    {
+      "file": "b162dbaedb5a-09-G2-independent-reordered-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 120860,
+      "sha256": "348e81cb3650f93d5db55708b320b64a161823305ce4e332b63ce657e7c6377b"
+    },
+    {
+      "file": "b162dbaedb5a-10-G3-environment820-sample170-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117181,
+      "sha256": "bf3237261f85713aa6f6892acd5f7ed2b0780347cf5090933cdf4e7a0b1abe27"
+    },
+    {
+      "file": "b162dbaedb5a-11-G3-complete412-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117281,
+      "sha256": "f7ec1c5ec53f9c97537730826f005f39c606e7f594480b824b9c2f9641db3ca6"
+    },
+    {
+      "file": "b162dbaedb5a-12-legacy-tools-3440x1157.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 3440,
+      "height": 1157,
+      "bytes": 148295,
+      "sha256": "a44254f7e98114565e2c38bd6819736f9d92925ad06e82d501ebed02c2e82197"
+    },
+    {
+      "file": "b162dbaedb5a-13-legacy-read-auto-dialogue-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 96365,
+      "sha256": "0f2828424f62515dc0ca92f49b65f174f559bbe43ef0e0fbff3629a0c86ce14b"
+    },
+    {
+      "file": "b162dbaedb5a-14-legacy-missing-off-feedback-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 107168,
+      "sha256": "1235d59c834f6d93328f97934e775274daac468205e3ba0ab58cad5371b6705f"
+    },
+    {
+      "file": "b162dbaedb5a-15-legacy-delay-before-if-failure-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 104707,
+      "sha256": "24aaaad40abb9203ee96eca1b05ea7cf59c8ccd8642765de9e43231c95f2b905"
+    },
+    {
+      "file": "b162dbaedb5a-16-legacy-reordered-wait-last-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 110235,
+      "sha256": "aa576623a167d049da5e8f110b3a2f332fb5fe09ecbb88a740312c45f6be5131"
+    },
+    {
+      "file": "b162dbaedb5a-17-basic-test-auto-dialogue-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99538,
+      "sha256": "f56c61895cadb464d66b5d05e0fe19c72cc8c6d56feeaa5ae7aa351e2a76154f"
+    },
+    {
+      "file": "b162dbaedb5a-18-basic-26-samples-and-change-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99340,
+      "sha256": "b32bb888bcc0ab40b8308d896756cdfbf9e35969df71282b66e5956329f948e1"
+    },
+    {
+      "file": "b162dbaedb5a-19-change-failure12of20-sidebar-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 92694,
+      "sha256": "17212b1e0b326a882435050dbd3bc1a71fa1e768724770a852491307c415ff4b"
+    },
+    {
+      "file": "b162dbaedb5a-20-change-customer-failure12of20-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 67076,
+      "sha256": "2510821f5ed3a1ba908744c09ea11c8b35851b58c6afb74ee059bd11b46c543d"
+    },
+    {
+      "file": "b162dbaedb5a-21-delivered100EC-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 76569,
+      "sha256": "137428f029565a1b39b67943210d1bc920126b78df662bc34b03d8aa1058c260"
+    },
+    {
+      "file": "b162dbaedb5a-22-change-pass20of20-boundary-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 68202,
+      "sha256": "9f04ffd9e532939e6fb26cdc30f363da99679bd129110871804a1792773a553d"
+    },
+    {
+      "file": "b162dbaedb5a-23-history-failure-retained-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 70422,
+      "sha256": "be995aaabd2737d99f0b91a4a0fc6af89e75623b03009931e577da8bddc8a77f"
+    },
+    {
+      "file": "b162dbaedb5a-24-basic-history26of26-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 67206,
+      "sha256": "950e643f41e0d921fc6d124aa09465aeeba465f981a403245b09733181ad31eb"
+    },
+    {
+      "file": "b162dbaedb5a-25-note-after-refresh-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 88164,
+      "sha256": "8393cabb4a264eebb201033d5afe5c11eb38ba7c3a64733d89e00cfb7fa31459"
+    },
+    {
+      "file": "b162dbaedb5a-26-original-blocks-retained-1280x720.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 1280,
+      "height": 720,
+      "bytes": 103793,
+      "sha256": "4a9ff2ea24f9c31e5a08c38fc906eb1aa0c8977de5f9c76127c7f73725e6d526"
+    },
+    {
+      "file": "b162dbaedb5a-27-final-delivered-note-restored-default.jpg",
+      "candidate": "dialogue-b162dbaedb5a",
+      "url": "http://127.0.0.1:5234/",
+      "width": 3394,
+      "height": 1147,
+      "bytes": 162369,
+      "sha256": "0c5616a53a3276ddefa22e9da6b23f28d5dec005b5bfc1e58b82bfc08b0d4a11"
+    }
+  ]
+}

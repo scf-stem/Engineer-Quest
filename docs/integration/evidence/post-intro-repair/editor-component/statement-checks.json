@@ -1,0 +1,199 @@
+{
+  "checks": [
+    "initialization is never reported as a student edit",
+    "LOOP DO0 ELSE and both insertion boundaries are discoverable",
+    "selected statement target has a visible native exact highlight",
+    "native drag displays a real Blockly insertion marker",
+    "native if insertion changes read wait if to read if wait",
+    "controlled draft echo preserves the same workspace",
+    "native output attaches to the DO0 statement input",
+    "native output attaches to ELSE and preserves upper branch",
+    "native branch undo restores the loose output and leaves the other branch",
+    "point selection attaches the same existing output to ELSE",
+    "single-statement move can target its original next chain",
+    "single move retains both branch trees",
+    "point selection repairs read wait if without losing wait100",
+    "one real undo restores the entire previous statement graph",
+    "undo reports origin edit for the existing host save contract",
+    "before target also inserts between read and wait",
+    "a genuine self cycle through a branch is rejected",
+    "value-to-statement mistake is explained without changing graph",
+    "occupied value preview preserves the original 100",
+    "replacement cancel leaves the exact serialized work untouched",
+    "replacement retains the old value loose and uses the chosen new block",
+    "native grouped undo restores replaced value and removes new block",
+    "external restore preserves exact graph and creates no student edit",
+    "external restore keeps the existing workspace object",
+    "keyboard undo also synchronizes the native graph",
+    "read-only view toggles preserve workspace and same-session native undo",
+    "native refresh immediately after draft echo restores latest field edit",
+    "refresh restores the repaired statement sequence",
+    "3440 tools stay grouped near the editor instead of spanning the screen",
+    "3440 placement controls remain visible with the workspace",
+    "opening the tray keeps the program body clear of its overlay at 3440",
+    "opening the tray keeps the program body clear of its overlay at 1280",
+    "1280 has no horizontal document overflow",
+    "no browser console or page errors"
+  ],
+  "errors": [],
+  "state": {
+    "mode": "synthetic-statement-harness",
+    "workspace": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqp_program",
+            "id": "root",
+            "x": 30,
+            "y": 25,
+            "inputs": {
+              "VARIABLES": {
+                "block": {
+                  "type": "eqp_declare",
+                  "id": "declaration",
+                  "fields": {
+                    "NAME": "light",
+                    "TYPE": "int",
+                    "CONSTANT": "FALSE"
+                  },
+                  "inputs": {
+                    "INITIAL": {
+                      "block": {
+                        "type": "math_number",
+                        "id": "initial",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LOOP": {
+                "block": {
+                  "type": "eqp_set",
+                  "id": "read",
+                  "fields": {
+                    "NAME": "light"
+                  },
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "type": "eqp_read_analog",
+                        "id": "reader",
+                        "fields": {
+                          "PORT": "LIGHT"
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "controls_if",
+                      "id": "if",
+                      "extraState": {
+                        "hasElse": true
+                      },
+                      "inputs": {
+                        "IF0": {
+                          "block": {
+                            "type": "logic_compare",
+                            "id": "comparison",
+                            "fields": {
+                              "OP": "LT"
+                            },
+                            "inputs": {
+                              "A": {
+                                "block": {
+                                  "type": "eqp_get",
+                                  "id": "light",
+                                  "fields": {
+                                    "NAME": "light"
+                                  }
+                                }
+                              },
+                              "B": {
+                                "block": {
+                                  "type": "math_number",
+                                  "id": "threshold",
+                                  "fields": {
+                                    "NUM": 451
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "DO0": {
+                          "block": {
+                            "type": "eqp_write",
+                            "id": "on",
+                            "fields": {
+                              "PORT": "LAMP"
+                            },
+                            "inputs": {
+                              "VALUE": {
+                                "block": {
+                                  "type": "logic_boolean",
+                                  "id": "on-bool",
+                                  "fields": {
+                                    "BOOL": "TRUE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "ELSE": {
+                          "block": {
+                            "type": "eqp_write",
+                            "id": "off",
+                            "fields": {
+                              "PORT": "LAMP"
+                            },
+                            "inputs": {
+                              "VALUE": {
+                                "block": {
+                                  "type": "logic_boolean",
+                                  "id": "off-bool",
+                                  "fields": {
+                                    "BOOL": "FALSE"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "eqp_wait",
+                          "id": "wait",
+                          "inputs": {
+                            "MS": {
+                              "block": {
+                                "type": "math_number",
+                                "id": "duration",
+                                "fields": {
+                                  "NUM": 100
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "feedback": "抓住文字旁实心边缘，避开齿轮和字段；对准黄色口，看到插入预览再松手。也可点选移动 / 插入。",
+    "edits": 0,
+    "coordinateSystem": "CSS px; origin top-left, x right, y down"
+  }
+}

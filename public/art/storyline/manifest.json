@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "lin-welcome-v1.webp",
+  "reference": "public/art/npc-tutorial/lin-mentor-v2.webp",
+  "rawFile": "generated_images/exec-689c7792-4eeb-421d-b775-41df6ef1fd66.png",
+  "alphaPreserved": true,
+  "sha256": "2691b052a495aa6f6946545c16b1bcf351b5cd2db5aa5f6dc4c2347eb46d5a8e",
+  "prompt": "Use case: identity-preserve. Transparent full-body visual-novel mentor sprite for Engineer Quest. Preserve the referenced Lin mentor: same East Asian man, black hair, rectangular glasses, navy work jacket with teal piping, grey shirt, lanyard. Welcoming pose with one open hand and a closed notebook, gentle smile facing slightly left. Painterly semi-realistic original game character, cool rim light and warm soft face lighting for the night engineering studio. Entire hair, hands and feet with transparent margins; clean alpha edges, no floor/background/color fragments/text/logos/watermark/UI. This is a pose variant, not a new person.",
+  "scope": "welcoming illustration only; no circuit or runtime state baked into art"
+}

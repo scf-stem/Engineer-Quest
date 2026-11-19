@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-11",
+  "status": "candidate_for_independent_experience_recheck",
+  "usabilityApproval": false,
+  "build": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-9cce64e9e15b",
+    "sourceDigest": "sha256:9cce64e9e15b89885326992865f3b727c055eebc10eabfa73666ea9cf10ea816",
+    "sourceRevision": "4557fb1de5ac67573734d4e04e22a293bf583035",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "unit": {
+    "passed": 166,
+    "failed": 0
+  },
+  "productionBrowser": {
+    "passed": 12,
+    "failed": 0,
+    "currentRoot": 11,
+    "legacy": 1
+  },
+  "storageUI": {
+    "passed": 6,
+    "failed": 0,
+    "teachingPolicy": "explicit fixture only; actual executor and IndexedDB",
+    "freshBuildBeforePreview": true
+  },
+  "immediateNoteReload": "actual native input/reload plus async digest deliberately stalled in browser regression",
+  "nativeScope": [
+    "actual prior own work current-manual base/re-preserve/mapping/change/delivery, ten reports and one100EC",
+    "new attempt3: wrong/ retry/six scenes, physical scene actions, six virtual wires, guided LED, actual root/declaration drag; incomplete lamp program",
+    "final frozen candidate root independent placement and actual declaration snap, structure feedback, original income/note restored"
+  ],
+  "nativeScreenshotBuilds": {
+    "01-08": "dialogue-2ab0d339a03a intermediate before final root-prompt repair",
+    "09-12": "dialogue-9cce64e9e15b final source"
+  },
+  "currentArchive": {
+    "attempts": 3,
+    "testResults": [
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "currentManualMatches": true,
+    "income": 100,
+    "generatedSourceMatchesDownload": true
+  },
+  "standardGameClient": {
+    "ran": true,
+    "page": "actual root frozen candidate version dialog",
+    "errorsFiles": []
+  },
+  "pending": [
+    "independent complete blank latest candidate game/teaching experience",
+    "whether finite scene responses still feel like a quiz",
+    "real novice time and transfer",
+    "complex 720px/mobile Blockly construction",
+    "physical compilation/upload/teacher inspection",
+    "accounts/online AI/shop/multi-user rankings/teacher backend"
+  ],
+  "newDependencies": [],
+  "pushed": false,
+  "deployed": false
+}

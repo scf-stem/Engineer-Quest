@@ -1,0 +1,35 @@
+{
+  "id": "lin-mentor-v2",
+  "created": "2026-11-11",
+  "character": "林工 · 硬件同事 / 新人带教",
+  "source": "Built-in image_gen; generated original for this project",
+  "model": "not exposed by tool; not verified as Image 2",
+  "rights": "Original AI-generated project asset; no existing character references supplied",
+  "expressions": [
+    "calm attentive smile; reused for neutral mentoring, warning tone conveyed by text"
+  ],
+  "sourceFile": "lin-mentor-v2.png",
+  "runtimeFile": "lin-mentor-v2.webp",
+  "files": [
+    {
+      "path": "public/art/npc-tutorial/lin-mentor-v2.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 2054917,
+      "sha256": "ad72de663f1d07d11b6d6c70313f48f4bcda77fa0d56a27cbe5650dea07dec46",
+      "mode": "RGBA"
+    },
+    {
+      "path": "public/art/npc-tutorial/lin-mentor-v2.webp",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 161776,
+      "sha256": "30b585bae3c0d9ec5a7ef56b445126cdf3fa57d423aab8061876958d54f10c07",
+      "mode": "RGBA"
+    }
+  ]
+}

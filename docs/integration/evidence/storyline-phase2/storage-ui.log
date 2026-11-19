@@ -1,0 +1,27 @@
+[WebServer] (node:78050) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:78071) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] Module "src/integration/learning-policy-adapter.js" tried to import "content/learning/auto-lamp-progression.json" with no attributes, but it was already imported elsewhere with "type": "json" attributes. Please ensure that import attributes for the same module are always consistent.
+[WebServer] 
+[WebServer] (!) Some chunks are larger than 500 kB after minification. Consider:
+[WebServer] - Using dynamic import() to code-split the application
+[WebServer] - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+[WebServer] - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[WebServer] (node:78076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:78097) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:78099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/ui/workspace.spec.js:5:1 › controller-bound shell restores identity, three real reports, source and idempotent income (3.6s)
+  ✓  2 tests/ui/workspace.spec.js:10:1 › restart preserves historical attempts and income, resume retains original learner (2.5s)
+  ✓  3 tests/ui/workspace.spec.js:14:1 › save failure keeps exact typed input, exports it and retries before restoring readiness (2.4s)
+  ✓  4 tests/ui/workspace.spec.js:18:1 › another browser page cannot silently overwrite and explicit reread resolves conflict (2.4s)
+  ✓  5 tests/ui/workspace.spec.js:22:1 › mobile bound work keeps inputs when switching tools and closing manual (2.1s)
+  ✓  6 tests/ui/workspace.spec.js:26:1 › receipt notes use the same recoverable input buffer and do not invalidate delivery (2.6s)
+
+  6 passed (19.1s)

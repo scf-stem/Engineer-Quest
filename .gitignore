@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+test-results/
+playwright-report/
+
+.worktrees/
+.DS_Store
+
+# Raw image-generation sources; the reviewed runtime asset is in public/art.
+generated_images/
+
+test-results-ui-workspace/

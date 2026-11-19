@@ -1,0 +1,23 @@
+.eq-ui {
+  --eq-paper: #f4f0e5;
+  --eq-surface: #fffdf7;
+  --eq-ink: #233e36;
+  --eq-muted: #646e60;
+  --eq-line: #d9dbcb;
+  --eq-green: #244b3d;
+  --eq-green-soft: #e7eddf;
+  --eq-coral: #b84b33;
+  --eq-coral-soft: #f9e4d8;
+  --eq-yellow: #f0d489;
+  --eq-shadow: 0 5px 0 #233e3609;
+  --eq-radius: 14px;
+  --eq-font: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --eq-mono: 'SFMono-Regular', Consolas, monospace;
+  color: var(--eq-ink);
+  background: var(--eq-paper);
+  font-family: var(--eq-font);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  isolation: isolate;
+}

@@ -1,0 +1,9 @@
+{
+  "format": "eq.candidate-build/1",
+  "id": "dialogue-75aae9e7c42e",
+  "sourceDigest": "sha256:75aae9e7c42e1d7202bb8e7b649cc6669e884a05a55998002364f600f01ce54f",
+  "sourceRevision": "2c33328d3f7765caf621dafac84ee8d6c36a8dfd",
+  "sourceDirty": false,
+  "mode": "frozen-candidate",
+  "scope": "src/content/public, bundled full manual, root entries and build configuration"
+}

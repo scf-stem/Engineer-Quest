@@ -1,0 +1,105 @@
+{
+  "scope": "Experience refinement native operation and labelled production regressions; synthetic identity only",
+  "files": [
+    {
+      "name": "01-player-receipt.png",
+      "bytes": 71472,
+      "sha256": "7e58b51764d528df3b965a9d354ee864cd5a2e33dfd6249948bef72c01f7ea60"
+    },
+    {
+      "name": "02-same-screen-bright.png",
+      "bytes": 88745,
+      "sha256": "415f76f3b7dffea2d873a082788f6e9d29c5958d84153b00a6098a7b6e5fbe1a"
+    },
+    {
+      "name": "03-edit-keeps-position.png",
+      "bytes": 105796,
+      "sha256": "782f78afb569ea1633a2b811f090374e5c4b508eebe9eff70bf238e264d7ae44"
+    },
+    {
+      "name": "04-customer-failure-retained.png",
+      "bytes": 102048,
+      "sha256": "88471784e982d174d1bb08d56f0316e1f631b9534377389975055a034c3e329d"
+    },
+    {
+      "name": "05-in-place-mentor.png",
+      "bytes": 96644,
+      "sha256": "bba035bcdafa43ab7274e64fc98e17552e6640415c4938adc43ff97fd5059169"
+    },
+    {
+      "name": "06-correct-manual-section.png",
+      "bytes": 96115,
+      "sha256": "757114b164809f31a72b094010f1376b6b835cc9cc4584ac96ce1a0029b62d6d"
+    },
+    {
+      "name": "07-final-player-receipt.png",
+      "bytes": 70358,
+      "sha256": "b15fe873d3d9f3761e24962e59b557199d1cdef3aea61eacc315820eb9fbe913"
+    },
+    {
+      "name": "08-current-manual-restored.png",
+      "bytes": 72444,
+      "sha256": "516f660a77e9897f23cd60a6b495f2b45a259b75d02afd1bacbf273e42f782c7"
+    },
+    {
+      "name": "client/shot-0.png",
+      "bytes": 877808,
+      "sha256": "fe865799d0e230416fd8996040cf3e702e012a1d70990456a67290797f765119"
+    },
+    {
+      "name": "client/state-0.json",
+      "bytes": 359,
+      "sha256": "8a4bee791b0c838157d374d7ae8b5fb93f5ee08b717e36801574d8bf328c1bae"
+    },
+    {
+      "name": "local-backup.json.gz",
+      "bytes": 132272,
+      "sha256": "7e6599952d0caffeda792ce0b3992ebf06c5b4ec9cba5fcba3be26ebb1042fb5"
+    },
+    {
+      "name": "own-candidate.ino",
+      "bytes": 1739,
+      "sha256": "af3da73d73f0a4fe6ebd1d1fb459219bf58635324e443e91c64196146476d091"
+    },
+    {
+      "name": "regression/branch-position-retained.png",
+      "bytes": 412398,
+      "sha256": "69519ecaf97735c4fdbe7061eb71048e2b1af670b2cebb18fc2ab50c496bf5ca"
+    },
+    {
+      "name": "regression/mentor-scene-desktop.png",
+      "bytes": 468892,
+      "sha256": "63f19fa47a171558ca9f322be9570f9881f18eb5d1b03de6704731ce2029d808"
+    },
+    {
+      "name": "regression/mobile-full-manual.png",
+      "bytes": 193878,
+      "sha256": "ebacd8e54239df0b1fac53469505c8da2e8d96b7c8fbccf97760d729d4d01819"
+    },
+    {
+      "name": "regression/player-receipt-desktop.png",
+      "bytes": 1259587,
+      "sha256": "69a8e51b7e8368ccc3b02867f0dcec3ba53a56bc8826570268c5776599e0edbb"
+    },
+    {
+      "name": "regression/player-receipt-mobile.png",
+      "bytes": 129351,
+      "sha256": "908e826429ea7a0dc0660aa82ec8f65ce24267a1e75b53533122f41b9e20f8d5"
+    },
+    {
+      "name": "regression/same-screen-real-failure.png",
+      "bytes": 402117,
+      "sha256": "46053c437f29cf0e2346f44307ecb057db8afd46be208c0c192237b7a5916ba7"
+    },
+    {
+      "name": "replay-result.json",
+      "bytes": 2966,
+      "sha256": "c6b5c6f8de2b6cb7706332e6189848886f642471972d07903814e13e537f1929"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 1864,
+      "sha256": "8b8fe294f789b7a01324e15e32d10d3a4c953d820912b357ad53a72947abe34e"
+    }
+  ]
+}

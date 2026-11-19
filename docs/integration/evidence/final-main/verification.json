@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-11",
+  "scope": "Local integration; developer blank mouse walkthrough, not real student or hardware signoff",
+  "integrationParent": "74a85dc",
+  "unit": {
+    "passed": 163,
+    "failed": 0
+  },
+  "build": "passed",
+  "browser": {
+    "developmentCurrentRootAndLegacy": {
+      "passed": 6,
+      "note": "5 combined before restored-record regression, plus restored-record test; later mobile geometry fix targeted test passed"
+    },
+    "productionCurrentRootAndLegacy": {
+      "passed": 6,
+      "failed": 0,
+      "currentRoot": 5,
+      "legacy": 1
+    },
+    "controllerUIHarness": {
+      "passed": 5,
+      "teachingPolicy": "explicit test double; actual program execution and IndexedDB"
+    },
+    "actualMousePath": "completed by E, no complete example injection"
+  },
+  "archiveReplay": "passed; actual blank mouse UI export; 3 objective reports and 9 current learning/review checks",
+  "visualInspection": [
+    "actual own restored blocks",
+    "retained 12/20 failure",
+    "mobile full manual after overlap fix",
+    "standard-client onboarding",
+    "12 native mouse-walkthrough screenshots"
+  ],
+  "buildWarnings": [
+    "Blockly language bundle larger than 500kB",
+    "Vite JSON import-attribute consistency warning; build succeeds"
+  ],
+  "noNewDependencies": true,
+  "push": "not_run",
+  "deploy": "not_run",
+  "targetCompile": "not_run",
+  "physicalUpload": "not_run",
+  "pending": [
+    "real student teaching review",
+    "second independent whole-flow reviewer",
+    "complex mobile blank programming",
+    "full repository source/evidence viewer",
+    "Word/PDF",
+    "real accounts, cloud, online AI, shop, multi-user income ranking, teacher dashboard",
+    "physical model/calibration and hardware acceptance"
+  ],
+  "reviewMessage": {
+    "status": "rejected_not_sent",
+    "reason": "Automatic approval review required current explicit user authorization to message the existing D thread; no workaround used"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "mode": "npc-tutorial-real-adapters",
+  "stage": "code",
+  "lesson": "change",
+  "tutorial": {
+    "open": true,
+    "lesson": "change",
+    "activeLesson": "change",
+    "line": "task",
+    "atTask": true,
+    "reviewing": false
+  },
+  "claimed": true,
+  "cardSaved": true,
+  "wiring": {
+    "valid": true,
+    "connections": 6,
+    "errors": []
+  },
+  "programReady": true,
+  "support": "teaching-example",
+  "baseCurrent": false,
+  "basePassed": false,
+  "codeCurrent": true,
+  "codePassed": false,
+  "income": 0,
+  "light": 150,
+  "lamp": true,
+  "physical": "not-verified"
+}

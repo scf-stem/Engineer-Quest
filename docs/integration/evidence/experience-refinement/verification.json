@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-11",
+  "sourceParent": "29a9f0f",
+  "status": "candidate_for_independent_computer_use_recheck",
+  "usabilityApproval": false,
+  "unit": {
+    "passed": 165,
+    "failed": 0
+  },
+  "build": "passed",
+  "productionBrowser": {
+    "passed": 9,
+    "failed": 0,
+    "currentRoot": 8,
+    "legacy": 1,
+    "latestReceiptTargeted": 1
+  },
+  "controllerUI": {
+    "passed": 6,
+    "failed": 0,
+    "teachingPolicy": "explicit test double; actual engine and IndexedDB"
+  },
+  "nativeMouseScope": [
+    "actual own-program edit 450 to 451, retained position, explicit runtime rechecks and independent failure",
+    "corrected 450, preserved 600 source, new software tests and income remains 100",
+    "new attempt scenario manipulation/help/retry/six scenes, hardware manual section",
+    "new manual hash invalidates six old reports; actual base/mapping/change rerun and refreshed receipt"
+  ],
+  "latestRecord": {
+    "testResults": [
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "currentManualMatches": true,
+    "manualRef": {
+      "id": "eq-student-manual",
+      "version": "0.2.0-local-full",
+      "digest": "sha256:dc38b0f0723115caf4f3c654d884444674f6d9fb01b7dbbf643d66df39502af4"
+    },
+    "income": 100,
+    "generatedSourceMatchesDownload": true
+  },
+  "pending": [
+    "independent full blank latest-layout walkthrough",
+    "real novice teaching, timing and transfer",
+    "complex mobile block construction",
+    "physical board/compilation/upload/teacher acceptance",
+    "real accounts/online AI/shop/multi-user ranking/teacher backend"
+  ],
+  "noNewDependencies": true,
+  "push": "not_run",
+  "deployment": "not_run",
+  "localPreview": "127.0.0.1:5200",
+  "buildWarnings": [
+    "large Blockly locale bundle",
+    "Vite JSON import attribute consistency warning"
+  ]
+}

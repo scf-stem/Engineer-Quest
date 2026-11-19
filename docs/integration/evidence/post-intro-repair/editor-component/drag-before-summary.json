@@ -1,0 +1,91 @@
+{
+  "callbacks": 8,
+  "duringDrag": 4,
+  "phases": [
+    {
+      "phase": "existing:before-lift",
+      "nativeDragging": true,
+      "pointerDown": true,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root",
+        "controls_if:if"
+      ],
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。"
+    },
+    {
+      "phase": "existing:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "escape:before-lift",
+      "nativeDragging": true,
+      "pointerDown": true,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root",
+        "controls_if:if"
+      ],
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。"
+    },
+    {
+      "phase": "escape:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    },
+    {
+      "phase": "flyout:before-lift",
+      "nativeDragging": true,
+      "pointerDown": true,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root",
+        "eqp_wait:2,sYe+`shs}vE3jPFm!:"
+      ],
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。"
+    },
+    {
+      "phase": "flyout:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": "BLOCK_INPUT：请补齐 MS 中的积木"
+    },
+    {
+      "phase": "flyout-cancel:before-lift",
+      "nativeDragging": true,
+      "pointerDown": true,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root",
+        "eqp_wait:j`u15V`A$NQcZFU3AY}E"
+      ],
+      "error": "BLOCK_ROOT：把现有动作接进一个「程序入口」的「持续执行」里；保留作品并检查散落积木。"
+    },
+    {
+      "phase": "flyout-cancel:released",
+      "nativeDragging": false,
+      "pointerDown": false,
+      "markers": 0,
+      "roots": [
+        "eqp_program:root"
+      ],
+      "error": ""
+    }
+  ],
+  "errors": []
+}

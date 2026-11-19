@@ -1,0 +1,36 @@
+
+> engineer-quest@0.2.0 build
+> vite build --outDir /tmp/eq-compact-results-build-5832670
+
+vite v7.3.8 building client environment for production...
+transforming...
+Module "src/integration/learning-policy-adapter.js" tried to import "content/learning/auto-lamp-progression.json" with no attributes, but it was already imported elsewhere with "type": "json" attributes. Please ensure that import attributes for the same module are always consistent.
+✓ 180 modules transformed.
+
+(!) outDir /tmp/eq-compact-results-build-5832670 is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../tmp/eq-compact-results-build-5832670/candidate-build.json                   0.38 kB │ gzip:   0.26 kB
+../../../../tmp/eq-compact-results-build-5832670/index.html                             0.45 kB │ gzip:   0.31 kB
+../../../../tmp/eq-compact-results-build-5832670/legacy.html                            0.53 kB │ gzip:   0.34 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/首单虚拟接线-CeXvSOmR.svg             4.80 kB │ gzip:   1.91 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/legacy-Bjn7rD1L.css             4.20 kB │ gzip:   1.53 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/ProgramBlocks-X2KuXdlq.css      8.22 kB │ gzip:   1.96 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/ProgramTeaching-SDpAGcMT.css   14.03 kB │ gzip:   3.73 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/main-CDV2TsVe.css             179.02 kB │ gzip:  35.91 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/runtime-DEh7EUKi.js            10.65 kB │ gzip:   4.84 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/program-BjIE17Zf.js            16.03 kB │ gzip:   6.81 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/legacy-DJcBrZM1.js             21.26 kB │ gzip:   8.77 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/ProgramBlocks-BRRN1sCM.js      26.74 kB │ gzip:  10.36 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/ProgramTeaching-DlMJddTQ.js    42.98 kB │ gzip:  15.49 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/client-aY1eXhyH.js            222.19 kB │ gzip:  69.12 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/main-CfQVFajr.js              495.41 kB │ gzip: 182.10 kB
+../../../../tmp/eq-compact-results-build-5832670/assets/zh-hans-TJFS4uYg.js           753.17 kB │ gzip: 193.62 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.28s

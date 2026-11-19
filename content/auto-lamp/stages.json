@@ -1,0 +1,134 @@
+{
+  "ref": {"id": "eq-auto-lamp-stages", "version": "0.2.0"},
+  "status": "integration_candidate",
+  "stateVocabulary": ["LOCKED", "AVAILABLE", "IN_PROGRESS", "SUBMITTED", "NEEDS_FIX", "PASSED"],
+  "transitions": [
+    {"from": "LOCKED", "to": "AVAILABLE", "event": "prerequisites_verified"},
+    {"from": "AVAILABLE", "to": "IN_PROGRESS", "event": "student_started"},
+    {"from": "IN_PROGRESS", "to": "SUBMITTED", "event": "snapshot_submitted"},
+    {"from": "SUBMITTED", "to": "NEEDS_FIX", "event": "evidence_rejected"},
+    {"from": "SUBMITTED", "to": "PASSED", "event": "required_evidence_verified"},
+    {"from": "NEEDS_FIX", "to": "IN_PROGRESS", "event": "student_revised"},
+    {"from": "PASSED", "to": "NEEDS_FIX", "event": "dependent_version_changed"}
+  ],
+  "policy": {
+    "authority": "总控在服务端核验身份、范围、版本和证据后执行。此配置不签发通过，不接受 NPC 文字当客观证据。",
+    "evidenceVersioning": "证据绑定当前个人提交及全部依赖版本；变更使依赖证据过期，历史仍保留。",
+    "teachingAssistance": "教师可记录非安全教学节点的协助完成；不得伪造客观测试、编译、上传或现场安全/功能证据。",
+    "extension": "选修分支，不阻塞基础交付、收入资格或回顾。",
+    "prototype": "编译和实物链未就绪时显示待验证，不用前端按钮填充成功。",
+    "currentSoftwareScope": "当前交付范围为合成个人软件练习。烧录延后；商城、真实账号、多人榜、教师后台未实现，不作为已有功能。",
+    "requirementGate": "旧四选项与自由文本存在性不放行；当前个人/尝试/需求/练习版本绑定的情境响应必须逐项重演为 ready。"
+  },
+  "stages": [
+    {
+      "id": "onboarding", "title": "领取个人员工证", "requires": [], "optional": false,
+      "studentAction": "阅读公司背景与低压实验规则，用昵称领取个人工位。",
+      "feedback": "显示个人员工证、课程和手册版本，以及找 NPC 接单的入口。",
+      "artifacts": ["personal_employee", "course_manual_binding", "safety_rules_acknowledgement"],
+      "passConditions": ["individual_identity_created", "course_and_manual_version_bound", "low_voltage_rules_acknowledged"],
+      "failureMessage": "身份或版本尚未保存，请保留草稿后重试。刷新不应重复建员工或发奖励。",
+      "help": "查看入职短卡，或请求教师帮助恢复个人工位。",
+      "teacherIntervention": "处理身份恢复；说明断电接线和现场检查规则，不要求真实姓名或家庭资料。",
+      "manualSections": ["01.1", "01.2"], "hintTopic": null
+    },
+    {
+      "id": "requirements", "title": "和需求负责人接单", "requires": ["onboarding"], "optional": false,
+      "studentAction": "逐步观察客户情境，选择输入与明暗动作，检查再次变化、等值边界和另一组输入；不确定就做局部观察后重试。",
+      "feedback": "每次仅显示当前题与具体诊断；完成情境后整理方案卡，原话不作任意中文语义判分。",
+      "artifacts": ["scenario_response_history", "version_bound_requirement_evidence", "requirement_card"],
+      "passConditions": ["current_scenario_review_replayed_ready", "requirement_evidence_binding_verified", "requirement_snapshot_saved"],
+      "failureMessage": "指出当前场景中的输入、动作或边界冲突，保持当前题并给出可执行小观察；旧四项选对也不能跳过。",
+      "help": "每题都有不确定和局部观察；求助后可重试，改答前题会使后续结论失效。",
+      "teacherIntervention": "帮助学生观察当前场景或无障碍作答，不把说明文字、下一句或点击手册记成情境证据。",
+      "manualSections": ["02.1", "03.1"], "hintTopic": "requirements"
+    },
+    {
+      "id": "wiring", "title": "查手册，准备虚拟硬件", "requires": ["requirements"], "optional": false,
+      "studentAction": "辨认 IO、元件和安全规则，在画布连线并用引导程序点灯。",
+      "feedback": "显示端子和具体连接诊断，点灯标注为引导实验；保留硬件进入下一关。",
+      "artifacts": ["wiring_snapshot", "component_list", "guided_lamp_record"],
+      "passConditions": ["current_wiring_rules_passed", "logical_pin_map_matches_profile", "guided_lamp_experiment_recorded"],
+      "failureMessage": "按诊断检查缺地、信号口、极性、限流和短接；虚拟通过不能批准实物上电。",
+      "help": "点击对应端子查资料，逐级提示或教师读图。",
+      "teacherIntervention": "帮助辨认元件；未知型号与实物供电问题必须现场确认。",
+      "learningMilestoneIds": ["observe-output"],
+      "manualSections": ["04.1", "05.1", "05.2", "06.1", "06.2"], "hintTopic": "wiring"
+    },
+    {
+      "id": "blocks", "title": "从空白搭完整自动灯", "requires": ["wiring"], "optional": false,
+      "studentAction": "保留接线，自行搭读取、变量、比较、双分支、输出和重复工作；调光后跑基础客户测试。",
+      "feedback": "显示执行分支、读数和灯状态，按输入、预期、实际与时间呈现测试。",
+      "artifacts": ["student_blocks_snapshot", "base_customer_test_run", "technical_review_record"],
+      "passConditions": ["progressive_observations_current", "student_program_saved_with_support_provenance", "base_suite_current_and_all_cases_passed"],
+      "requirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.0.0"},
+      "testSuiteRef": {"id": "eq-customer-tests-auto-lamp", "version": "1.0.0"},
+      "failureMessage": "先复现失败场景，再检查重新读取、比较方向和两个输出分支。改阈值不会改客户预期。",
+      "help": "逐级提示；需要完整救援方案时先明确选择并保存自己的版本，记录协助来源。",
+      "teacherIntervention": "一起走读一轮执行；测试失败仍显示失败，不以 NPC 好评覆盖。",
+      "learningMilestoneIds": ["read-input", "branch-output", "repeat-read", "base-delivery"],
+      "manualSections": ["07.1", "07.2", "09.1", "09.2"], "hintTopic": "blocks"
+    },
+    {
+      "id": "short-code", "title": "客户变更：让灯提早亮", "requires": ["blocks"], "optional": false,
+      "studentAction": "查看自己积木对应的简写 C++，保留快照，把虚拟开灯边界从 450 改到 600，预测 500 的行为并复测。",
+      "feedback": "并排显示积木与代码映射、修改前后版本及新版测试；语法检查、编译和导出分别显示。",
+      "artifacts": ["preserved_blocks_snapshot", "changed_short_cpp_snapshot", "change_prediction", "comparison_mapping_record", "change_customer_test_run", "exact_source_export"],
+      "passConditions": ["old_blocks_snapshot_preserved", "change_scenarios_replayed_ready", "own_comparison_mapping_observed", "own_source_changed_and_explained", "language_profile_validation_passed", "change_suite_current_and_all_cases_passed"],
+      "requirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.1.0"},
+      "testSuiteRef": {"id": "eq-customer-tests-auto-lamp", "version": "1.1.0"},
+      "failureMessage": "先核对新版需求情境、自己比较节点的映射和当前源码，再重跑完整新版独立测试。旧证据保留为历史；编译烧录显示延后，不能填成功。",
+      "help": "查映射与局部提示，不要求重新抄写完整程序。返回积木时查看旧快照或复制成新分支。",
+      "teacherIntervention": "帮助在学生自己的代码里定位变化；不能把重新生成的另一份源码说成原作品已通过。",
+      "learningMilestoneIds": ["code-mapping", "change-delivery"],
+      "deferredConditions": ["exact_source_target_compile_passed", "physical_upload_verified"],
+      "deferredArtifacts": ["target_compile_record", "physical_upload_record"],
+      "manualSections": ["02.2", "08.1", "08.2", "09.1"], "hintTopic": "short-code"
+    },
+    {
+      "id": "hardware", "title": "断电接线，等待现场验证", "requires": ["short-code"], "optional": false,
+      "studentAction": "按当前接线方案断电布线，请教师检查后上电上传，再演示明暗变化并请求功能验收。",
+      "feedback": "分别显示安全检查、编译、上传工具结果与功能验收；未就绪时显示实物待验收。",
+      "artifacts": ["teacher_safety_record", "target_board_and_port", "exact_source_upload_log", "physical_self_test_record", "teacher_function_acceptance"],
+      "passConditions": ["authenticated_teacher_safety_approved_current_version", "upload_tool_evidence_matches_exact_source_and_device", "physical_behavior_demonstrated", "authenticated_teacher_function_approved_current_version"],
+      "failureMessage": "停止上电或上传操作，按实际失败节点求助；虚拟点灯、导出或工具成功不能替代现场功能验收。",
+      "help": "按 10.1、10.2 核对版本和设备，教师可更换标准件或备用电脑。",
+      "teacherIntervention": "独立签核安全与功能，写明版本、操作人和原因；设备未就绪时保留软件成果而非伪造实物通过。",
+      "manualSections": ["01.2", "10.1", "10.2"], "hintTopic": "hardware"
+    },
+    {
+      "id": "delivery", "title": "交付这一个确切版本", "requires": ["hardware"], "optional": false,
+      "studentAction": "提交功能摘要、测试与一次排错，列明完成项和已知限制。",
+      "feedback": "显示个人交付版本卡；收入规则未确认前仅显示带 synthetic 标识的演示，真实账本由总控处理。",
+      "artifacts": ["personal_delivery_summary", "version_bound_acceptance_reference"],
+      "passConditions": ["accepted_version_matches_delivery", "summary_saved"],
+      "failureMessage": "交付引用的版本与验收不一致，请检查变更记录并请求重验。",
+      "help": "用一句功能说明和一条排错记录开始整理。",
+      "teacherIntervention": "核对真实完成范围；未实物验收的作品只能展示软件成果，不结算真实交付奖励。",
+      "manualSections": ["10.2", "11.1"], "hintTopic": null
+    },
+    {
+      "id": "extension", "title": "选修：先审核，再升级", "requires": ["delivery"], "optional": true,
+      "studentAction": "查看候选商城与升级订单，选择已审核可用的模块，或保留探索提案。",
+      "feedback": "区分虚拟购买、余额、库存和实际领料；当前候选模块显示待验证，不可当作正式在售。",
+      "artifacts": ["optional_upgrade_proposal", "optional_upgrade_branch"],
+      "passConditions": ["optional_exploration_recorded"],
+      "failureMessage": "模块未验证、缺货或升级未完成都不影响基础结业，可保存待办并继续回顾。",
+      "help": "选择无新硬件的软件提案，或请教师给替代路线。",
+      "teacherIntervention": "确认模型、资料、语言支持和实物验证后才上架；实物改线需再次安全检查。",
+      "manualSections": ["11.1", "02.2"], "hintTopic": null
+    },
+    {
+      "id": "reflection", "title": "回顾我的第一次工程交付", "requires": ["delivery"], "optional": false,
+      "studentAction": "说清完成的功能、一次排错和想继续体验的岗位工作。",
+      "feedback": "生成个人探索卡，明确独立完成、得到协助与待完成的部分；兴趣由学生自述。",
+      "artifacts": ["personal_reflection", "support_provenance", "remaining_work"],
+      "passConditions": ["personal_reflection_saved"],
+      "failureMessage": "可以口述或由教师辅助记录，不按措辞流利度或职业选择评分。",
+      "help": "从需求、接线、软件、测试中选一件你做过的事来讲。",
+      "teacherIntervention": "提供表达帮助，记录体验而不生成职业适配结论。",
+      "manualSections": ["11.2"], "hintTopic": null
+    }
+  ],
+  "trialTiming": {"status": "unvalidated_candidate", "unit": "minute", "segments": [{"id": "onboarding", "duration": 15}, {"id": "requirements", "duration": 20}, {"id": "wiring", "duration": 30}, {"id": "blocks", "duration": 40}, {"id": "break", "duration": 10}, {"id": "short-code", "duration": 35}, {"id": "hardware", "duration": 45}, {"id": "extension", "duration": 25}, {"id": "delivery-and-reflection", "duration": 20}]}
+}

@@ -1,0 +1,420 @@
+[
+  {
+    "file": "01-candidate-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      3440,
+      1157
+    ],
+    "bytes": 99355,
+    "sha256": "0229f65d8fd577d1a72ae449fa290b9e26560f1e4e138f757c732a353b10af1f"
+  },
+  {
+    "file": "02-stage-initial1920-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 185539,
+    "sha256": "a16d3ba5f8b8b608cb58d6e501cc19755f711389b3fe0987b16fab5ae4aaf679"
+  },
+  {
+    "file": "03-requirements1920-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 145065,
+    "sha256": "3a3f89ce002900b3729e4a3aa6a38bda2e2d24fc2ac78f2c16ea731a1cfa529f"
+  },
+  {
+    "file": "04-after-shade150-group-focus1920-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 136324,
+    "sha256": "78b76f9fbd40756d4a561dd5937d3c21ad1e2184591b0630b9e815615e0cd155"
+  },
+  {
+    "file": "05-first-answer-refresh150-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 141941,
+    "sha256": "5ad2def6f7e958aea5bd4a84e2746b1473d3e6a69c0181617c6e8e03043f519a"
+  },
+  {
+    "file": "06-wrong-date-stays150-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 131113,
+    "sha256": "3b7b30f1333b9b952de6e3cc13ddfc4e7e8365981aa5605f6a2e220107aa406e"
+  },
+  {
+    "file": "07-retry-refresh150-threecards-group-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 142242,
+    "sha256": "ca7921175c26536ee9151e9bfe26c9afff47c6ca247cd121024fe64d0160ef1c"
+  },
+  {
+    "file": "08-requirements1280-threecards-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 100883,
+    "sha256": "35901af64efff140258eb59effc90402ea4fe63c4f9a4b5822de2ec8083dcd2d"
+  },
+  {
+    "file": "09-requirements1024-threecards-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1024,
+      768
+    ],
+    "bytes": 89023,
+    "sha256": "00cf9706418b723d0e181ddb871a8fa47e3713d00beeca404168a15055fc7b62"
+  },
+  {
+    "file": "10-help-manual-closed-clean1024-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1024,
+      768
+    ],
+    "bytes": 88480,
+    "sha256": "d7f4ada1df69cc37ea9578d6c05ba8771379f5a1512d60e7662436d3f8d2e0da"
+  },
+  {
+    "file": "11-correct-keeps-step1-1501024-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1024,
+      768
+    ],
+    "bytes": 86956,
+    "sha256": "b9e9b6db83093a4394dd9524bfda549c26673c98b96eb14d1a67b301db73e789"
+  },
+  {
+    "file": "12-explicit-continue-step2-160-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1024,
+      768
+    ],
+    "bytes": 92647,
+    "sha256": "8120d39328c5b6cecdc6e0b25a2f60a5f3018ccf1156d59966b61d6a3a01c673"
+  },
+  {
+    "file": "13-four-moments1024-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1024,
+      768
+    ],
+    "bytes": 101793,
+    "sha256": "04bab300296a6a36824044c6922b7eb4c24bf1ac3e2a8694135ecd6ec96ead28"
+  },
+  {
+    "file": "14-four-moments1280-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 102443,
+    "sha256": "99782562a09242a2d0f9d8d69941d0d00d954a234ffd699e240553af3f17abd6"
+  },
+  {
+    "file": "15-four-moments1920-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 145165,
+    "sha256": "976bf0c70e48650d59425ebb3f26c1de6991f8c8f572ef1a68ee321417aa5d3e"
+  },
+  {
+    "file": "16-focus-follows-to-options-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 141728,
+    "sha256": "496be72664142fde08660543864ad256cdb9d2003f31f42c257de6384336ae91"
+  },
+  {
+    "file": "17-final-requirement-feedback-uncovered-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "bytes": 138853,
+    "sha256": "2411ff4ffd112a76cd3cddd1d78d2936cffd5304adf8e8920116173b672225fd"
+  },
+  {
+    "file": "18-on-demands-off-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 97493,
+    "sha256": "ac9bbb7412e37f5541b2062976c3d9bfa2de7dafc8514348e137b328f2a0b042"
+  },
+  {
+    "file": "19-empty-own-blocks-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 101386,
+    "sha256": "c1c3f82ee688886c830612a05472bb7ef53077ba744e3466134c62236c9435d0"
+  },
+  {
+    "file": "20-page07-canvas-reminder-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 71041,
+    "sha256": "665609dfcbc304f79d7bc903fac822b48ec88cd47d7591e9e8a75fa03bb31756"
+  },
+  {
+    "file": "21-before-slot-canvas-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 111638,
+    "sha256": "a5725a43355caf3438642323a3ede0aecb2de5bf0f37fc73708f159f20873b6b"
+  },
+  {
+    "file": "22-after-slot-canvas-moved-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 114209,
+    "sha256": "b2ba9a0c631e710963588919729d044a4d05e10885eecae7c981e5ddfcbc537b"
+  },
+  {
+    "file": "23-precision-read-real-drag-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 111000,
+    "sha256": "d7da580fae450897eded3fc7cbe0895e3b4a5d8e73b685f0fd8e767c52d3e8a7"
+  },
+  {
+    "file": "24-own-incomplete-comparison-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 114525,
+    "sha256": "1a5486b668e7515d91add5b99246a8eb2f1166bc46b91e4b73d596d11529a721"
+  },
+  {
+    "file": "25-page08-original-size-compare-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 81546,
+    "sha256": "9e4bb02c909c2bddcfb6b218b4f34864bb67cb13022fcf7d7c07dbf9c1e258db"
+  },
+  {
+    "file": "26-page08-closed-own-work-preserved-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 113649,
+    "sha256": "fea1b1a60129d9ebbdd43822ece86be6f6556c4b5ecd7b1ffdf978f309721a33"
+  },
+  {
+    "file": "27-real-dark-bright-mentor-transition-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 119981,
+    "sha256": "33e7b3ff9189cf15de51511a0dbd740ec6a85f4011eb775c2407f65e8b827629"
+  },
+  {
+    "file": "28-own-repeat200ms-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 127493,
+    "sha256": "08bd8743060df1666e0f7dfa8e8fe454ac9c9f8bb475861e88249caac968c7a2"
+  },
+  {
+    "file": "29-own-base26of26-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 89162,
+    "sha256": "acd2499f204c9eef89abed9776c1f98fff9df4221e34f4b7b7550421e4dfa9ac"
+  },
+  {
+    "file": "30-change-stage1280-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 116647,
+    "sha256": "0c70e3f21eb05f00602b91d2103cdc7b47033e5ac8083f033520c60b8beb4d08"
+  },
+  {
+    "file": "31-own-comparison-mapping-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 85410,
+    "sha256": "6a97ebf178abce62c16f47de61bf70c120698156792d55ae2916e87b20d062b9"
+  },
+  {
+    "file": "32-change-final-feedback-uncovered-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 93568,
+    "sha256": "4e310426e16519b588ac5de17b53c614847a0f8454aa255f2e61969a0515d52c"
+  },
+  {
+    "file": "33-own-editor-first-visible1280-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 99646,
+    "sha256": "dc3b084dc860700c1f453d91e42907b541c85fb73576444f24d84b4e34c879fe"
+  },
+  {
+    "file": "34-old450-new12of20-failure-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 118860,
+    "sha256": "5a9adc1caade1b23486218edb2754f62d41ffe29fdad290842722c992e5fe71d"
+  },
+  {
+    "file": "35-only600-20of20-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 119704,
+    "sha256": "6eeff73499882b2a51706fed5826b7ab5e4419c3a0d2fca1b50e24f503e25b73"
+  },
+  {
+    "file": "36-delivery-short-guide10-1-after-wiring-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 64740,
+    "sha256": "56c81cc9af7e0aa262ca72f92826eb55771f457d4d4002d6d7267461c4c5499f"
+  },
+  {
+    "file": "37-page12-immediate-refresh-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 73702,
+    "sha256": "0650bbfab270b8a0d4d76a13bdab536de9e781424d129848b9c03efd8f995ac9"
+  },
+  {
+    "file": "38-note-income-restored-viewport-reset-bc6a0daa1ac0.jpg",
+    "candidate": "dialogue-bc6a0daa1ac0",
+    "url": "http://127.0.0.1:5230/",
+    "dimensions": [
+      3440,
+      1157
+    ],
+    "bytes": 165041,
+    "sha256": "0d1b7f2e63aa7f2fd8f4fd190913774e0f16765717c67e45d40c9d3e3d8787e1"
+  }
+]

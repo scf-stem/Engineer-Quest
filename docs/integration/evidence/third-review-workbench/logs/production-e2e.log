@@ -1,0 +1,24 @@
+[WebServer] (node:53268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:53308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/e2e/adventure-integration.spec.js:3:1 › room and NPC entry only navigate and local income stays zero (954ms)
+  ✓   2 tests/e2e/dialogue-journey.spec.js:5:1 › a player can keep talking during actual wiring and program actions without dialogue awarding facts (2.9s)
+  ✓   3 tests/e2e/dialogue-journey.spec.js:29:1 › note input followed by reload before the async archive commit recovers the last characters (1.2s)
+  ✓   4 tests/e2e/dialogue-journey.spec.js:41:1 › frozen build identity agrees between HUD, text state and downloadable build record (176ms)
+  ✓   5 tests/e2e/experience-refinement.spec.js:5:1 › branch instruction remains while edited evidence needs explicit rerun; actual failures remain independent (1.5s)
+  ✓   6 tests/e2e/experience-refinement.spec.js:30:1 › scene manipulation gets in-place mentor response without granting progress (998ms)
+  ✓   7 tests/e2e/experience-refinement.spec.js:43:1 › component manual labels match full-text anchors; player delivery has customer feedback and useful next actions (2.3s)
+  ✓   8 tests/e2e/game-ui.spec.js:5:1 › mobile full manual retains current draft and exposes authored SVG and both source attachments (1.3s)
+  ✓   9 tests/e2e/integration.spec.js:4:1 › real current scenarios reject self-reported guessing and restore six original responses (1.5s)
+  ✓  10 tests/e2e/restored-novice.spec.js:5:1 › main root replays actual blank walkthrough record and preserves current facts through all tools (2.0s)
+  ✓  11 tests/e2e/smoke.spec.js:2:1 › local learning flow, real Blockly, code and invalidation (1.2s)
+  ✓  12 tests/e2e/wiring-usability.spec.js:4:1 › uncompleted scenarios block shortcuts; six keyboard wires open a genuinely blank program (2.9s)
+  ✓  13 tests/e2e/workbench-third-review.spec.js:9:1 › 3440 by1157 keeps flyout and core practice actions inside one fitted work area (1.2s)
+  ✓  14 tests/e2e/workbench-third-review.spec.js:30:1 › integer drop cannot replace a whole if; selected left slot highlights and accepts the same value (3.3s)
+  ✓  15 tests/e2e/workbench-third-review.spec.js:57:1 › change coaching moves from numeric prediction into own code and an actual old customer letter (2.4s)
+
+  15 passed (26.9s)

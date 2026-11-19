@@ -1,0 +1,332 @@
+[
+  {
+    "file": "01-candidate-847eda4094e5.jpg",
+    "candidate": "dialogue-847eda4094e5",
+    "dimensions": [
+      3440,
+      1101
+    ],
+    "bytes": 96945,
+    "sha256": "073b530797dd48c5e04570b5ad8e57089271ffd56d68c4a009be768ebc5fe6f4"
+  },
+  {
+    "file": "02-taskbook-page02-1280x720-847eda4094e5.jpg",
+    "candidate": "dialogue-847eda4094e5",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 72439,
+    "sha256": "babebc5c076b53b10464d11f747b89b0a6c9ec4f5e59a6842c58ce124c81a25c"
+  },
+  {
+    "file": "03-mid-checkpoint450-847eda4094e5.jpg",
+    "candidate": "dialogue-847eda4094e5",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 108542,
+    "sha256": "45fd0603880c3f3d434deaf8a71a4d856d8432808abb62d6a8241966301078b0"
+  },
+  {
+    "file": "final-01-candidate-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      3440,
+      1101
+    ],
+    "bytes": 97105,
+    "sha256": "06a36f2daf8eeb99627b1180b1be9732f133c68712fab36d01504752e0d166ef"
+  },
+  {
+    "file": "final-02-taskbook-entry-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 72462,
+    "sha256": "3fc1c0e763abc8b068eee8b4cb485a8638bf688ffa288390c4daa9574a43d9c3"
+  },
+  {
+    "file": "final-03-wiring-taskbook-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 55517,
+    "sha256": "e0fd2a8811cda1ed4d34e80941801bba847e1d32bcb7d0369d11eb440fb7ec47"
+  },
+  {
+    "file": "final-04-wiring1440-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 99998,
+    "sha256": "a3951ff884b5ee15962514a978faea12eb085b3a4aa439077452f968fba707a8"
+  },
+  {
+    "file": "final-05-page07-precision-help-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 66882,
+    "sha256": "19e8160f6cd9b18176213780c149878b45b68ca1c481564abdfe2a475f3ac96c"
+  },
+  {
+    "file": "final-06-before-precision-selection-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 109030,
+    "sha256": "b73a40245d909e5001093e7e4b43a336cca3d4390b28ec172ef6566771377daa"
+  },
+  {
+    "file": "final-07-after-precision-highlight-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 112825,
+    "sha256": "9005c57c18fa359aa2993414f716e3b5411a50ca52ca1ef072258dac72437bf8"
+  },
+  {
+    "file": "final-08-precision-real-drag-connected-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 109494,
+    "sha256": "9947111eedaa23307add6a23c6e60ed60d6271f9788d5b137ea972241117cd69"
+  },
+  {
+    "file": "final-09-own-unfinished-comparison-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 113032,
+    "sha256": "20e562757f9003701f173813b21c5a833cd5ad722a97773f97bf4ee1db756132"
+  },
+  {
+    "file": "final-10-page08-incomplete-local-guide-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 89337,
+    "sha256": "ae38c5c622bb1ed5a34f132b4caf89c7b8ce2a63ef57301656533eaf723e7281"
+  },
+  {
+    "file": "final-11-page08-original-size-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 97351,
+    "sha256": "be97b35f825891c7f1159c6fa014565510b4f46003407d84118ab385169652f5"
+  },
+  {
+    "file": "final-12-page08-original-empty-slots-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 83423,
+    "sha256": "0596c8da13803802b075999b3c2077cf63487e6e7a3e4eb3ef22f6fb7f1138cd"
+  },
+  {
+    "file": "final-13-page08-returned-same-page-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 89337,
+    "sha256": "ae38c5c622bb1ed5a34f132b4caf89c7b8ce2a63ef57301656533eaf723e7281"
+  },
+  {
+    "file": "final-14-own-empty-comparison-preserved-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 112090,
+    "sha256": "e4443be679d6472be15a940225c310dde570bd9901e15bd27eaf6607031628ef"
+  },
+  {
+    "file": "final-15-after-own-dark-bright-observation-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 120068,
+    "sha256": "3a49d339633fd6cc5ed5c38b42ce657890fc7e074b0b5a1c3e05a00687936f79"
+  },
+  {
+    "file": "final-16-paused-line-restored-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 120036,
+    "sha256": "beddf841b136dcfb810c22e4aa1dca16b0034d4410851198bbc22da1c9ce6ca8"
+  },
+  {
+    "file": "final-17-own-loop200ms-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 128772,
+    "sha256": "4470b1f70dde3d4220955b1a201dcb17a2c25687e2d59a99cccc727297502e27"
+  },
+  {
+    "file": "final-18-unopened-tool-stayed-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 126492,
+    "sha256": "927d6e9bbdcb2bab9ee11f1daeb00ee8968e8525e298a75ef3cc060088438fce"
+  },
+  {
+    "file": "final-19-own-base26of26-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 88770,
+    "sha256": "c772be86fd6c17c3fb6c43a894094cae2aef4194e6c4b4e959837ccf4b5254b6"
+  },
+  {
+    "file": "final-20-own-map-comparison1280-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 83574,
+    "sha256": "91ce82c3de3b84a88f18f3e995a2384b9e905bf6963ea60724cfccd94651b9bb"
+  },
+  {
+    "file": "final-21-taskbook-change1280-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 74971,
+    "sha256": "65689c06be14cfc290d57536ba828f2d3e74f963d5d7493ccc209f320af6c21b"
+  },
+  {
+    "file": "final-22-editor-first-visible1280-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 99800,
+    "sha256": "d5cf74e91481746cdbef3bade0623f68436d5778ecde8b61ad63e51a277933c7"
+  },
+  {
+    "file": "final-23-old450-new-test-failure12of20-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 98280,
+    "sha256": "39916981cfdf154b63391f7a26faa6cadf5fbba9668e1378d2c7957b622df2fa"
+  },
+  {
+    "file": "final-24-failure-details-visible-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 118894,
+    "sha256": "f1d7f7572adc15ae69dc67ac180cdf622bb73b48a4e46b4efbf5aba259997750"
+  },
+  {
+    "file": "final-25-only600-pass20of20-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 119743,
+    "sha256": "cbff73d531e7bbef52e8995a27321f7fc9c4e13022044721aaae2c1c4ae593a7"
+  },
+  {
+    "file": "final-26-wiring-revisit-keeps-progress-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 110331,
+    "sha256": "ce74e9219ce83ee89d0b5b0d0dd14eda21d30f06147440a642b43c87acaa0b8d"
+  },
+  {
+    "file": "final-27-page12-immediate-reload-instruction-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 73694,
+    "sha256": "9744e635d116e1d4470225135ce7e484bae1760094c9a7fda92cd04d57a7bc61"
+  },
+  {
+    "file": "final-28-note-immediate-reload-restored-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 102445,
+    "sha256": "a7ce9834887c10ada4d5b60a4e57cf404c5951d195440f6f3bcfea73a6b98318"
+  },
+  {
+    "file": "final-29-restored-note-visible-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "bytes": 110679,
+    "sha256": "8e001fd22e1ccd35135e3198bf8397fbf6b0285e9e1a683868400f8029931fea"
+  },
+  {
+    "file": "final-30-viewport-reset-final-state-ac548cce4d84.jpg",
+    "candidate": "dialogue-ac548cce4d84",
+    "dimensions": [
+      3440,
+      1101
+    ],
+    "bytes": 155628,
+    "sha256": "bd04cfba7e65fd187bde463aab15173c3b2565b00f2aeca98e874ad123ed2413"
+  }
+]

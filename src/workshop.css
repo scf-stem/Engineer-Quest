@@ -1,0 +1,13 @@
+.quest-experience-nav {
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  z-index: 10000;
+  display: flex;
+  gap: .75rem;
+  padding: .65rem .9rem;
+  background: #f4faf5;
+  border: 1px solid #a6beac;
+  border-radius: .65rem;
+}
+.quest-experience-nav a { color: #214d3a; font: 600 .93rem system-ui, sans-serif; }
+.quest-workshop-status { padding: 2rem; font: 1rem system-ui, sans-serif; }

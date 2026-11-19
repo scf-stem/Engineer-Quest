@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-11-12T14:02:58.627Z",
+  "frozen": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-762e7dcf79d4",
+    "sourceDigest": "sha256:762e7dcf79d41a5144398ae45daf7e9e2a01f7cccefefd2cf3feb2af106abe6e",
+    "sourceRevision": "58326702a2c74e0ff02fae65aabaf4a1affc2ff3",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "currentWorkspace": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-762e7dcf79d4",
+    "sourceDigest": "sha256:762e7dcf79d41a5144398ae45daf7e9e2a01f7cccefefd2cf3feb2af106abe6e",
+    "sourceRevision": "58326702a2c74e0ff02fae65aabaf4a1affc2ff3",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "node": "v25.5.0",
+  "lockedDependencies": {
+    "blockly": "12.5.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "vite": "7.3.8",
+    "@playwright/test": "1.65.0"
+  },
+  "note": "冻结应用源与当前根构建相关内容相同；之后文档/证据提交不另宣称为同一源码SHA。"
+}

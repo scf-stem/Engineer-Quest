@@ -1,0 +1,61 @@
+{
+  "version": "C-UI-0.3",
+  "date": "2026-11-11",
+  "method": "Pillow inspection only; original PNG vs encoded WebP dimensions and alpha byte equality; no image content processing in Python",
+  "assets": [
+    {
+      "id": "reading-corner",
+      "original": "exec-c592f251-030d-4123-b4f6-2184312d3748.png",
+      "file": "eq-reading-corner-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 212526,
+      "sha256": "aea3e6805a30afaa225af08de3e9471f740660f9d770f37f819d5560d37806bb",
+      "mode": "RGB"
+    },
+    {
+      "id": "parts-tray",
+      "original": "exec-231ac08b-655b-4b99-a85a-1f51294372c5.png",
+      "file": "eq-parts-tray-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 324386,
+      "sha256": "15e7c6466dfc16c01eb4383ee28a53a7f853dbf1d99fabeaf5f8dda5348771b5",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "transparentPixels": 520636,
+      "partialAlphaPixels": 1052228,
+      "alphaPreserved": true
+    },
+    {
+      "id": "lin-portrait",
+      "original": "exec-fb349d19-5261-4a00-928d-64b5b69c73ce.png",
+      "file": "eq-lin-portrait-v1.webp",
+      "width": 1175,
+      "height": 1338,
+      "bytes": 207482,
+      "sha256": "189ac842daeff83167e83dd93bb4abd9550cf7d3238489e39203ae4861357328",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 873737,
+      "partialAlphaPixels": 698017,
+      "alphaPreserved": true
+    },
+    {
+      "id": "studio-exploration",
+      "original": "exec-78aebddc-0e96-4be5-809a-bf5fcfe3eac1.png",
+      "file": "eq-studio-exploration-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 275918,
+      "sha256": "ac575543d080a924eb5bd1940dab712e1e555ec87cdde24852fc9dc700d290a3",
+      "mode": "RGB"
+    }
+  ]
+}

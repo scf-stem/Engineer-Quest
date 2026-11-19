@@ -1,0 +1,22 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 454,
+    "sha256": "072fb933b60d67eb08474a3eb9da9bf5bea989bb6bc50571fb1b4630e8a98a20"
+  },
+  {
+    "path": "candidate-build.json",
+    "bytes": 375,
+    "sha256": "5ef5c80156596c3525dfdbf978b935a5796d241ec50ee1099daea362f9c7fd65"
+  },
+  {
+    "path": "client/shot-0.png",
+    "bytes": 222848,
+    "sha256": "159fc6a6c5c76b9e40acbdc023fbf20f0cf44ab8230ba140e3a20c60768afba1"
+  },
+  {
+    "path": "client/state-0.json",
+    "bytes": 726,
+    "sha256": "fd98266768cf595379f40e01c5ddd14c90f231f43cea3579d0bed18e44b9fa3f"
+  }
+]

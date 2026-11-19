@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "eq-course-content/0.1",
+  "ref": {"id": "eq-task-auto-lamp", "version": "0.1.0"},
+  "courseRef": {"id": "eq-course-personal-embedded", "version": "0.1.0"},
+  "title": "首单：给展台做一盏自动灯",
+  "locale": "zh-CN",
+  "participation": "individual",
+  "developmentData": "synthetic_only",
+  "setting": {
+    "status": "name_candidates",
+    "company": "微光硬件工作室",
+    "customer": "校园科技展台",
+    "requirementsNpc": {"id": "npc-requirements", "name": "林工", "role": "需求负责人"},
+    "technicalNpc": {"id": "npc-technical", "name": "周工", "role": "技术负责人"},
+    "welcome": "今天你独立负责一个小装置。先听懂客户，再查手册、接线、搭程序，用测试说明它能做什么。"
+  },
+  "customerMessage": "展台需要一盏低压 LED 演示灯。周围暗下来时亮起，变亮时熄灭；演示过程中光照会多次变化。请先做基础版，暂时不加按钮、显示屏和联网功能。",
+  "requirementSchemaRef": {"id": "eq-requirement-card", "version": "0.1.0"},
+  "requirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.0.0"},
+  "languageProfileRef": {"id": "eq-short-cpp-candidate", "version": "0.1.0"},
+  "deviceProfileRef": {"id": "eq-uno-synthetic-candidate", "version": "0.1.0"},
+  "manualRef": {"id": "eq-student-manual", "version": "0.1.0-draft"},
+  "testSuiteRef": {"id": "eq-customer-tests-auto-lamp", "version": "1.0.0"},
+  "profileStatus": {
+    "device": "B线冻结后替换候选引用；已定 Arduino Uno，代际、芯片、FQBN 和实物校准未定。",
+    "language": "A线冻结后替换候选引用；已定简写 C++，教学函数和可编辑范围由 A 线提供。",
+    "referenceDigest": "本内容只提供 id/version。总控按公共规范计算摘要，不把候选引用当已签发凭证。"
+  },
+  "logicalSignals": {
+    "light": {"direction": "input", "type": "integer", "min": 0, "max": 1023, "syntheticMeaning": "数值越小越暗"},
+    "lamp": {"direction": "output", "type": "boolean", "trueMeans": "LED 亮"}
+  },
+  "allowedComponents": ["arduino-uno", "light-sensor-ao", "led", "current-limiting-resistor", "breadboard", "jumper-wire"],
+  "componentStatus": "类别清单；不是已验证 BOM，不指定实物电阻阻值、供电或引脚。",
+  "allowedConcepts": ["input_read", "integer_variable", "comparison", "if_else", "output_write", "repeat", "wait"],
+  "requirements": [
+    {
+      "ref": {"id": "eq-requirement-auto-lamp", "version": "1.0.0"},
+      "label": "积木基础订单",
+      "rule": {"input": "light", "operator": "lt", "threshold": 450, "output": "lamp", "whenTrue": true, "whenFalse": false},
+      "responseWithinMs": 200,
+      "continuous": true,
+      "calibrationStatus": "synthetic",
+      "studentText": "虚拟光照小于 450 时开灯，等于或大于 450 时关灯；持续读取并响应变化，每次变化后最多 200 毫秒响应。",
+      "manualSections": ["02.1", "03.1", "09.1"],
+      "outOfScope": ["市电照明", "按钮手动模式", "显示屏", "联网", "防闪烁滞回", "真实电气仿真"]
+    },
+    {
+      "ref": {"id": "eq-requirement-auto-lamp", "version": "1.1.0"},
+      "label": "轻代码客户变更",
+      "rule": {"input": "light", "operator": "lt", "threshold": 600, "output": "lamp", "whenTrue": true, "whenFalse": false},
+      "responseWithinMs": 200,
+      "continuous": true,
+      "calibrationStatus": "synthetic",
+      "studentText": "展台希望更早开灯：虚拟光照小于 600 时开灯，等于或大于 600 时关灯，响应时限仍为 200 毫秒。",
+      "manualSections": ["02.2", "08.1", "09.1"],
+      "outOfScope": ["改动硬件", "新增模块", "完整重抄积木", "真实光照标定"]
+    }
+  ],
+  "codeChange": {
+    "id": "change-earlier-light",
+    "availableAfter": "blocks",
+    "customerMessage": "基础版已经能演示了。展台挪到了偏暗的位置，我希望灯提早亮起。请把虚拟开灯边界从 450 改到 600，硬件保持原方案。",
+    "fromRequirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.0.0"},
+    "toRequirementRef": {"id": "eq-requirement-auto-lamp", "version": "1.1.0"},
+    "toTestSuiteRef": {"id": "eq-customer-tests-auto-lamp", "version": "1.1.0"},
+    "actions": ["保留积木与对应代码的版本", "找出决定开灯边界的比较表达式", "修改自己的简写 C++", "先预测输入 500 的结果，再运行新版客户测试", "说明为什么旧测试记录不能证明新版需求通过"],
+    "preserve": ["wiring", "components", "blocks_snapshot"],
+    "invalidateEvidence": ["software_test", "compile", "source_export", "upload", "hardware_function_acceptance"],
+    "safetyEvidencePolicy": "安全签核是否可复用由教师按实际变化判断；不得自动迁移到新提交。"
+  },
+  "stages": ["onboarding", "requirements", "wiring", "blocks", "short-code", "hardware", "delivery", "extension", "reflection"],
+  "completionClaims": {
+    "virtualPassed": "软件检查通过",
+    "sourceExported": "已导出源码，尚未证明编译、烧录或实物功能",
+    "hardwarePending": "等待教师现场安全检查与功能验收",
+    "npcStatic": "静态问题卡 · 未接入在线 AI"
+  }
+}

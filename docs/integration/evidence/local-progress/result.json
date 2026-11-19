@@ -1,0 +1,79 @@
+{
+  "scope": "Real IndexedDB persistence only; teaching policy is a test double, objective software runs are real.",
+  "saved": {
+    "notice": "仅存储验证，教学策略为测试替身",
+    "storage": {
+      "status": "saved",
+      "externalRevision": null
+    },
+    "revision": 13,
+    "learnerId": "local-learner-4627d465-88c2-4957-9cce-5d89ab4bfb0d",
+    "attemptId": "attempt-7d303d70-6d58-45c0-9828-f7279bbe4815",
+    "stage": "software-complete",
+    "income": 100,
+    "incomeEvents": 1,
+    "attempts": 1,
+    "tests": [
+      {
+        "id": "evidence-dc2f2334-9e4a-4986-a3a3-c80ea8b8d30c",
+        "passed": true,
+        "invalidReason": null
+      },
+      {
+        "id": "evidence-77f11227-1d6b-4373-9c1d-ccbb1b2600ea",
+        "passed": false,
+        "invalidReason": null
+      },
+      {
+        "id": "evidence-1f91c514-0446-4eda-a5bb-66e5b3c00e66",
+        "passed": true,
+        "invalidReason": null
+      }
+    ],
+    "source": "const int threshold = 600;\nint light = 0;\nvoid setup() {\n}\nvoid loop() {\n  light = readAnalog(LIGHT);\n  if ((light < threshold)) {\n    writeDigital(LAMP, true);\n  } else {\n    writeDigital(LAMP, false);\n  }\n  waitMs(100);\n}\n",
+    "baseCurrent": true,
+    "codeCurrent": true
+  },
+  "restored": {
+    "notice": "仅存储验证，教学策略为测试替身",
+    "storage": {
+      "status": "restored",
+      "externalRevision": null
+    },
+    "revision": 13,
+    "learnerId": "local-learner-4627d465-88c2-4957-9cce-5d89ab4bfb0d",
+    "attemptId": "attempt-7d303d70-6d58-45c0-9828-f7279bbe4815",
+    "stage": "software-complete",
+    "income": 100,
+    "incomeEvents": 1,
+    "attempts": 1,
+    "tests": [
+      {
+        "id": "evidence-dc2f2334-9e4a-4986-a3a3-c80ea8b8d30c",
+        "passed": true,
+        "invalidReason": null
+      },
+      {
+        "id": "evidence-77f11227-1d6b-4373-9c1d-ccbb1b2600ea",
+        "passed": false,
+        "invalidReason": null
+      },
+      {
+        "id": "evidence-1f91c514-0446-4eda-a5bb-66e5b3c00e66",
+        "passed": true,
+        "invalidReason": null
+      }
+    ],
+    "source": "const int threshold = 600;\nint light = 0;\nvoid setup() {\n}\nvoid loop() {\n  light = readAnalog(LIGHT);\n  if ((light < threshold)) {\n    writeDigital(LAMP, true);\n  } else {\n    writeDigital(LAMP, false);\n  }\n  waitMs(100);\n}\n",
+    "baseCurrent": true,
+    "codeCurrent": true
+  },
+  "atomic": {
+    "fulfilled": 1,
+    "rejections": [
+      "REVISION_CONFLICT"
+    ],
+    "revision": 2
+  },
+  "pageErrors": []
+}

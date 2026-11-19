@@ -1,0 +1,82 @@
+{
+  "checks": [
+    "initial fragment stays empty and emits no student edit",
+    "one persistent exact target",
+    "real flyout drag snaps true into output VALUE",
+    "controlled echo keeps the same workspace instance",
+    "real boolean field menu edits TRUE to FALSE with Chinese meaning",
+    "empty-space drop preserves the loose block and original empty slot",
+    "unconnected drop reports an actual target immediately",
+    "undo restores the connection and reports undo synchronously",
+    "replacement preview leaves true connected until confirmed",
+    "cancel preserves the original value",
+    "confirmed replacement uses false and retains old true loose",
+    "one undo restores the replaced value and removes the new block",
+    "native occupied drop opens replacement confirmation",
+    "native replacement preview protects original true",
+    "entering sequence clears the previous output connection message",
+    "a real missed wait drop preserves the same wait in the workspace",
+    "the same existing wait can be placed before the first statement",
+    "the misplaced existing wait can move from before the root into its own former next-chain",
+    "undo restores the whole misplaced chain without losing its statements",
+    "sequence false remains a real editable FALSE field",
+    "wrong numeric-to-statement placement identifies the actual statement connection",
+    "wrong native value drop identifies the actual boolean VALUE slot",
+    "native wait insertion keeps the original off statement below it",
+    "step placement fills just the chosen wait MS slot",
+    "existing statements can be reordered to off wait on",
+    "external restore recovers exact connection graph without a student edit",
+    "execution focus points to the real supplied Blockly block ID",
+    "external focusTarget restores an exact real slot",
+    "external null focusTarget clears the outline",
+    "real LIGHT reader connects to the numeric observation anchor",
+    "reading undo returns to an empty observation VALUE",
+    "independent mode has no unsolicited target outline",
+    "explicit help can locate the actual target in independent mode",
+    "keyboard selection preview and confirm uses the same connection operation",
+    "disabled editing locks undo and placement actions",
+    "output core blocks fit 1024x768",
+    "sequence core blocks fit 1024x768",
+    "reading core blocks fit 1024x768",
+    "output core blocks fit parent 560x300",
+    "sequence core blocks fit parent 560x300",
+    "reading core blocks fit parent 560x300",
+    "output core blocks fit parent 500x330",
+    "sequence core blocks fit parent 500x330",
+    "reading core blocks fit parent 500x330",
+    "no browser console or page errors"
+  ],
+  "errors": [],
+  "state": {
+    "kind": "reading",
+    "independent": false,
+    "locked": false,
+    "workspace": {
+      "blocks": {
+        "languageVersion": 0,
+        "blocks": [
+          {
+            "type": "eqt_sample",
+            "id": "sample",
+            "x": 245,
+            "y": 70,
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "type": "eqp_read_analog",
+                  "id": ":O?iBdc+6n46y-[VjY2e",
+                  "fields": {
+                    "PORT": "LIGHT"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "feedback": "已按预览放入。可以撤销这一步。",
+    "changes": 31,
+    "coordinateSystem": "CSS px; origin top-left, x right, y down"
+  }
+}

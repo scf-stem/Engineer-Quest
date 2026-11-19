@@ -1,0 +1,62 @@
+{
+  "candidate": "dialogue-b59ccb76e3f9",
+  "sourceRevision": "3a1b0edc81deb7d5b7014cd428c2a38dbd2e8c01",
+  "scope": "Independent blank full walkthrough; functional closure passed but teaching experience rejected",
+  "files": [
+    {
+      "path": "01-candidate-b59ccb76e3f9.jpg",
+      "bytes": 99395,
+      "sha256": "2272c5298b8e97a760b87929a3cc66a464b7c3fb31eed2172ce905fdb03b6191"
+    },
+    {
+      "path": "02-onboarding-1280x720-b59ccb76e3f9.jpg",
+      "bytes": 99233,
+      "sha256": "6aa0e1dd1ae48ab34e73276b2a964a28e9d6a1519cafb66b3b43fb0e74cccfd3"
+    },
+    {
+      "path": "03-resume-same-line-b59ccb76e3f9.jpg",
+      "bytes": 100486,
+      "sha256": "8d0f090dd8482394fc74dd5d58424eeafaf99b30e45304fdd9026cdcefdd1087"
+    },
+    {
+      "path": "04-locked-tool-retains-position-1280x720-b59ccb76e3f9.jpg",
+      "bytes": 67172,
+      "sha256": "5d7f3377f75dff0a66fb240ac1847651a6dd0d8efd80662aaf0c2b8a5989ee72"
+    },
+    {
+      "path": "05-wrong-wire-1280x720-b59ccb76e3f9.jpg",
+      "bytes": 76882,
+      "sha256": "1078f5865544ca1a6c87d35f668f6d18391a2e7c7c9b95247304caafec34480e"
+    },
+    {
+      "path": "06-wire-canvas-1440x900-b59ccb76e3f9.jpg",
+      "bytes": 98040,
+      "sha256": "f60e4d73d6bf705e9b50f8e0c92477a3a26b08c73da19bda1c12f2103f17595a"
+    },
+    {
+      "path": "07-read-stage-wrong-output-hint-b59ccb76e3f9.jpg",
+      "bytes": 104576,
+      "sha256": "3b8cffd861e79c32f1f236d2b4fc97b83ed39cbea71d0472862938edd9b85bd7"
+    },
+    {
+      "path": "08-own-blocks-fit-1280x720-b59ccb76e3f9.jpg",
+      "bytes": 105248,
+      "sha256": "a2337f2b9f827467083746b0e61da24b58a741b513547d7f9fb1800b670d17d2"
+    },
+    {
+      "path": "09-own-block-to-code-mapping-b59ccb76e3f9.jpg",
+      "bytes": 88504,
+      "sha256": "092c8f3aa8a46c86650362bf2a2d99b1db55af27f3658b1f08e5653e559098e9"
+    },
+    {
+      "path": "10-old-code-fails-new-requirement-b59ccb76e3f9.jpg",
+      "bytes": 88043,
+      "sha256": "e269e8a386877d40956b86daf440e5d4d17bfd33d6162d9a9297306533459b85"
+    },
+    {
+      "path": "11-delivery-100EC-1440x900-b59ccb76e3f9.jpg",
+      "bytes": 98768,
+      "sha256": "5ae4b0c5919a371a976eee97f8d44e5dda9b007279680cd1a53db5f6185bb067"
+    }
+  ]
+}

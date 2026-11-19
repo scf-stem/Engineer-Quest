@@ -1,0 +1,170 @@
+{
+  "candidate": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-bc6a0daa1ac0",
+    "sourceDigest": "sha256:bc6a0daa1ac0932ee24b351b8561ae901f844f989ebeca39210070981d92f4cc",
+    "sourceRevision": "0c8110b580c4b5329ee3646c2d813c1ac9ec6ae6",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "studentAcceptance": "See separate independent computer-use report; these are E implementation regressions.",
+  "files": [
+    {
+      "file": "1024-accepted-150.png",
+      "bytes": 503194,
+      "sha256": "93075951c10cc2c5688d8e6211f8e2d36cc4669f55e73cc89f07bbd56bc7cf62",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1024-own-code-choices.png",
+      "bytes": 362051,
+      "sha256": "ae09c696382cb8177dfe93e7710a7baf379d8d0a2497d9c9e8b97395bbb93ad2",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1024-own-evidence.png",
+      "bytes": 356981,
+      "sha256": "54eed2d63c9e853d78805cbc49d12d3de01d33cfa7afe1376e65c17415e3e061",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1024-retry.png",
+      "bytes": 482057,
+      "sha256": "681bf3d7515f502c6bc66f4143a31d345f333a0a173c03c0c7386146d8a312eb",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1024-text-200.png",
+      "bytes": 570657,
+      "sha256": "bfc9661c5415b47806278334c53c35b4784f44cc82bf3b5ad4512ae8ee854dac",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1024-transfer-controls-fit.png",
+      "bytes": 513398,
+      "sha256": "631d0e51ca4d340102ce5a07169531e1dbc5de275536ae7cb0faff3494d48fbc",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1280-equal-choices.png",
+      "bytes": 565505,
+      "sha256": "22b29526ff87026ef3b2e44b9aafa60d56f5707398c910fff579016a3b91e4ec",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1280-save-recovery.png",
+      "bytes": 545255,
+      "sha256": "a9841e5d9327cf030fdad59830cf7bb0de0b44ab9474195121bd2e5b2a5e75c3",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1280-transfer-controls-fit.png",
+      "bytes": 633620,
+      "sha256": "0f9d4db8837892fff62e5ceaa5ccc8bc50c6eb8a2be8df424301746164393a3b",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "1920-observe.png",
+      "bytes": 1031263,
+      "sha256": "9c28cd5bc43e340a0ea275b77e2b1f392943b74839ce6037039ad0121f61bd91",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "archive-replay.log",
+      "bytes": 122,
+      "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d",
+      "scope": "historic-own-work-twelve-report-replay-not-new-blank-playthrough"
+    },
+    {
+      "file": "build.log",
+      "bytes": 2380,
+      "sha256": "c7bab775637067846e562cdbfd57748c96a6037b2ac48c2ba58b38bde7ce7b38",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "candidate-build.json",
+      "bytes": 375,
+      "sha256": "339f7b55acf29e39f539e240a6e52bb7b1921005a76c54cba4441e7e1bf1c00e",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "final-feedback-before-wiring.png",
+      "bytes": 627982,
+      "sha256": "090c48683d85998208e2a4789284e9efb45322297221b871fe1e381d059fcb8d",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "integrated-page12-mobile.png",
+      "bytes": 111697,
+      "sha256": "709d9536ed07972ca58844d864261a16daea9eab4d58f62522327278dfe0e22b",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "integrated-page8-1280.png",
+      "bytes": 164261,
+      "sha256": "00930c131f67e275bd45dbb63f88475ac17b9a4f643472b83ac1dee7567d2a06",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "module-harness.json",
+      "bytes": 168,
+      "sha256": "f74afdfa68b2e84ce35df31cc5d66e61c9041e51673ecee9e1b321970e8266cb",
+      "scope": "actual-D-and-native-IDB-module-harness-not-gameplay-signoff"
+    },
+    {
+      "file": "module-harness.log",
+      "bytes": 148,
+      "sha256": "6fcf793aa6a475bd68c6afee09018a7f74c649fda11e1543204132278258cec8",
+      "scope": "actual-D-and-native-IDB-module-harness-not-gameplay-signoff"
+    },
+    {
+      "file": "production-browser.log",
+      "bytes": 4953,
+      "sha256": "fdd1a71ac6dd61a23613d99aefff8f37299346e98815b6044318fc68108183ed",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "served-taskbook-sha256.json",
+      "bytes": 3112,
+      "sha256": "4b2b169510bcf5344ee71a31a5422da3ef77740ea507eae0511037749f1eb434",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "standard-client-state.json",
+      "bytes": 751,
+      "sha256": "b979489a165ee6f1506c575619ff96558b7ac936a5eac3b9fd4fc3ffed81f021",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "standard-client.png",
+      "bytes": 223396,
+      "sha256": "4dfd7eddb373ab57ff56d27b3024b447f153e7f9bdd9e29098083a082db714b8",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "storage-ui-98d13de.log",
+      "bytes": 2468,
+      "sha256": "34ada0cb864eda17548a23f29fa73beb4eccf31a3076673a2698e959d4506555",
+      "scope": "prior-storage-fix-98d13de-teaching-policy-test-double"
+    },
+    {
+      "file": "story-player-receipt.png",
+      "bytes": 370970,
+      "sha256": "4a3e481b81d4648bc5c22a50c5f84cd78735f859fba8bf7392ab62d0e3802baa",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "taskbook-resources.log",
+      "bytes": 127,
+      "sha256": "1f6d24009a0924c252a29ca7897a3b0d0aa41cf9fc632863c0da860a0a31b0c3",
+      "scope": "fixed-candidate-regression"
+    },
+    {
+      "file": "unit.log",
+      "bytes": 16303,
+      "sha256": "4c49e51eb8480a8017523c01f9391f68101d98cf17298bdac82b7f39418a61e4",
+      "scope": "fixed-candidate-regression"
+    }
+  ]
+}

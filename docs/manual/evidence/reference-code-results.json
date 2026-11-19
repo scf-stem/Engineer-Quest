@@ -1,0 +1,13 @@
+{
+  "file": "docs/manual/工程参考.md",
+  "codeBlocks": 1,
+  "results": [
+    {
+      "index": 0,
+      "status": "executed",
+      "validation": true,
+      "diagnostics": [],
+      "outputEvents": []
+    }
+  ]
+}

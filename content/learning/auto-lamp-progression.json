@@ -1,0 +1,530 @@
+{
+  "ref": {
+    "id": "eq-auto-lamp-requirements",
+    "version": "0.2.0"
+  },
+  "schemaVersion": "eq-requirement-lesson/1",
+  "status": "local_synthetic_validation",
+  "policy": {
+    "passScope": "只验证以下具体情境选择，不能声称理解了任意中文或掌握了职业能力。",
+    "presentation": "只投影当前题；完成后才整理学生已验证的方案，不在入口显示整套标准答案。",
+    "legacy": "旧四选项、解释字数、点击下一句与手册浏览都不能替代情境证据。",
+    "help": "每题可选择不确定；求助不扣钱、不扣资格，保留当前作品并提供局部观察和重试。",
+    "selfReportText": "只对有限明确求助原句保守转引导，其余文本未做语义判断；不使用关键词判对。",
+    "physical": "本课参数为合成约定；不批准实物、不执行烧录。"
+  },
+  "explicitHelpPhrases": [
+    "我完全不懂，随便选的。",
+    "我不懂",
+    "我不知道",
+    "我只是猜的",
+    "随便选的",
+    "我需要帮助"
+  ],
+  "lessons": [
+    {
+      "requirementVersion": "1.0.0",
+      "stageId": "requirements",
+      "title": "订单 01：校园自动灯的工作约定",
+      "goal": "用六个情境确认装置读什么、怎样判断、怎样响应和持续工作。",
+      "readyAction": {
+        "type": "open-practice",
+        "label": "带着方案去认识元件",
+        "targetId": "wiring"
+      },
+      "checkpoints": [
+        {
+          "id": "req-light-input",
+          "title": "先找到会变化的信息",
+          "manualSection": "03.1",
+          "scene": {
+            "description": "同一分钟，工作人员把桌面装置从窗边移进阴影。日期和时间没变，周围却暗了。"
+          },
+          "prompt": "要让灯回应眼前的环境，装置每次最需要读取哪项信息？",
+          "options": [
+            {
+              "optionId": "calendar",
+              "label": "今天是星期几"
+            },
+            {
+              "optionId": "current-light",
+              "label": "此刻周围光照的读数"
+            },
+            {
+              "optionId": "old-light",
+              "label": "刚开机时记住的读数"
+            }
+          ],
+          "answerOptionId": "current-light",
+          "successFact": "学生选择了能反映当前环境的光照输入。",
+          "wrongFeedback": {
+            "code": "REQ_INPUT_NOT_CURRENT",
+            "message": "日期和旧读数无法区分这次从窗边到阴影的变化。",
+            "observedFact": "选择的信息没有跟随本次光照变化。"
+          },
+          "guidance": {
+            "id": "guide-input",
+            "title": "比较同一时刻的两个位置",
+            "observation": "窗边和阴影处的时间相同，光照不同。",
+            "tryThis": "指一指两个位置中真正发生改变的信息，再重选需要读取的量。"
+          }
+        },
+        {
+          "id": "req-dark-action",
+          "title": "暗下来时要发生什么",
+          "manualSection": "03.1",
+          "scene": {
+            "description": "客户想在桌面变暗时看清物品。虚拟仪表标注“低值较暗”，读数由 820 降到 160。",
+            "light": 160,
+            "previousLight": 820,
+            "synthetic": true
+          },
+          "prompt": "针对这一次变暗，哪一个灯的动作符合客户用途？",
+          "options": [
+            {
+              "optionId": "lamp-off",
+              "label": "关闭灯"
+            },
+            {
+              "optionId": "ignore-change",
+              "label": "不处理，让灯保持原样"
+            },
+            {
+              "optionId": "lamp-on",
+              "label": "打开灯"
+            }
+          ],
+          "answerOptionId": "lamp-on",
+          "successFact": "学生把变暗的输入与需要照明的输出联系起来。",
+          "wrongFeedback": {
+            "code": "REQ_DARK_OUTPUT",
+            "message": "这次桌面已经变暗，关闭或忽略都不能提供客户需要的照明。",
+            "observedFact": "暗场景选择的输出没有让灯亮起。"
+          },
+          "guidance": {
+            "id": "guide-dark",
+            "title": "先看客户此刻遇到什么",
+            "observation": "这里只讨论桌面暗下来这一刻，还没有写程序。",
+            "tryThis": "用手遮住场景中的光源，想一想需要 LED 呈现哪种状态，再重试。"
+          }
+        },
+        {
+          "id": "req-bright-action",
+          "title": "已经亮着的灯也要能关",
+          "manualSection": "07.2",
+          "scene": {
+            "description": "灯刚在暗处亮起。工作人员移开遮挡，虚拟读数变为 810，桌面已亮；客户要求亮处关灯。",
+            "light": 810,
+            "previousLamp": true,
+            "synthetic": true
+          },
+          "prompt": "这时程序需要给 LED 什么动作？",
+          "options": [
+            {
+              "optionId": "lamp-off",
+              "label": "明确关闭灯"
+            },
+            {
+              "optionId": "keep-on",
+              "label": "只处理开灯，不处理关灯"
+            },
+            {
+              "optionId": "lamp-on",
+              "label": "再发一次开灯动作"
+            }
+          ],
+          "answerOptionId": "lamp-off",
+          "successFact": "学生验证了亮处的关闭分支，未把一直亮当作自动灯。",
+          "wrongFeedback": {
+            "code": "REQ_BRIGHT_BRANCH_MISSING",
+            "message": "灯已经亮着，不给关灯动作会留下旧状态。",
+            "observedFact": "亮场景仍选择开灯或保留亮灯状态。"
+          },
+          "guidance": {
+            "id": "guide-bright",
+            "title": "比较旧状态与需要的新状态",
+            "observation": "当前 LED 是亮，客户现在需要灭。",
+            "tryThis": "先说出状态要怎样改变，再选择能产生这个变化的动作。"
+          }
+        },
+        {
+          "id": "req-read-again",
+          "title": "过一会儿又暗了",
+          "manualSection": "07.1",
+          "scene": {
+            "description": "开机时读数 150，后来是 850，接着又变成 180。装置不能要求工作人员每次重新启动。",
+            "lightSequence": [
+              150,
+              850,
+              180
+            ],
+            "synthetic": true
+          },
+          "prompt": "怎样才能发现后面的两次变化？",
+          "options": [
+            {
+              "optionId": "repeat-old-result",
+              "label": "循环发送开机时算出的结果"
+            },
+            {
+              "optionId": "restart-device",
+              "label": "每次让工作人员重新启动"
+            },
+            {
+              "optionId": "read-decide-repeat",
+              "label": "持续重新读取，再判断和更新输出"
+            }
+          ],
+          "answerOptionId": "read-decide-repeat",
+          "successFact": "学生区分了持续重新读取与重复旧结果。",
+          "wrongFeedback": {
+            "code": "REQ_STALE_INPUT",
+            "message": "反复使用 150 不会发现后来的 850 和 180；重新启动也不符合持续演示。",
+            "observedFact": "选择的方式不能自行读取后续光照变化。"
+          },
+          "guidance": {
+            "id": "guide-repeat",
+            "title": "把三个时刻分开看",
+            "observation": "同一装置先暗、再亮、再暗。每个时刻都有新的输入。",
+            "tryThis": "依次指向三个读数，问“这一次程序从哪里取得新值”，再重试。"
+          }
+        },
+        {
+          "id": "req-base-equality",
+          "title": "客户边界也要说准确",
+          "manualSection": "09.1",
+          "scene": {
+            "description": "客户为本次虚拟演示规定：读数小于 450 时亮，否则灭。现在刚好读到 450。这不是实际模块的通用标定值。",
+            "light": 450,
+            "synthetic": true
+          },
+          "prompt": "刚好等于 450 时，这张订单期望灯怎样？",
+          "options": [
+            {
+              "optionId": "lamp-on",
+              "label": "亮，等于也算小于"
+            },
+            {
+              "optionId": "lamp-off",
+              "label": "灭，等于不属于小于"
+            },
+            {
+              "optionId": "change-customer-rule",
+              "label": "先改客户预期，让它跟我的程序一致"
+            }
+          ],
+          "answerOptionId": "lamp-off",
+          "successFact": "学生验证了严格小于的等值边界。",
+          "wrongFeedback": {
+            "code": "REQ_BOUNDARY_EQUALITY",
+            "message": "450 等于边界，不是小于边界；客户预期不会随程序改写。",
+            "observedFact": "等值场景的选择与当前客户比较规则不一致。"
+          },
+          "guidance": {
+            "id": "guide-equality",
+            "title": "把小于与等于分开",
+            "observation": "449、450、451 是三个不同位置。",
+            "tryThis": "先把三个数放到边界两侧与边界上，再只回答中间这个数。"
+          }
+        },
+        {
+          "id": "req-transfer-sequence",
+          "title": "换一组输入，自己预测",
+          "manualSection": "09.1",
+          "scene": {
+            "description": "同一订单换了一组光照，按顺序读到 620、430、450、200。请沿用刚才已确认的客户规则。",
+            "lightSequence": [
+              620,
+              430,
+              450,
+              200
+            ],
+            "synthetic": true
+          },
+          "prompt": "LED 应按哪个顺序变化？",
+          "options": [
+            {
+              "optionId": "trace-a",
+              "label": "灭 → 亮 → 亮 → 亮"
+            },
+            {
+              "optionId": "trace-b",
+              "label": "灭 → 亮 → 灭 → 亮"
+            },
+            {
+              "optionId": "trace-c",
+              "label": "亮 → 灭 → 亮 → 灭"
+            },
+            {
+              "optionId": "trace-d",
+              "label": "一直保持第一次的灭"
+            }
+          ],
+          "answerOptionId": "trace-b",
+          "successFact": "学生在另一组输入上同时应用了明暗、边界与持续读取规则。",
+          "wrongFeedback": {
+            "code": "REQ_TRANSFER_MISMATCH",
+            "message": "这组预测至少有一次没有沿用当前规则。请逐个读数检查，特别看边界和后续变化。",
+            "observedFact": "新输入序列的预测与冻结客户行为不一致。"
+          },
+          "guidance": {
+            "id": "guide-transfer",
+            "title": "一次判断一个时刻",
+            "observation": "四个时刻都需要取当前读数；第三个恰好等于边界。",
+            "tryThis": "给每个读数标出小于、等于或大于边界，再分别选灯状态，不要一次猜整串。"
+          }
+        }
+      ]
+    },
+    {
+      "requirementVersion": "1.1.0",
+      "stageId": "short-code",
+      "title": "订单 01 变更：让灯提早亮",
+      "goal": "先预测新行为，定位该改的逻辑，再说明为什么需要新版测试。",
+      "readyAction": {
+        "type": "open-practice",
+        "label": "修改自己的比较规则并复测",
+        "targetId": "short-code"
+      },
+      "checkpoints": [
+        {
+          "id": "change-middle",
+          "title": "新旧需求有什么可见区别",
+          "manualSection": "02.2",
+          "scene": {
+            "description": "客户将虚拟边界从 450 改成 600，仍是读数小于边界时亮。现在输入 500，硬件没有变化。",
+            "light": 500,
+            "synthetic": true
+          },
+          "prompt": "与旧订单比较，新订单下 500 应怎样？",
+          "options": [
+            {
+              "optionId": "same-off",
+              "label": "仍灭，450 以后都不再检查"
+            },
+            {
+              "optionId": "now-on",
+              "label": "现在应亮，500 落在新边界之下"
+            },
+            {
+              "optionId": "rewire-only",
+              "label": "必须先换一个信号口才有答案"
+            }
+          ],
+          "answerOptionId": "now-on",
+          "successFact": "学生预测了能区分新旧需求的中间输入。",
+          "wrongFeedback": {
+            "code": "CHANGE_OLD_RULE_REUSED",
+            "message": "这次客户改变的是比较边界；用旧规则或只改接线不能回应新行为。",
+            "observedFact": "500 的预测仍沿用旧行为或误认为必须改硬件。"
+          },
+          "guidance": {
+            "id": "guide-change-middle",
+            "title": "在两个边界之间找一个数",
+            "observation": "500 大于旧边界，又小于新边界。",
+            "tryThis": "分别用旧、新边界判断一次 500，再选本次客户要的结果。"
+          }
+        },
+        {
+          "id": "change-equality",
+          "title": "变更后仍需检查等值",
+          "manualSection": "09.1",
+          "scene": {
+            "description": "新版规则仍是严格小于 600 时亮。现在输入刚好 600。",
+            "light": 600,
+            "synthetic": true
+          },
+          "prompt": "新需求的等值边界应怎样输出？",
+          "options": [
+            {
+              "optionId": "lamp-off",
+              "label": "关闭灯"
+            },
+            {
+              "optionId": "lamp-on",
+              "label": "打开灯"
+            },
+            {
+              "optionId": "reuse-last",
+              "label": "边界处不更新，保留旧状态"
+            }
+          ],
+          "answerOptionId": "lamp-off",
+          "successFact": "学生把严格小于应用到新的等值边界。",
+          "wrongFeedback": {
+            "code": "CHANGE_EQUALITY",
+            "message": "边界变了，严格小于的含义没有变；等于和保持旧状态都不能归为小于。",
+            "observedFact": "新版等值输入没有得到明确关闭的预测。"
+          },
+          "guidance": {
+            "id": "guide-change-equality",
+            "title": "换边界，不换比较含义",
+            "observation": "599、600、601 分别位于新边界前、边界上和边界后。",
+            "tryThis": "把刚才区分小于和等于的方法，用到 600 上。"
+          }
+        },
+        {
+          "id": "change-code-focus",
+          "title": "找到需要修改的那类逻辑",
+          "manualSection": "08.1",
+          "scene": {
+            "description": "保持同一接线、光照读取与 LED 输出。客户只希望灯更早亮。"
+          },
+          "prompt": "应先在自己的积木对应代码中定位哪一部分？",
+          "options": [
+            {
+              "optionId": "pin",
+              "label": "把输入端口改成另一个引脚"
+            },
+            {
+              "optionId": "delay",
+              "label": "只改等待时间，比较保持原样"
+            },
+            {
+              "optionId": "comparison",
+              "label": "光照与客户边界进行比较的表达式"
+            }
+          ],
+          "answerOptionId": "comparison",
+          "successFact": "学生把客户变更定位到比较表达式，而非重抄整题。",
+          "wrongFeedback": {
+            "code": "CHANGE_WRONG_EDIT_TARGET",
+            "message": "引脚决定从哪里读，等待影响何时再读；这次要改变的是哪一侧算暗。",
+            "observedFact": "选择的修改位置没有改变客户指定的判断边界。"
+          },
+          "guidance": {
+            "id": "guide-code-focus",
+            "title": "从功能追到代码位置",
+            "observation": "读取、比较、输出、等待承担不同工作。",
+            "tryThis": "在 A 线积木—代码映射中点选比较节点，再回到这题；不需要加载完整示例。"
+          }
+        },
+        {
+          "id": "change-evidence",
+          "title": "哪份证据能证明变更完成",
+          "manualSection": "02.2",
+          "scene": {
+            "description": "旧程序已经通过需求 1.0.0。你刚改了代码，客户现在要求 1.1.0。"
+          },
+          "prompt": "接下来怎样检查，才能证明交付的是新版行为？",
+          "options": [
+            {
+              "optionId": "old-report",
+              "label": "继续使用旧版本的通过记录"
+            },
+            {
+              "optionId": "new-current-suite",
+              "label": "对修改后的确切版本运行完整新版客户测试"
+            },
+            {
+              "optionId": "edit-expected",
+              "label": "把预期改成与程序一致，再显示通过"
+            }
+          ],
+          "answerOptionId": "new-current-suite",
+          "successFact": "学生区分了历史通过与当前版本证据。",
+          "wrongFeedback": {
+            "code": "CHANGE_STALE_EVIDENCE",
+            "message": "旧证据对应旧需求和旧源码；改预期会丢掉客户独立检查。",
+            "observedFact": "选择的证据路径没有核对当前需求与当前作品。"
+          },
+          "guidance": {
+            "id": "guide-evidence",
+            "title": "对照三张版本标签",
+            "observation": "需求、源码和测试都要指向本次提交；旧记录保留作历史。",
+            "tryThis": "先找到三者的版本标签，再选择能一起验证当前提交的动作。"
+          }
+        }
+      ]
+    }
+  ],
+  "practiceMilestones": [
+    {
+      "id": "observe-output",
+      "stageId": "wiring",
+      "title": "先看见一次输出",
+      "goal": "在引导实验里改变一个灯状态，说明这是输出。",
+      "requiresEvidence": [
+        "guided_output_observed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "guided-output",
+      "manualSection": "06.2"
+    },
+    {
+      "id": "read-input",
+      "stageId": "blocks",
+      "title": "读取并观察一个当前值",
+      "goal": "放入读取与变量，调节虚拟光照，确认读数随输入变化。",
+      "requiresEvidence": [
+        "current_input_read_observed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "read-input",
+      "manualSection": "07.1"
+    },
+    {
+      "id": "branch-output",
+      "stageId": "blocks",
+      "title": "让两个分支给出不同动作",
+      "goal": "搭比较与双分支，在暗和亮两个局部场景观察输出。",
+      "requiresEvidence": [
+        "dark_branch_observed",
+        "bright_branch_observed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "branch-output",
+      "manualSection": "07.2"
+    },
+    {
+      "id": "repeat-read",
+      "stageId": "blocks",
+      "title": "再变一次，检查是否重新读取",
+      "goal": "在一次运行里经历暗→亮→暗，确认输入与输出持续更新。",
+      "requiresEvidence": [
+        "repeated_current_read_observed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "repeat-read",
+      "manualSection": "07.1"
+    },
+    {
+      "id": "base-delivery",
+      "stageId": "blocks",
+      "title": "提交完整基础软件版本",
+      "goal": "对自己组合的程序运行冻结基础客户测试，按失败场景排错。",
+      "requiresEvidence": [
+        "base_customer_suite_passed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "base-customer-tests",
+      "manualSection": "09.1"
+    },
+    {
+      "id": "code-mapping",
+      "stageId": "short-code",
+      "title": "从自己积木找到比较代码",
+      "goal": "保留积木快照，定位比较节点对应代码，先预测 500 再修改。",
+      "requiresEvidence": [
+        "own_blocks_snapshot_preserved",
+        "own_comparison_mapping_observed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "comparison-map",
+      "manualSection": "08.1"
+    },
+    {
+      "id": "change-delivery",
+      "stageId": "short-code",
+      "title": "回应客户变更并复测",
+      "goal": "保存确切修改版本，运行完整新版独立客户测试。",
+      "requiresEvidence": [
+        "changed_exact_source_recorded",
+        "change_customer_suite_passed"
+      ],
+      "fullAnswerAllowed": false,
+      "helpTarget": "change-customer-tests",
+      "manualSection": "09.1"
+    }
+  ]
+}

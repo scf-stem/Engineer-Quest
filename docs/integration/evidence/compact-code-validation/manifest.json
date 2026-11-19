@@ -1,0 +1,138 @@
+{
+  "format": "eq.scoped-evidence/1",
+  "candidate": {
+    "format": "eq.candidate-build/1",
+    "id": "dialogue-762e7dcf79d4",
+    "sourceDigest": "sha256:762e7dcf79d41a5144398ae45daf7e9e2a01f7cccefefd2cf3feb2af106abe6e",
+    "sourceRevision": "58326702a2c74e0ff02fae65aabaf4a1affc2ff3",
+    "sourceDirty": false,
+    "mode": "frozen-candidate",
+    "scope": "src/content/public, bundled full manual, root entries and build configuration"
+  },
+  "staticOrigin": "http://127.0.0.1:5240/",
+  "sameDirectoryE2eOrigin": "http://127.0.0.1:5275/",
+  "warning": "自动化/旧档重演不替代新的独立熟悉CUA；末版CUA另存compact-code-independent。",
+  "files": [
+    {
+      "path": "production/00-version.png",
+      "scope": "standard-game-client",
+      "note": "E已目检冻结候选和源码/内容摘要。",
+      "bytes": 222762,
+      "sha256": "4199e071a911dcf2d3124e65b90cd09a416467a08c1dc740381c88e6c2409da6",
+      "testedUrl": "http://127.0.0.1:5240/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/00-text-state.json",
+      "scope": "standard-game-client",
+      "note": "只读文本状态。",
+      "bytes": 792,
+      "sha256": "4ff8efe0339a462a15452d19a40a8b0fffd6abf1b4567cd3c23f6dbd5a6fac7c",
+      "testedUrl": "http://127.0.0.1:5240/"
+    },
+    {
+      "path": "production/1024-code-results.png",
+      "scope": "same-frozen-production-directory",
+      "note": "该尺寸逐个实际新版客户场景检查标签和断言表不横滚；截图为边界场景。",
+      "bytes": 280969,
+      "sha256": "9c46c935b4dc0fc624c77b4971417abdafae2bbf47123f5ef6b1309473725d02",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "path": "production/1280-code-results.png",
+      "scope": "same-frozen-production-directory",
+      "note": "该尺寸逐个实际新版客户场景检查标签和断言表不横滚；截图为边界场景。",
+      "bytes": 262997,
+      "sha256": "fd4b83c8b0095769908a0fa51d5768eb3c3b7207450c3e0acdfbcd973b5e9960",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "production/1440-code-results.png",
+      "scope": "same-frozen-production-directory",
+      "note": "该尺寸逐个实际新版客户场景检查标签和断言表不横滚；截图为边界场景。",
+      "bytes": 299237,
+      "sha256": "f750626c04e9b6f0038d62ce2ecec7fba0dc083f912865420993ff38051b755b",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "production/3440-code-results.png",
+      "scope": "same-frozen-production-directory",
+      "note": "超宽代码与全部场景标签保持可读/换行。",
+      "bytes": 1910401,
+      "sha256": "070060369456b239eae5f38a43e40d1a32681526a43b84385497940f1d1f6555",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 3440,
+      "height": 1157
+    },
+    {
+      "path": "production/base-refresh-600-current20.png",
+      "scope": "same-frozen-production-directory",
+      "note": "真实编辑/撤销、基础新回信、两个测试入口禁用、明确保留600重关联、当前20/20及100EC。",
+      "bytes": 325280,
+      "sha256": "616bda09f3c927e98cebbb95b55a8ade8dd3ddb6bc8a52d5191eee7e18f39a7a",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "production/1280-diagnostic-visible.png",
+      "scope": "same-frozen-production-directory",
+      "note": "同静态目录错误程序真实运行后，1280实际诊断不再零高。",
+      "bytes": 300575,
+      "sha256": "8316f7d3926fa894b94d6da1d6c92e9a40bf6f6441ebe5cf7b17050875cacf74",
+      "testedUrl": "http://127.0.0.1:5275/",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "logs/210-unit.log",
+      "scope": "root-validation",
+      "note": "最终210/210。",
+      "bytes": 20391,
+      "sha256": "209483916454336e9e91245005083540946fbeda1708ddc31e888d35ac93aecf"
+    },
+    {
+      "path": "logs/36-production-ui.log",
+      "scope": "root-validation",
+      "note": "同目录最终36/36，无跳过；含三紧凑尺寸逐个场景。",
+      "bytes": 6022,
+      "sha256": "f085d3980db1c5981ed15070564dfa98b90403a63d34ac83f03b16ea136c43b9"
+    },
+    {
+      "path": "logs/build.log",
+      "scope": "root-validation",
+      "note": "5832670相关源干净构建。",
+      "bytes": 2874,
+      "sha256": "e36dc01d8c9b4c9ef90bb295a5350b445cf2274128b03145e127b0732f1484d5"
+    },
+    {
+      "path": "logs/historical-record.log",
+      "scope": "root-validation",
+      "note": "旧12报告/六线/确切代码/单100EC重演，不是原生新员工。",
+      "bytes": 122,
+      "sha256": "0f1e3a23fa04bdf0852cc89f244518fd36be843fb770c1caad9ab8dbb23f587d"
+    },
+    {
+      "path": "served-resources-20.json",
+      "scope": "http-resources",
+      "note": "实际5240的20份美术/任务书资源。",
+      "bytes": 4355,
+      "sha256": "bdabd7bd269d99863f276b51c62435ddfc716bb112b2ae7f265d7f4ffe4b3e74",
+      "testedUrl": "http://127.0.0.1:5240/"
+    },
+    {
+      "path": "source-content-identity.json",
+      "scope": "read-only-source-and-lock-check",
+      "note": "冻结源与根构建内容摘要匹配；实际Node及完整锁定依赖。",
+      "bytes": 1172,
+      "sha256": "aeb1a34d7a2ae395938327e79216effaf9cc04d3f96e018b9e4dd94d0b23c13f"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Engineer Quest",
+  "designVersion": "C-UI-0.3",
+  "createdAt": "2026-11-11",
+  "status": "immersive-local-preview",
+  "assets": [
+    {
+      "id": "eq-office-style-v1",
+      "file": "eq-office-style-v1.jpg",
+      "kind": "generated-atmosphere",
+      "use": [
+        "OfficeHero background",
+        "ArtGallery",
+        "legacy scene-cropped NPC portrait when artSrc is supplied"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "bytes": 536502,
+      "sha256": "af9169c5f6827bc70b6e0a380ee29f202947fc77ce2af46f0e6c120dd875a674",
+      "source": {
+        "method": "built-in image_gen__imagegen",
+        "model": "unverified",
+        "modelEvidence": "The available tool has no model selector and its result has no model name. Do not label this asset Image 2.",
+        "originalFile": "generated_images/exec-2d68e723-1092-4364-95b9-7fa26bc44cee.png (tool-created source, excluded from commit)",
+        "postprocess": "macOS sips JPEG encoding at formatOptions 82; no crop, resize or content edit; UI avatar crop uses CSS only"
+      },
+      "rights": {
+        "origin": "Original image generated for the authorized Engineer Quest local design task. No third-party reference images supplied.",
+        "license": "No third-party asset license asserted. Generated output is subject to the generation service terms; no independent rights clearance or public-release approval is claimed."
+      },
+      "technicalUse": "Atmosphere and character portrait only. Never a circuit diagram, actual PCB, pin map, safety evidence or simulation.",
+      "alt": "原创场景：暖阳照进电子研发工作室，一位戴圆眼镜的工程师站在工位旁",
+      "prompt": "Use case: stylized-concept. Asset type: one original office scene style sample for Engineer Quest, a Chinese high-school beginner embedded engineering career exploration game. Primary request: create a charming editorial game illustration of a small independent electronics studio named only in external UI (NO text in image). Wide horizontal landscape, warm late afternoon light. At right a friendly young adult Chinese female hardware mentor with short dark hair, round glasses and moss-green work jacket with small orange enamel pin, holding a small unlabelled notebook and smiling naturally. At left and center a cozy wooden electronics workbench, retro cream monitor with blank pale screen, green cutting mat, small desk lamp, little component trays, potted plant, stools, soft window shadows, light paper notices. Painterly but crisp hand-drawn linework, warm paper grain, restrained isometric-ish perspective; sophisticated indie management/adventure game concept art, not childish kawaii, not photorealism. Colors: cream #f4eedf, deep forest #193c36, muted jade #7b9e8a, coral orange #df7155, honey #e4bb63. Composition: generous pale uncluttered negative space in the upper left; character on far right; desk occupies lower half; scene fits a wide 3:2 crop. Constraints: original character and environment, no logos, no lettering, no UI, no labels, no circuit diagram, no exact pin representations, no watermark. This image is atmosphere only; all functional wiring and technical labels will be rendered in HTML/SVG."
+    },
+    {
+      "id": "eq-native-ui",
+      "files": [
+        "src/ui/icons.jsx",
+        "src/ui/TerminalIllustration.jsx",
+        "src/ui/tokens.css",
+        "src/ui/quest.css"
+      ],
+      "kind": "project-authored-react-svg-css",
+      "origin": "Original repository source authored for this task; no third-party icon, character or game assets copied.",
+      "license": "Follows project source licensing; no new independent license imposed.",
+      "technicalUse": "TerminalIllustration is a non-authoritative visual example with candidate labels. Replace with the hardware module for actual wiring.",
+      "model": "not-applicable"
+    },
+    {
+      "id": "eq-reading-corner-v1",
+      "file": "eq-reading-corner-v1.webp",
+      "kind": "generated-atmosphere",
+      "use": [
+        "TaskMail scene",
+        "ArtGallery"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 212526,
+      "sha256": "aea3e6805a30afaa225af08de3e9471f740660f9d770f37f819d5560d37806bb",
+      "transparency": {
+        "hasAlpha": false
+      },
+      "source": {
+        "method": "built-in image_gen__imagegen",
+        "model": "not-exposed-by-tool",
+        "originalFile": "generated_images/exec-c592f251-030d-4123-b4f6-2184312d3748.png (tool-created source, excluded from commit)",
+        "referenceAsset": null,
+        "postprocess": "cwebp -q 84 -m 6; unchanged dimensions, no content edit; RGB scene"
+      },
+      "rights": {
+        "origin": "Original image generated for the authorized Engineer Quest local design task; no external reference images supplied.",
+        "license": "Generated output is subject to the generation service terms. No third-party license or independent rights clearance is asserted."
+      },
+      "technicalUse": "Narrative atmosphere and props only. No pin specification, circuit simulation, inventory commitment or safety evidence.",
+      "prompt": "Use case: stylized-concept. Asset type: original client-location illustration for the first automatic LED light commission in Engineer Quest, a high-school engineering career game. Primary request: a quiet school reading corner at dusk, a wooden table beside a tall window, two empty chairs, neatly stacked books with unlettered spines, a small potted plant and a compact unlit desk-lamp prop. The blue early-evening sky and warm remaining sunlight make the tabletop visibly dim; the client problem is a reading corner that needs an automatic light. No people. Original cozy hand-painted indie game illustration, crisp restrained pencil/ink lines, paper grain, editorial sophistication; warm cream, forest green, muted sage, terracotta, honey wood, dusty dusk blue. Wide landscape image, clear depth, main reading desk in the lower middle, uncluttered upper left, generous breathing room. This is narrative atmosphere, not an electrical diagram or actual hardware product. All copy will be external HTML. No text, no letters, no numerals, no signs, no brand marks, no labels, no watermark, no connected electronics, no exposed mains outlet or wall wiring."
+    },
+    {
+      "id": "eq-parts-tray-v1",
+      "file": "eq-parts-tray-v1.webp",
+      "kind": "generated-atmosphere",
+      "use": [
+        "StarterKitCard",
+        "ArtGallery"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "bytes": 324386,
+      "sha256": "15e7c6466dfc16c01eb4383ee28a53a7f853dbf1d99fabeaf5f8dda5348771b5",
+      "transparency": {
+        "hasAlpha": true,
+        "sourceAlphaPreserved": true,
+        "transparentPixels": 520636,
+        "alphaExtrema": [
+          0,
+          254
+        ]
+      },
+      "source": {
+        "method": "built-in image_gen__imagegen",
+        "model": "not-exposed-by-tool",
+        "originalFile": "generated_images/exec-231ac08b-655b-4b99-a85a-1f51294372c5.png (tool-created source, excluded from commit)",
+        "referenceAsset": null,
+        "postprocess": "cwebp -q 86 -m 6 -alpha_q 100; unchanged dimensions, no content edit; alpha channel byte equality checked against original"
+      },
+      "rights": {
+        "origin": "Original image generated for the authorized Engineer Quest local design task; no external reference images supplied.",
+        "license": "Generated output is subject to the generation service terms. No third-party license or independent rights clearance is asserted."
+      },
+      "technicalUse": "Narrative atmosphere and props only. No pin specification, circuit simulation, inventory commitment or safety evidence.",
+      "prompt": "Use case: stylized-concept. Asset type: original transparent-background game prop for Engineer Quest. Primary request: one neat open low-sided component tray containing loose unconnected beginner electronics parts, viewed from a gentle top-down three-quarter angle. A small forest-green generic microcontroller board with a silver USB socket, two warm coral LED bulbs, a small beige axial resistor, a round light-sensitive sensor component on a tiny board, a few short neatly curved unconnected jumper wires, and a folded blank cream instruction card. Every part rests in a separate tray compartment; nothing is wired together. Warm hand-painted editorial game illustration with clean thin ink outlines, soft paper texture, moss-green tray, cream card, honey highlights and terracotta accents. Centered compact landscape arrangement with all edges visible and a clean transparent alpha background; no floor or room. Original art, no logos, no text, no exact pin labels, no circuit diagram, no glowing parts, no people, no watermark. The image is an atmospheric prop; exact component specs and pin names will be HTML/SVG outside the image."
+    },
+    {
+      "id": "eq-lin-portrait-v1",
+      "file": "eq-lin-portrait-v1.webp",
+      "kind": "generated-character",
+      "use": [
+        "NpcReviewPanel default portrait",
+        "ArtGallery"
+      ],
+      "width": 1175,
+      "height": 1338,
+      "bytes": 207482,
+      "sha256": "189ac842daeff83167e83dd93bb4abd9550cf7d3238489e39203ae4861357328",
+      "transparency": {
+        "hasAlpha": true,
+        "sourceAlphaPreserved": true,
+        "transparentPixels": 873737,
+        "alphaExtrema": [
+          0,
+          255
+        ]
+      },
+      "source": {
+        "method": "built-in image_gen__imagegen",
+        "model": "not-exposed-by-tool",
+        "originalFile": "generated_images/exec-fb349d19-5261-4a00-928d-64b5b69c73ce.png (tool-created source, excluded from commit)",
+        "referenceAsset": "eq-office-style-v1",
+        "postprocess": "cwebp -q 86 -m 6 -alpha_q 100; unchanged dimensions, no content edit; alpha channel byte equality checked against original"
+      },
+      "rights": {
+        "origin": "Generated from this project's original office character, with no outside identity reference.",
+        "license": "Generated output is subject to the generation service terms. No third-party license or independent rights clearance is asserted."
+      },
+      "technicalUse": "Narrative atmosphere and props only. No pin specification, circuit simulation, inventory commitment or safety evidence.",
+      "prompt": "Use case: identity-preserve. Asset type: reusable transparent NPC portrait for Engineer Quest. Edit target: the provided office scene. Extract and recompose the same original female engineer character into a clean stand-alone waist-up character portrait on a genuinely transparent background. Preserve her identity: young adult Chinese woman, short tousled dark bob, fine round metal glasses, friendly natural smile, cream collared shirt, forest/moss-green work jacket, small orange square enamel pin on the lapel, brown closed notebook held comfortably. Preserve the warm paper-textured painted indie game style and gentle ink outlines from the source. She faces slightly toward the viewer's left, torso at a subtle three-quarter angle, no exaggerated expression. Show head, shoulders, both hands and notebook; do not cut off the top of the head or elbows. Centered composition with generous clear margin around her silhouette, suitable for a dialogue panel, not a full scene. Remove all room, desk, shelves, windows and plants. Background fully transparent with real alpha. No lettering, no logo, no watermark, no UI, no technical diagram. Do not create a different person."
+    },
+    {
+      "id": "eq-studio-exploration-v1",
+      "file": "eq-studio-exploration-v1.webp",
+      "kind": "generated-exploration-room",
+      "use": [
+        "ExplorationScene background",
+        "ArtGallery"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 275918,
+      "sha256": "ac575543d080a924eb5bd1940dab712e1e555ec87cdde24852fc9dc700d290a3",
+      "source": {
+        "method": "built-in image_gen__imagegen",
+        "model": "not-exposed-by-tool",
+        "originalFile": "generated_images/exec-78aebddc-0e96-4be5-809a-bf5fcfe3eac1.png (excluded from commit)",
+        "referenceAsset": "eq-office-style-v1",
+        "postprocess": "cwebp -q 84 -m 6; no crop, resize or content edit"
+      },
+      "rights": {
+        "origin": "Original room recomposed from the project's own original office and mentor illustration for the authorized immersive prototype.",
+        "license": "Generated output is subject to the generation service terms. No third-party license or independent rights clearance is asserted."
+      },
+      "technicalUse": "Spatial atmosphere only. HTML buttons overlay three visual hotspots; no text, pin map, wiring or validation is encoded in the image.",
+      "prompt": "Use case: stylized-concept. Asset type: a wide original explorable-room background for Engineer Quest, a Chinese high-school beginner engineering adventure. Edit/reference image: the supplied original office scene establishes the same female mentor identity and warm hand-painted style. Recompose it into a full wide 16:9 game environment, slightly elevated three-quarter side view, eye-level enough to feel present, not a UI mockup. A small cozy electronics studio at blue hour with rich forest/teal shadows and warm amber desk lamps. Build three clear interaction areas with generous separation: LEFT at about 20% horizontal is a small wooden company mail station with one cream envelope sticking out and a corkboard of completely blank paper, CENTER at about 52% horizontal is the main wooden workbench with a green open loose-parts tray and a closed cream manual, RIGHT at about 80% horizontal is the same original young adult Chinese female mentor with short dark bob, round glasses, green work jacket and small orange square pin, standing beside her stool and holding her brown notebook. Keep her complete head and torso visible, friendly calm smile. Around them: tall dusk-blue window, shelves, plants, soft wiring tools, blank retro monitor, warm wooden floor, foreground work surface. Crisp editorial ink lines, subtle painted paper grain, sophisticated indie adventure game atmosphere, restrained details that stay readable at laptop scale. Wider room and more atmospheric depth than the source; no game HUD or overlay, no text, no lettering, no numerals, no symbols, no logos, no watermark. Do not draw readable technical labels, connected circuits, exact pin diagrams, sparks or combat equipment. No battle, no fantasy armor, no 3D photoreal rendering. This is only the room art; every hotspot, objective, Chinese word and actual circuit control will be HTML/SVG."
+    }
+  ],
+  "updatedAt": "2026-11-11",
+  "generationDecision": "The user authorized direct use of the image generation tool for first-order assets; a model-name confirmation is not a delivery gate."
+}

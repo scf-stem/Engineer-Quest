@@ -1,0 +1,92 @@
+{
+  "candidate": "dialogue-b162dbaedb5a",
+  "sourceRevision": "ceeb1817170db40e0de355d5a76a5d4d3c82b830",
+  "sourceDigest": "sha256:b162dbaedb5ab2e57cc59bac90529e941ba74a32155918525dd1b48d9eebf0ff",
+  "rootBrowserOrigin": "http://127.0.0.1:5267/",
+  "fixedReviewOrigin": "http://127.0.0.1:5234/",
+  "scope": "E修复后自动和目检证据，不替代独立computer use；两个地址服务同一冻结目录",
+  "files": [
+    {
+      "path": "00-fixed-candidate.png",
+      "bytes": 223173,
+      "sha256": "c4dd676feb266ded174586c1eff6ea7463597e55cf6884910f62e459b6438de8",
+      "scope": "实际游戏客户端核对5234版本",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "00-fixed-candidate-state.json",
+      "bytes": 771,
+      "sha256": "a142e164a72d34168030568021e7b9e2176e4efbab1e59c713c869cb6f7c93d4",
+      "scope": "对应空白只读状态"
+    },
+    {
+      "path": "01-g2-real-wait-hold.png",
+      "bytes": 859762,
+      "sha256": "e35ee51d7828341901983fdb309e3bfc4881e07c0e727cee7dc217abdf5a4475",
+      "scope": "真实同一等待块先错放/修正后运行；300ms只是已执行轨迹回放",
+      "dimensions": [
+        1440,
+        900
+      ]
+    },
+    {
+      "path": "02-g3-second-read-1024.png",
+      "bytes": 517765,
+      "sha256": "95c099533403303942a1817ea5ffe7bb7de8fb1161a560aa199cd6ca0b58757d",
+      "scope": "同版第二次本人主动读取后，1024×768核心操作可见",
+      "dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "path": "03-real-drag-and-draft-refresh.png",
+      "bytes": 654925,
+      "sha256": "ba4faef410e607d667289c6756ccdf4c58477bdd65dc18b2da191460222d7db1",
+      "scope": "真实值块拖放/撤销/替换/移走及字段立即刷新恢复",
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "root-browser-3.log",
+      "bytes": 921,
+      "sha256": "38b5ee8cb8e10aab805c5055a43b2611f730419b178307fa5892470aeeeb3b2e",
+      "scope": "本次修复后固定生产目录3条G0–G3路径，非独立CUA"
+    },
+    {
+      "path": "unit-193.log",
+      "bytes": 18476,
+      "sha256": "07a48ec4c00e29a66c9e929591d331146b983114e7ed447beef96fd752755d93",
+      "scope": "修复提交后的193/193真实单测"
+    },
+    {
+      "path": "editor-checks-45.json",
+      "bytes": 3536,
+      "sha256": "643dd973a6c18d339c93162170ac6eb32ca1eddb0673909320ec548a39a2c53a",
+      "scope": "45编辑器控件检查，无应用运行/完成权威"
+    },
+    {
+      "path": "editor-checks-45.log",
+      "bytes": 2627,
+      "sha256": "6ea555df1963d5ea512acceef2b955bdfee3357b3101b392dbc8b124054ccb22",
+      "scope": "对应实际检查日志"
+    },
+    {
+      "path": "build.log",
+      "bytes": 2808,
+      "sha256": "2ded8cb8400b64c36bdfbdfb21fba52fe5480ecc4a189a755cf57928db1871c4",
+      "scope": "固定修复候选生产构建日志"
+    },
+    {
+      "path": "served-resources-20.json",
+      "bytes": 4355,
+      "sha256": "dfed15729e477417af4c9a3373cb05c6104cfd4ba86611109fbf3fb596326aaa",
+      "scope": "最终5234固定候选HTTP资源20项字节/摘要核对，新SVG解析通过"
+    }
+  ]
+}

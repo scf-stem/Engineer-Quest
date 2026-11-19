@@ -1,0 +1,24 @@
+{
+  "method": "Manual custom block recipe constructed independently via serialization; not mouse-drag usability evidence.",
+  "source": "const int threshold = 450;\nint light = 0;\nvoid setup() {\n}\nvoid loop() {\n  light = readAnalog(LIGHT);\n  if ((light < threshold)) {\n    writeDigital(LAMP, true);\n  } else {\n    writeDigital(LAMP, false);\n  }\n  waitMs(100);\n}\n",
+  "checks": [
+    {
+      "phase": "blocks",
+      "threshold": 450,
+      "passed": true,
+      "expected": true
+    },
+    {
+      "phase": "short-cpp",
+      "threshold": 450,
+      "passed": false,
+      "expected": false
+    },
+    {
+      "phase": "short-cpp",
+      "threshold": 600,
+      "passed": true,
+      "expected": true
+    }
+  ]
+}

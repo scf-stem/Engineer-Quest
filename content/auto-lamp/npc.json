@@ -1,0 +1,32 @@
+{
+  "ref": {"id": "eq-npc-question-cards", "version": "0.2.0"},
+  "mode": "static",
+  "notice": "静态选项检查不理解自由文本，不冒充在线 AI。每轮只展示一个问题，固定规则检查与教师语义核对分别记录。",
+  "reviewPolicy": {
+    "allowed": ["提出一个具体问题", "引用当前需求或测试", "指向手册", "建议下一步", "标记需要教师帮助"],
+    "forbidden": ["签核真实硬件", "允许上电", "改变阶段通过状态", "发放收入", "扣减余额", "修改库存", "改写学生代码或需求"],
+    "freeText": "原话可保存但不评分；旧四选项只检查草稿。通过具体情境选择验证当前行为，有限明确求助原句只触发引导。",
+    "fallback": "超时、断网、响应不合法或学生主动选择时进入静态问题卡；保留草稿与已有版本，不循环等待模型。"
+  },
+  "fields": [
+    {"key": "input", "label": "装置读取什么", "expectedOptionId": "light-sensor", "questionId": "req-input", "options": [{"id": "light-sensor", "label": "周围光照的传感器读数"}, {"id": "clock", "label": "只看几点钟"}, {"id": "no-input", "label": "不需要读取信息"}]},
+    {"key": "condition", "label": "按什么规则判断", "expectedOptionId": "below-customer-threshold", "questionId": "req-condition", "options": [{"id": "below-customer-threshold", "label": "读数小于当前客户需求的边界时算暗"}, {"id": "above-customer-threshold", "label": "读数大于边界时算暗"}, {"id": "choose-any-threshold", "label": "我改成多少，客户就按多少验收"}]},
+    {"key": "output", "label": "明暗分别怎样做", "expectedOptionId": "dark-on-bright-off", "questionId": "req-output", "options": [{"id": "dark-on-bright-off", "label": "暗时开灯，亮时关灯"}, {"id": "always-on", "label": "一直开灯"}, {"id": "dark-off-bright-on", "label": "暗时关灯，亮时开灯"}]},
+    {"key": "continuous", "label": "演示过程中怎样工作", "expectedOptionId": "repeat-read-decide", "questionId": "req-continuous", "options": [{"id": "repeat-read-decide", "label": "反复读取、判断和更新灯状态"}, {"id": "read-once", "label": "启动时读一次，以后重复旧结果"}, {"id": "one-shot", "label": "判断一次后结束"}]}
+  ],
+  "questions": [
+    {"id": "req-input", "question": "装置凭什么知道周围暗了？", "manualSection": "03.1", "requirementPath": "rule.input", "nextStep": "选择装置实际需要读取的信息，再继续补全需求卡。"},
+    {"id": "req-condition", "question": "按这张虚拟需求卡，读数落在边界哪一侧才算暗？", "manualSection": "07.2", "requirementPath": "rule", "nextStep": "看清当前需求版本的比较方向和边界，不让客户规则跟着程序改变。"},
+    {"id": "req-output", "question": "装置从暗处移到亮处时，已经亮着的灯应怎样变化？", "manualSection": "07.2", "requirementPath": "rule.whenFalse", "nextStep": "同时写明暗时和亮时的动作。"},
+    {"id": "req-continuous", "question": "启动后光照再次变化，装置怎样发现它？", "manualSection": "07.1", "requirementPath": "continuous", "nextStep": "选择持续重新读取并判断的方式。"},
+    {"id": "req-explanation", "question": "用你自己的话说，光照从暗变亮后装置会经历什么？", "manualSection": "02.1", "requirementPath": "studentText", "nextStep": "补一句自己的解释；不会代码拼写也可以表达。"},
+    {"id": "req-discussion", "question": "如果光照又暗下来，你的方案怎样继续响应？", "manualSection": "02.1", "requirementPath": "continuous", "nextStep": "草稿选项已覆盖。先完成当前版本的逐步情境练习，再由固定规则决定是否能继续。"},
+    {"id": "tech-run", "question": "你能先运行当前需求版本的客户测试，留下预期与实际输出吗？", "manualSection": "09.1", "requirementPath": "rule", "nextStep": "运行整套客户测试，不用手动调光代替通过记录。"},
+    {"id": "tech-failure", "question": "第一条失败记录里，预期和实际输出分别是什么？", "manualSection": "09.2", "requirementPath": "rule", "nextStep": "先复现该场景，再检查相关读取、比较或输出；修改后重新跑整套测试。"},
+    {"id": "tech-budget", "question": "程序在哪一步停止了推进时间或超出了执行预算？", "manualSection": "07.1", "requirementPath": "responseWithinMs", "nextStep": "检查循环与等待，必要时请教师帮助；未完成运行不能当作测试通过。"},
+    {"id": "tech-explain", "question": "你能结合一条明暗往返记录，指出程序在哪一步重新读取了光照吗？", "manualSection": "07.1", "requirementPath": "continuous", "nextStep": "保存当前作品与测试版本，说明一次执行过程；软件通过不代表实物验收。"},
+    {"id": "teacher-help", "question": "你想让教师一起看哪一步的现象和记录？", "manualSection": "09.2", "requirementPath": "studentText", "nextStep": "保留当前个人版本与卡点摘要，提交教师求助。"},
+    {"id": "hardware-teacher", "question": "准备上电前，你是否已经把当前接线版本交给教师现场检查？", "manualSection": "10.1", "requirementPath": "outOfScope", "nextStep": "保持断电并请求教师检查；NPC 和虚拟通过记录不能代替现场批准。"},
+    {"id": "req-guided-observation", "question": "同一时刻从窗边移到阴影，变化的是时间还是光照？", "manualSection": "03.1", "requirementPath": "rule.input", "nextStep": "打开 req-light-input 小情境，比较两个位置；可选择不确定，观察后重试，不用猜整套答案。"}
+  ]
+}

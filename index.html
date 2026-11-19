@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>职业体验课程</title>
+  <link rel="stylesheet" href="/invitation.css">
+  <script src="/enroll.js" type="module"></script>
+</head>
+<body class="quest-shell quest-landing">
+  <header class="quest-header"><a class="wordmark" href="/">Engineer <span>Quest</span></a><span class="site-purpose">职业体验课程</span></header>
+  <main class="landing-layout">
+    <section class="landing-hero" aria-labelledby="course-title">
+      <img src="/art/eq-studio-exploration-v1.webp" alt="" fetchpriority="high" width="1672" height="941">
+      <div class="hero-copy">
+        <h1 id="course-title">动手做一次<br>工程师的任务</h1>
+        <p>从连接传感器到测试 LED，在工程工位里动手试一试，找出你想继续探索的方向。</p>
+      </div>
+    </section>
+    <div class="landing-panel">
+    <section id="account" hidden>
+      <h2 id="mode-title">注册体验平台</h2>
+      <form id="registration">
+        <div class="account-field"><label for="student-name">姓名</label><input id="student-name" name="student_name" required maxlength="100" type="text" autocomplete="username" aria-describedby="name-note"><small id="name-note">登录时使用这个姓名</small></div>
+        <div class="account-field"><label for="password">密码</label><input id="password" name="password" required minlength="8" maxlength="128" type="password" autocomplete="new-password"></div>
+        <div class="account-field" data-registration data-school-grade><label for="grade">年级</label><input id="grade" name="grade_band" required maxlength="20" type="text" placeholder="如：高一"></div>
+        <div class="account-field" data-registration data-school-grade><label for="school">学校</label><input id="school" name="school" required maxlength="100" type="text" autocomplete="organization"></div>
+        <label data-registration class="notice"><input type="checkbox" name="notice" value="quest-profile/3" required><span>我已了解，注册资料和答卷用于本次课程体验，售前团队和指定开发人员可在 OA 查看。</span></label>
+        <button type="submit" id="submit-account">注册并选课</button>
+      </form>
+      <button type="button" class="secondary" id="switch-mode">已有账号？登录</button>
+    </section>
+    <section id="courses" hidden>
+      <div class="student-toolbar"><p id="student-greeting"></p><button id="switch-student" type="button" class="secondary">切换学生</button></div>
+      <h2>选择体验课</h2>
+      <div id="course-options"></div>
+    </section>
+    <p id="status" role="status" aria-live="polite">正在读取课程…</p>
+    </div>
+  </main>
+</body>
+</html>

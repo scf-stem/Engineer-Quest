@@ -1,0 +1,33 @@
+
+> engineer-quest@0.2.0 build
+> vite build --outDir /tmp/eq-storyline-candidate3
+
+vite v7.3.8 building client environment for production...
+transforming...
+Module "src/integration/learning-policy-adapter.js" tried to import "content/learning/auto-lamp-progression.json" with no attributes, but it was already imported elsewhere with "type": "json" attributes. Please ensure that import attributes for the same module are always consistent.
+✓ 163 modules transformed.
+
+(!) outDir /tmp/eq-storyline-candidate3 is not inside project root and will not be emptied.
+Use --emptyOutDir to override.
+
+rendering chunks...
+computing gzip size...
+../../../../tmp/eq-storyline-candidate3/candidate-build.json                 0.38 kB │ gzip:   0.27 kB
+../../../../tmp/eq-storyline-candidate3/index.html                           0.45 kB │ gzip:   0.32 kB
+../../../../tmp/eq-storyline-candidate3/legacy.html                          0.53 kB │ gzip:   0.34 kB
+../../../../tmp/eq-storyline-candidate3/assets/首单虚拟接线-CeXvSOmR.svg           4.80 kB │ gzip:   1.91 kB
+../../../../tmp/eq-storyline-candidate3/assets/legacy-Bjn7rD1L.css           4.20 kB │ gzip:   1.53 kB
+../../../../tmp/eq-storyline-candidate3/assets/ProgramBlocks-oclwoMxw.css    5.25 kB │ gzip:   1.34 kB
+../../../../tmp/eq-storyline-candidate3/assets/main-B34cJ6vN.css           158.85 kB │ gzip:  32.48 kB
+../../../../tmp/eq-storyline-candidate3/assets/ProgramBlocks-Comugds8.js    11.57 kB │ gzip:   5.15 kB
+../../../../tmp/eq-storyline-candidate3/assets/program-CSFNRkOk.js          15.94 kB │ gzip:   6.78 kB
+../../../../tmp/eq-storyline-candidate3/assets/legacy-DQ-rX6k6.js           21.26 kB │ gzip:   8.77 kB
+../../../../tmp/eq-storyline-candidate3/assets/client-aY1eXhyH.js          222.19 kB │ gzip:  69.12 kB
+../../../../tmp/eq-storyline-candidate3/assets/main-CnMlSvxv.js            452.65 kB │ gzip: 167.95 kB
+../../../../tmp/eq-storyline-candidate3/assets/zh-hans-BCYkcVnv.js         753.13 kB │ gzip: 193.60 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.26s

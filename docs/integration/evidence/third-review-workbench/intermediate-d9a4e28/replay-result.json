@@ -1,0 +1,148 @@
+{
+  "scope": "Replay of E actual third-review workbench inspection and change coaching on an existing own work; latest independent blank experience re-review pending",
+  "archiveDigest": "sha256:3bf848d0dbc12ac8270217dd1cad353c55c5948c5a1d6e8f8ec953cb96c8394f",
+  "manualRef": {
+    "id": "eq-student-manual",
+    "version": "0.2.0-local-full",
+    "digest": "sha256:6b937d8b548d36b3536184014482b9aff3857d7d4d071a1784f5c30cd8c27ade"
+  },
+  "currentManualRef": {
+    "id": "eq-student-manual",
+    "version": "0.2.0-local-full",
+    "digest": "sha256:6b937d8b548d36b3536184014482b9aff3857d7d4d071a1784f5c30cd8c27ade"
+  },
+  "manualMatchesCurrent": true,
+  "learnerId": "local-learner-ff014aee-2a64-4de9-b6d1-57e62f3693fa",
+  "attemptId": "attempt-96b7e0b9-a65a-4d90-90ab-ebfded9e119d",
+  "tests": [
+    {
+      "phase": "blocks",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "short-cpp",
+      "passed": false,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "blocks",
+      "passed": false,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "blocks",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "blocks",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": "当前执行版本与旧结果不同"
+    },
+    {
+      "phase": "blocks",
+      "passed": true,
+      "invalidReason": null
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": null
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": null
+    }
+  ],
+  "learning": [
+    {
+      "id": "requirements-review",
+      "state": "observed"
+    },
+    {
+      "id": "observe-output",
+      "state": "observed"
+    },
+    {
+      "id": "read-input",
+      "state": "observed"
+    },
+    {
+      "id": "branch-output",
+      "state": "observed"
+    },
+    {
+      "id": "repeat-read",
+      "state": "observed"
+    },
+    {
+      "id": "base-delivery",
+      "state": "observed"
+    },
+    {
+      "id": "change-review",
+      "state": "observed"
+    },
+    {
+      "id": "code-mapping",
+      "state": "observed"
+    },
+    {
+      "id": "change-delivery",
+      "state": "observed"
+    }
+  ],
+  "observedActions": [
+    "observe-output",
+    "read-input",
+    "read-input",
+    "read-input",
+    "branch-output",
+    "branch-output",
+    "repeat-read",
+    "customer-tests",
+    "preserve-snapshot",
+    "code-mapping",
+    "customer-tests",
+    "customer-tests",
+    "read-input",
+    "branch-output",
+    "branch-output",
+    "repeat-read",
+    "customer-tests",
+    "customer-tests",
+    "preserve-snapshot",
+    "customer-tests",
+    "customer-tests",
+    "preserve-snapshot",
+    "code-mapping",
+    "customer-tests",
+    "customer-tests",
+    "code-mapping",
+    "preserve-snapshot",
+    "customer-tests",
+    "code-mapping",
+    "customer-tests"
+  ],
+  "income": 100,
+  "generatedSourceMatchesDownload": true,
+  "targetCompile": "not_run",
+  "physicalUpload": "not_run"
+}

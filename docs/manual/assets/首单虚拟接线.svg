@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="700" viewBox="0 0 1040 700" role="img" aria-labelledby="title desc">
+  <title id="title">首单自动灯：虚拟六线功能连接图</title>
+  <desc id="desc">Arduino Uno 的 5V 接光照模块 VCC，GND_1 接模块 GND，A0 接模块 AO。D9 经串联电阻接 LED 的 A 阳极，K 阴极接 GND_2。三个板内 GND 相通。图为功能示意，不是按针脚距离绘制的实物接线图，电阻规格待实物核验。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#8c570d"/></marker>
+    <style>
+      text { font-family: "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; fill: #183d36; }
+      .title { font-size: 27px; font-weight: 700; }
+      .body { font-size: 20px; }
+      .small { font-size: 17px; }
+      .pin { font-size: 22px; font-weight: 650; }
+      .wire { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .dot { stroke: #fff; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1040" height="700" fill="#f7f7ef"/>
+  <text x="40" y="47" class="title">首单自动灯 / 六线功能连接图</text>
+  <text x="40" y="78" class="small">虚拟映射：LIGHT → A0　LAMP → D9　｜　不是实物布置图，不代表上电批准</text>
+
+  <rect x="45" y="112" width="245" height="468" rx="16" fill="#e4eee7" stroke="#315f51" stroke-width="2"/>
+  <text x="67" y="150" class="title">Arduino Uno</text>
+  <text x="67" y="180" class="small">家族 / 候选引脚</text>
+  <text x="67" y="209" class="small">按标签找口，不按图量距</text>
+
+  <rect x="672" y="112" width="320" height="227" rx="16" fill="#f5ecd4" stroke="#8c6c2d" stroke-width="2"/>
+  <text x="696" y="151" class="title">光照模块</text>
+  <text x="696" y="181" class="small">AO 模拟输出 / 合成模型</text>
+
+  <text x="222" y="246" class="pin">5V</text>
+  <path d="M290 240H672" class="wire" stroke="#b54c33"/>
+  <circle cx="290" cy="240" r="7" fill="#b54c33" class="dot"/><circle cx="672" cy="240" r="7" fill="#b54c33" class="dot"/>
+  <text x="696" y="247" class="pin">VCC</text>
+  <text x="376" y="226" class="small">① 电源连接</text>
+
+  <text x="186" y="287" class="pin">GND_1</text>
+  <path d="M290 281H672" class="wire" stroke="#52667a"/>
+  <circle cx="290" cy="281" r="7" fill="#52667a" class="dot"/><circle cx="672" cy="281" r="7" fill="#52667a" class="dot"/>
+  <text x="696" y="288" class="pin">GND</text>
+  <text x="480" y="272" class="small">② 公共地</text>
+
+  <text x="227" y="328" class="pin">A0</text>
+  <path d="M661 322H305" class="wire" stroke="#8c570d" marker-end="url(#arrow)"/>
+  <circle cx="290" cy="322" r="7" fill="#8c570d" class="dot"/><circle cx="672" cy="322" r="7" fill="#8c570d" class="dot"/>
+  <text x="696" y="329" class="pin">AO</text>
+  <text x="371" y="355" class="small">③ 模块 AO → 板 A0（字母 O / 数字 0）</text>
+
+  <text x="227" y="444" class="pin">D9</text>
+  <path d="M290 438H410" class="wire" stroke="#267262"/>
+  <circle cx="290" cy="438" r="7" fill="#267262" class="dot"/>
+  <text x="330" y="420" class="small">④</text>
+  <rect x="410" y="407" width="150" height="62" rx="6" fill="#efe0ba" stroke="#6d6044" stroke-width="2"/>
+  <text x="424" y="445" class="pin">1</text><text x="531" y="445" class="pin">2</text>
+  <text x="450" y="444" class="body">电阻</text>
+  <text x="399" y="496" class="small">串联；规格待实物核验</text>
+  <path d="M560 438H712" class="wire" stroke="#267262"/>
+  <text x="619" y="420" class="small">⑤</text>
+
+  <rect x="712" y="402" width="260" height="74" rx="12" fill="#f8e5d9" stroke="#a65b43" stroke-width="2"/>
+  <text x="727" y="445" class="pin">A (+)</text><text x="817" y="445" class="pin">LED</text><text x="896" y="445" class="pin">K (−)</text>
+  <path d="M972 438H1008V546H290" class="wire" stroke="#52667a"/>
+  <circle cx="290" cy="546" r="7" fill="#52667a" class="dot"/>
+  <text x="186" y="553" class="pin">GND_2</text>
+  <text x="612" y="535" class="small">⑥ K 回到公共地</text>
+
+  <path d="M170 281H148V546H170" stroke="#52667a" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+  <text x="67" y="375" class="small">板内公共地</text>
+  <text x="67" y="399" class="small">另有 GND_TOP</text>
+  <text x="67" y="423" class="small">三处相通</text>
+
+  <line x1="40" y1="609" x2="1000" y2="609" stroke="#b9c8bd"/>
+  <text x="40" y="638" class="body">读图要点：电阻不能被额外导线旁路；LED 的 A / K 不能反接。</text>
+  <text x="40" y="671" class="small">原创功能图 · 适配基线 8bf7386 · 阈值与读数为合成约定；真实供电、阻值、板型必须另核验。</text>
+</svg>

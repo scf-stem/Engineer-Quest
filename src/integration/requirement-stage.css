@@ -1,0 +1,99 @@
+/* Requirement / change scenes only. Shared mentor, wiring and program layouts keep their defaults. */
+.eq-game .eq-game-mail:has(.eq-requirement-stage)>.eq-game-mail-file,
+.eq-game .eq-game-mail:has(.eq-requirement-stage) .eq-game-section-head{display:none}
+.eq-game .eq-game-mail:has(.eq-requirement-stage){display:block}
+.eq-game .eq-game-requirement:has(>.eq-requirement-stage){padding:12px 18px}
+.eq-game .eq-requirement-stage{--stage-text:clamp(1rem,1.4vw,1.25rem);width:100%;max-width:1440px;padding:0;margin:0 auto;line-height:1.6;font-size:var(--stage-text);color:#e0eced;box-sizing:border-box}
+.eq-requirement-stage *{box-sizing:border-box}
+.eq-requirement-stage .eq-stage-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 10px;min-height:44px}
+.eq-game .eq-requirement-stage .eq-stage-heading h2{font-size:1.1em;line-height:1.4;margin:0;font-weight:550}
+.eq-stage-heading nav{display:flex;gap:8px;flex-shrink:0}
+.eq-game .eq-requirement-stage button{min-height:44px;font:inherit!important;font-size:1em!important;line-height:1.5!important;border:1px solid #6b8b96;border-radius:5px;padding:8px 14px!important;background:#193b49;color:#e2f0ef;cursor:pointer;white-space:normal}
+.eq-game .eq-requirement-stage button:hover:not(:disabled){background:#2b5260;border-color:#b8d7da}
+.eq-game .eq-requirement-stage button:disabled{cursor:default;opacity:.6}
+.eq-game .eq-requirement-stage button:focus-visible,.eq-requirement-stage summary:focus-visible{outline:3px solid #c6fbff;outline-offset:3px}
+.eq-game .eq-requirement-stage .eq-stage-heading button{font-size:.8em!important;min-height:40px;padding:5px 10px!important;background:#112d3b}
+.eq-requirement-stage .eq-stage-scene{display:grid;grid-template-columns:minmax(0,1fr) clamp(140px,17vw,245px);height:clamp(220px,30vh,360px);min-height:13rem;background:linear-gradient(110deg,#203f49,#122b38);border:1px solid #68808a;border-bottom:0;border-radius:8px 8px 0 0;overflow:hidden}
+.eq-stage-world{min-width:0;min-height:0}
+.eq-game[data-storytelling] .eq-requirement-stage .eq-client-desk{height:100%;min-height:0;display:grid;grid-template-rows:auto 1fr auto;justify-items:center;gap:8px;padding:12px 20px;border:0;border-radius:0;background:linear-gradient(#d0d9ce50,#a08864a6),url('/art/eq-reading-corner-v1.webp') center/cover}
+.eq-game[data-storytelling] .eq-requirement-stage .eq-client-desk.is-dark{background-image:linear-gradient(#122c3cba,#122530b0),url('/art/eq-reading-corner-v1.webp')}
+.eq-requirement-stage .eq-client-desk-caption{display:flex;justify-content:space-between;gap:12px;align-self:stretch;width:100%;font-size:.72em;color:#f2f4df;text-shadow:0 2px 5px #000}
+.eq-requirement-stage .eq-client-objects{display:flex;justify-content:center;align-items:center;gap:clamp(40px,7vw,120px);position:relative;margin:0;padding:4px 14px;width:fit-content;max-width:100%;border-radius:6px}
+.eq-requirement-stage .eq-client-meter{display:grid;gap:0;min-width:170px;padding:8px 20px!important;background:#132f3e!important;border:2px solid #a0b7ab!important;border-radius:8px!important;color:#d9eee3!important;box-shadow:0 8px 20px #14272244;cursor:default;text-align:center}
+.eq-requirement-stage .eq-client-meter output{font:550 clamp(36px,3.6vw,56px)/1.1 ui-monospace,monospace;color:#c3f5df}
+.eq-requirement-stage .eq-client-meter small{font-size:.72em}
+.eq-requirement-stage .eq-client-meter small span{font-size:.9em;margin-left:10px;color:#a6c6bd}
+.eq-requirement-stage .eq-client-meter>span{font-size:.65em;margin-top:4px}
+.eq-requirement-stage .eq-client-lamp{font-size:.85em;min-width:70px}
+.eq-requirement-stage .eq-client-lamp i{width:48px;height:54px}
+.eq-requirement-stage .eq-client-lamp.is-on i{background:#ffe7a4;box-shadow:0 10px 0 #b9bbaa,0 0 55px #ffdd75,0 0 100px #ffde5e66}
+.eq-game .eq-requirement-stage .eq-client-shade{font-size:.85em!important;background:#173e4deb!important;min-height:44px;padding:6px 18px!important;color:#fff!important;position:relative}
+.eq-stage-timeline{display:flex;gap:6px;list-style:none;padding:0;margin:0;align-items:center;grid-row:3}
+.eq-stage-timeline li{display:flex;align-items:center;gap:8px;padding:2px 8px;background:#183946d9;border:1px solid #7a9291;font-size:.7em;border-radius:3px}
+.eq-stage-timeline li[aria-current=step]{border-color:#dcebdc;background:#365765}
+.eq-stage-timeline small{font-size:.8em}.eq-stage-timeline strong{font:inherit;font-weight:650}
+.eq-game[data-storytelling] .eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline){grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto minmax(0,1fr) auto;column-gap:8px;row-gap:4px;padding:8px 14px}
+.eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline) .eq-client-desk-caption,
+.eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline) .eq-client-objects{grid-column:1 / -1}
+.eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline) .eq-stage-timeline{grid-column:1;justify-self:center}
+.eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline) .eq-client-shade{grid-column:2;grid-row:3}
+.eq-stage-mentor{position:relative;height:100%;margin:0;overflow:hidden;background:radial-gradient(ellipse at 45% 35%,#47647166,transparent 75%)}
+.eq-stage-mentor img{height:100%;width:100%;display:block;object-fit:cover;object-position:50% 10%;filter:drop-shadow(-12px 6px 14px #08192566)}
+.eq-stage-mentor figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px 16px 10px;background:linear-gradient(transparent,#102c3aea);font-size:1em;color:#e1d1a2}
+.eq-stage-mentor small{display:block;color:#b0c6cb;font-size:.65em}
+.eq-stage-dock{padding:14px 20px 18px;border:1px solid #68808a;border-top:2px solid #b5a16f;border-radius:0 0 8px 8px;background:linear-gradient(115deg,#173b4a,#0d2533);position:relative}
+.eq-stage-speech{display:flex;gap:16px;align-items:baseline;position:relative;border-radius:4px}
+.eq-stage-speaker{color:#eddaac;flex-shrink:0;font-weight:600;font-size:1em}
+.eq-game .eq-requirement-stage .eq-mentor-current-line{font-size:var(--stage-text)!important;line-height:1.65!important;min-height:0;margin:0!important;color:#e3eef0}
+.eq-game .eq-requirement-stage .eq-stage-next-line{font-size:.8em!important;min-height:36px;padding:4px 10px!important;margin:7px 0 0 52px;border-color:#5d808e;color:#b8d5df;background:transparent}
+.eq-game .eq-requirement-stage .eq-stage-question{font-size:1em;line-height:1.5;margin:10px 0 8px;color:#c5dde3}
+.eq-stage-choices{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border-radius:5px}
+.eq-game .eq-requirement-stage .eq-stage-choices button{background:#234552;border-color:#78959d;padding:9px 14px!important;font-size:1em!important;min-height:48px;text-align:left}
+.eq-stage-feedback{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:12px;padding:4px 0;position:relative;border-radius:4px}
+.eq-game .eq-requirement-stage .eq-stage-feedback>p{font-size:.8em;margin:0;color:#c5d9de}
+.eq-stage-feedback>p span{color:#97b6c1}
+.eq-game .eq-requirement-stage .eq-stage-feedback>button{background:#b1dedc;color:#102f38;border-color:#d3efea;flex-shrink:0}
+.eq-stage-speech:has([data-scene-continue]){flex-wrap:wrap}
+.eq-stage-speech>[data-scene-continue]{margin-left:52px}
+.eq-stage-saving,.eq-stage-recovery{position:relative;font-size:.9em;padding:10px 12px;border:1px solid #b5a16f;border-radius:4px;margin:12px 0;background:#203a3c}
+.eq-stage-recovery p{margin:0 0 8px}.eq-stage-recovery{color:#ffe0c3;background:#392e29}
+.eq-requirement-stage [data-current-focus=true]{outline:3px solid #ebc768;outline-offset:4px;position:relative}
+.eq-requirement-stage [data-current-focus=true]::after{content:'当前重点';position:absolute;top:-13px;left:12px;font-size:11px;line-height:18px;padding:0 6px;background:#ebc768;color:#243432;border-radius:3px;pointer-events:none;white-space:nowrap}
+.eq-stage-handoff{display:grid;align-content:center;gap:12px;height:100%;padding:30px;color:#d9e6dc}.eq-stage-handoff strong{font-size:1.35em}.eq-stage-handoff p{margin:0;font-size:.9em}
+.eq-requirement-stage .eq-stage-scene.has-artifact{height:clamp(220px,30vh,360px);min-height:13rem;align-items:stretch}
+.eq-stage-artifact{position:relative;margin:10px;border-radius:5px;height:calc(100% - 20px);min-height:0;overflow:hidden}
+.eq-requirement-stage .eq-change-artifact{padding:14px 18px;margin:0}
+.eq-requirement-stage .eq-change-artifact h3{font-size:1.05em;margin:0 0 6px}
+.eq-requirement-stage .eq-change-artifact p{font-size:.9em;line-height:1.6;margin:6px 0}
+.eq-game .eq-requirement-stage .eq-change-artifact button{font-size:.9em!important;margin:3px;min-height:44px}
+.eq-requirement-stage .eq-change-own-nodes{margin:10px 0}
+.eq-requirement-stage .eq-old-client-note{margin:10px 0;padding:10px 16px;transform:none}.eq-requirement-stage .eq-old-client-note strong{font-size:1.3em;margin:3px 0}
+.eq-requirement-stage .eq-change-node-detail{margin:10px 0;padding:10px}.eq-requirement-stage .eq-change-node-detail pre{margin:5px 0;font-size:.9em;padding:8px}
+.eq-stage-help{font-size:18px;line-height:1.7}.eq-stage-help textarea{display:block;width:100%;font:inherit;background:#0e2634;color:#e2edef;border:1px solid #6b8b96;padding:10px;box-sizing:border-box}.eq-stage-help button{min-height:44px;font:inherit;color:#d7eaeb;background:#183c4e;border:1px solid #7395a2;border-radius:4px;margin:6px 8px 6px 0;padding:8px 12px}.eq-stage-help label{display:block;margin:12px 0}
+@media(max-width:1100px),(max-height:780px){
+ .eq-game .eq-game-requirement:has(>.eq-requirement-stage){padding:8px 12px}
+ .eq-requirement-stage .eq-stage-heading{gap:8px;margin-bottom:8px}.eq-game .eq-requirement-stage .eq-stage-heading h2{font-size:1em}
+ .eq-requirement-stage .eq-stage-scene{grid-template-columns:minmax(0,1fr) 150px;height:220px}
+ .eq-requirement-stage .eq-stage-mentor small{display:none}
+ .eq-stage-dock{padding:12px 16px 14px}.eq-stage-speech{gap:12px}
+ .eq-game .eq-requirement-stage .eq-stage-next-line{margin-left:44px}
+ .eq-game .eq-requirement-stage .eq-stage-choices button{padding:8px 10px!important}
+ .eq-stage-feedback{gap:10px}.eq-stage-speech>[data-scene-continue]{margin-left:44px}
+}
+@media(max-width:760px){.eq-requirement-stage .eq-stage-heading{flex-wrap:wrap}.eq-stage-heading nav{margin-left:auto}.eq-requirement-stage .eq-stage-scene{grid-template-columns:minmax(0,1fr) 90px}.eq-stage-mentor figcaption{padding:20px 8px 10px}.eq-requirement-stage .eq-client-desk-caption{font-size:.65em}.eq-requirement-stage .eq-client-objects{gap:20px;padding:4px}.eq-requirement-stage .eq-client-meter{min-width:120px;padding:8px!important}.eq-stage-choices{grid-template-columns:1fr}.eq-stage-feedback{align-items:stretch;flex-direction:column}.eq-stage-timeline{gap:3px}.eq-stage-timeline li{padding:2px 3px;gap:4px}}
+@media(max-width:760px){.eq-game[data-storytelling] .eq-requirement-stage .eq-stage-scene:has(.eq-stage-timeline){height:280px}.eq-game[data-storytelling] .eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline){grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto auto}.eq-requirement-stage .eq-client-desk:has(.eq-stage-timeline) .eq-client-shade{grid-column:1;grid-row:4}}
+@media(prefers-reduced-motion:reduce){.eq-requirement-stage *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Artifact scenes share the same stage height; only the generated source scrolls. */
+.eq-requirement-stage .eq-change-scene{height:100%;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr);gap:8px;overflow:hidden}
+.eq-requirement-stage .eq-change-scene>pre{margin:0;min-height:0;overflow:auto;font-size:.9em;padding:10px;line-height:1.6}
+.eq-requirement-stage .eq-change-scene:has(.eq-old-client-note){display:flex;align-items:center;gap:14px}
+.eq-requirement-stage .eq-change-scene .eq-old-client-note{flex:1;min-width:0;margin:0;padding:12px 16px}
+.eq-requirement-stage .eq-change-scene .eq-change-node-detail{flex:1;min-width:0;margin:0;padding:10px}
+.eq-stage-artifact-controls{position:relative;border-radius:5px;margin-top:10px}
+.eq-requirement-stage .eq-change-stage-controls .eq-change-own-nodes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:6px 0}
+.eq-game .eq-requirement-stage .eq-change-stage-controls .eq-change-own-nodes button{font-size:max(1rem,.9em)!important;margin:0;padding:6px 9px!important;text-align:left}
+.eq-requirement-stage .eq-change-other-choices{display:flex;gap:6px}
+.eq-game .eq-requirement-stage .eq-change-other-choices button{font-size:max(1rem,.9em)!important;min-height:36px;padding:4px 10px!important}
+.eq-requirement-stage .eq-change-evidence-choices{margin-top:8px}
+@media(max-width:1100px),(max-height:780px){.eq-requirement-stage .eq-stage-scene.has-artifact{height:220px}.eq-requirement-stage .eq-change-scene .eq-old-client-note p{font-size:1em}.eq-requirement-stage .eq-change-scene .eq-old-client-note strong{font-size:1.1em}.eq-requirement-stage .eq-change-scene .eq-change-node-detail strong{font-size:.9em}}
+@media(max-width:760px){.eq-requirement-stage .eq-change-stage-controls .eq-change-own-nodes{grid-template-columns:repeat(2,minmax(0,1fr))}.eq-requirement-stage .eq-change-scene:has(.eq-old-client-note){display:grid;overflow:auto}}

@@ -1,0 +1,12 @@
+{
+  "scope": "Actual runtime/UI module regression with explicit assisted fixture; not novice or complete game signoff",
+  "final": {
+    "ready": true,
+    "tests": [
+      true,
+      false,
+      true
+    ]
+  },
+  "pageErrors": []
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:engineer-quest:eq-requirement-card:0.1.0",
+  "x-content-ref": {"id": "eq-requirement-card", "version": "0.1.0"},
+  "title": "个人自动灯中文需求卡快照",
+  "description": "只规定已提交卡片的形状与选项 ID，不证明选择正确或解释理解正确。草稿可不完整。个人身份、客户场景、需求版本与明确不做的功能由服务端绑定订单快照，不信任卡片自报。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["input", "condition", "output", "continuous", "explanation"],
+  "properties": {
+    "input": {"type": "string", "enum": ["light-sensor", "clock", "no-input"]},
+    "condition": {"type": "string", "enum": ["below-customer-threshold", "above-customer-threshold", "choose-any-threshold"]},
+    "output": {"type": "string", "enum": ["dark-on-bright-off", "always-on", "dark-off-bright-on"]},
+    "continuous": {"type": "string", "enum": ["repeat-read-decide", "read-once", "one-shot"]},
+    "explanation": {"type": "string", "minLength": 1, "maxLength": 1500, "description": "原样保存，不按固定关键词评分；空白和语义问题由评审处理。"}
+  }
+}

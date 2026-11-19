@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>体验报告 · Engineer Quest</title>
+  <link rel="stylesheet" href="/invitation.css">
+  <script src="/report.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <p class="brand">ENGINEER QUEST</p>
+    <h1>体验报告</h1>
+    <form id="unlock" hidden>
+      <label for="access-code">8 位报告查看码</label>
+      <input id="access-code" type="text" inputmode="numeric" autocomplete="off" pattern="[0-9]{8}" maxlength="8" required>
+      <button type="submit">查看已审核报告</button>
+    </form>
+    <p id="status" role="status"></p>
+    <article id="report" aria-label="已审核体验报告" hidden></article>
+    <section id="follow-up" hidden>
+      <h2>本次体验回访</h2>
+      <p id="follow-up-notice"></p>
+      <p id="follow-up-state" role="status"></p>
+      <div class="actions">
+        <button id="follow-up-allow" type="button">授权本次回访</button>
+        <button id="follow-up-withdraw" class="secondary" type="button" hidden>撤回回访授权</button>
+      </div>
+    </section>
+    <a id="back" href="/experience.html" hidden>返回我的体验</a>
+  </main>
+</body>
+</html>

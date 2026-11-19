@@ -1,0 +1,103 @@
+{
+  "source": "D actual requirementTutorialFacts(reviewRequirementAttempt(not-sure/need-help)); synthetic fixture",
+  "summary": {
+    "status": "needs-help",
+    "stageId": "requirements",
+    "checkpointId": "req-light-input",
+    "current": {
+      "checkpointId": "req-light-input",
+      "title": "先找到会变化的信息",
+      "number": 1,
+      "total": 6
+    },
+    "goal": "用六个情境确认装置读什么、怎样判断、怎样响应和持续工作。",
+    "readyForPractice": false,
+    "readyToAdvance": false,
+    "challenge": {
+      "id": "req-light-input",
+      "checkpointId": "req-light-input",
+      "stageId": "requirements",
+      "title": "先找到会变化的信息",
+      "scene": {
+        "description": "同一分钟，工作人员把桌面装置从窗边移进阴影。日期和时间没变，周围却暗了。"
+      },
+      "prompt": "要让灯回应眼前的环境，装置每次最需要读取哪项信息？",
+      "options": [
+        {
+          "optionId": "calendar",
+          "label": "今天是星期几"
+        },
+        {
+          "optionId": "current-light",
+          "label": "此刻周围光照的读数"
+        },
+        {
+          "optionId": "old-light",
+          "label": "刚开机时记住的读数"
+        },
+        {
+          "optionId": "not-sure",
+          "label": "我还不确定，先做一个小观察"
+        }
+      ],
+      "confidenceOptions": [
+        {
+          "id": "ready-to-try",
+          "label": "我愿意按这个判断试一次"
+        },
+        {
+          "id": "need-help",
+          "label": "我需要引导，再试一次"
+        }
+      ],
+      "manualSection": "03.1"
+    },
+    "diagnostic": {
+      "code": "REQ_SUPPORT_REQUESTED",
+      "severity": "info",
+      "message": "先做当前小观察，再重试这一题；求助不会失去继续资格。",
+      "observedFact": "学生明确选择了需要帮助。",
+      "manualSection": "03.1"
+    },
+    "guidance": {
+      "id": "guide-input",
+      "title": "比较同一时刻的两个位置",
+      "observation": "窗边和阴影处的时间相同，光照不同。",
+      "tryThis": "指一指两个位置中真正发生改变的信息，再重选需要读取的量。"
+    },
+    "retryAction": {
+      "type": "observe-and-retry",
+      "targetId": "req-light-input",
+      "checkpointId": "req-light-input",
+      "manualSection": "03.1",
+      "label": "做小观察，再试当前情境"
+    },
+    "actionTarget": {
+      "type": "requirement-challenge",
+      "targetId": "req-light-input",
+      "checkpointId": "req-light-input",
+      "manualSection": "03.1"
+    },
+    "explanationReview": "not_semantically_evaluated"
+  },
+  "navigation": {
+    "stage": "requirements",
+    "intent": {
+      "actionTarget": {
+        "type": "requirement-challenge",
+        "targetId": "req-light-input",
+        "checkpointId": "req-light-input",
+        "manualSection": "03.1"
+      },
+      "retryAction": {
+        "type": "observe-and-retry",
+        "targetId": "req-light-input",
+        "checkpointId": "req-light-input",
+        "manualSection": "03.1",
+        "label": "做小观察，再试当前情境"
+      },
+      "checkpointId": "req-light-input"
+    }
+  },
+  "errors": []
+}

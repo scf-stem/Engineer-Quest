@@ -1,0 +1,84 @@
+{
+  "scope": "Replay of E independent blank mouse-built UI record; not real student or hardware acceptance",
+  "archiveDigest": "sha256:b50c4518019c4ce58312b070fe3ace0b348443daa4a53e7b84ceff6b8650d769",
+  "manualRef": {
+    "id": "eq-student-manual",
+    "version": "0.2.0-local-full",
+    "digest": "sha256:c34a145d8aa3b5a38fae10b08c11004304bc5355a2eec64a132e59a83d8ded54"
+  },
+  "learnerId": "local-learner-ff014aee-2a64-4de9-b6d1-57e62f3693fa",
+  "attemptId": "attempt-96b7e0b9-a65a-4d90-90ab-ebfded9e119d",
+  "tests": [
+    {
+      "phase": "blocks",
+      "passed": true,
+      "invalidReason": null
+    },
+    {
+      "phase": "short-cpp",
+      "passed": false,
+      "invalidReason": null
+    },
+    {
+      "phase": "short-cpp",
+      "passed": true,
+      "invalidReason": null
+    }
+  ],
+  "learning": [
+    {
+      "id": "requirements-review",
+      "state": "observed"
+    },
+    {
+      "id": "observe-output",
+      "state": "observed"
+    },
+    {
+      "id": "read-input",
+      "state": "observed"
+    },
+    {
+      "id": "branch-output",
+      "state": "observed"
+    },
+    {
+      "id": "repeat-read",
+      "state": "observed"
+    },
+    {
+      "id": "base-delivery",
+      "state": "observed"
+    },
+    {
+      "id": "change-review",
+      "state": "observed"
+    },
+    {
+      "id": "code-mapping",
+      "state": "observed"
+    },
+    {
+      "id": "change-delivery",
+      "state": "observed"
+    }
+  ],
+  "observedActions": [
+    "observe-output",
+    "read-input",
+    "read-input",
+    "read-input",
+    "branch-output",
+    "branch-output",
+    "repeat-read",
+    "customer-tests",
+    "preserve-snapshot",
+    "code-mapping",
+    "customer-tests",
+    "customer-tests"
+  ],
+  "income": 100,
+  "generatedSourceMatchesDownload": true,
+  "targetCompile": "not_run",
+  "physicalUpload": "not_run"
+}

@@ -1,0 +1,142 @@
+{
+  "file": "docs/manual/参考实现.md",
+  "codeBlocks": 2,
+  "results": [
+    {
+      "index": 0,
+      "status": "executed",
+      "validation": true,
+      "diagnostics": [],
+      "outputEvents": [
+        {
+          "time": 0,
+          "value": true
+        },
+        {
+          "time": 100,
+          "value": true
+        },
+        {
+          "time": 200,
+          "value": true
+        },
+        {
+          "time": 300,
+          "value": true
+        },
+        {
+          "time": 400,
+          "value": true
+        },
+        {
+          "time": 500,
+          "value": true
+        },
+        {
+          "time": 600,
+          "value": false
+        },
+        {
+          "time": 700,
+          "value": false
+        },
+        {
+          "time": 800,
+          "value": false
+        },
+        {
+          "time": 900,
+          "value": false
+        },
+        {
+          "time": 1000,
+          "value": false
+        },
+        {
+          "time": 1100,
+          "value": false
+        },
+        {
+          "time": 1200,
+          "value": true
+        },
+        {
+          "time": 1300,
+          "value": true
+        },
+        {
+          "time": 1400,
+          "value": true
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "status": "executed",
+      "validation": true,
+      "diagnostics": [],
+      "outputEvents": [
+        {
+          "time": 0,
+          "value": true
+        },
+        {
+          "time": 100,
+          "value": true
+        },
+        {
+          "time": 200,
+          "value": true
+        },
+        {
+          "time": 300,
+          "value": true
+        },
+        {
+          "time": 400,
+          "value": true
+        },
+        {
+          "time": 500,
+          "value": true
+        },
+        {
+          "time": 600,
+          "value": false
+        },
+        {
+          "time": 700,
+          "value": false
+        },
+        {
+          "time": 800,
+          "value": false
+        },
+        {
+          "time": 900,
+          "value": false
+        },
+        {
+          "time": 1000,
+          "value": false
+        },
+        {
+          "time": 1100,
+          "value": false
+        },
+        {
+          "time": 1200,
+          "value": true
+        },
+        {
+          "time": 1300,
+          "value": true
+        },
+        {
+          "time": 1400,
+          "value": true
+        }
+      ]
+    }
+  ]
+}
